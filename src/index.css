@@ -1,12 +1,33 @@
+:root {
+  --bg-main: #1b1b1b;
+  --bg-deep: #000000;
+  --text-main: #f2f0ea;
+}
+
 * {
   box-sizing: border-box;
 }
 
 html {
+  background: var(--bg-main);
   font-family: system-ui, sans-serif;
 }
 
 body {
-  margin: 0;
   min-height: 100vh;
+  margin: 0;
+  color: var(--text-main);
+  background: linear-gradient(180deg, var(--bg-main) 0%, var(--bg-deep) 100%);
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.25;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='2.75' numOctaves='5' seed='12' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size: 160px 160px;
 }
