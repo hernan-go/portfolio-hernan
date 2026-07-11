@@ -3,7 +3,7 @@ import { profile } from "../data/profile";
 
 export function Hero() {
   return (
-    <section className="min-h-screen px-6 py-10">
+    <section className="relative flex min-h-screen items-center pt-28 md:pt-32">
       <Container>
         <p className="mb-4 text-sm uppercase tracking-[0.35em] text-neutral-400">
           {profile.role}

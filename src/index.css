@@ -13,6 +13,7 @@
 html {
   background: var(--bg-main);
   font-family: system-ui, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
