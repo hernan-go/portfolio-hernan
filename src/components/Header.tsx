@@ -17,7 +17,7 @@ export function Header () {
         aria-label="Go to homepage"
         className="text-xs font-semibold uppercase tracking-[0.28em] text-neutral-100/90 transition-colors duration-300 hover:text-neutral-100 md:text-sm"
         >
-          HG.
+          HERNÁN.
         </a>
 
         <nav aria-label="Primary navigation">
