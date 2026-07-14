@@ -142,7 +142,7 @@ const projects: Project[] = [
     ],
     context:
       "Implemented two responsive institutional sites from Figma for circular-economy organizations, prioritizing visual fidelity, clear service communication and fast client delivery.",
-      liveUrl: "https://tau.coop.ar//",
+      liveUrl: "https://tau.coop.ar/",
   },
 ];
 
@@ -310,21 +310,22 @@ export function Work() {
                   </dd>
                 </div>
               </dl>
-              <div className="mt-8"></div>
-              {activeProject.liveUrl ? (
-                <a
-                  href={activeProject.liveUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-3 bg-[#FF707C]/70 px-3 py-1.5 font-['IBM_Plex_Mono'] text-xs font-medium uppercase tracking-[0.16em] text-neutral-950 transition-colors duration-200 [clip-path:polygon(0_0,calc(100%-0.75rem)_0,100%_0.75rem,100%_100%,0_100%)] hover:bg-[#FF707C]/95 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#FF707C]"
-                >
-                  Visit live ↗
-                </a>
-              ) : (
-                 <span className="inline-flex cursor-not-allowed items-center gap-3 bg-[#FF707C]/25 px-3 py-1.5 font-['IBM_Plex_Mono'] text-xs font-medium uppercase tracking-[0.16em] text-neutral-500 [clip-path:polygon(0_0,calc(100%-0.75rem)_0,100%_0.75rem,100%_100%,0_100%)]">
-                  Live link pending
-                </span>
-              )}
+              <div className="mt-8">
+                {activeProject.liveUrl ? (
+                  <a
+                    href={activeProject.liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-3 bg-[#FF707C]/70 px-3 py-1.5 font-['IBM_Plex_Mono'] text-xs font-medium uppercase tracking-[0.16em] text-neutral-950 transition-colors duration-200 [clip-path:polygon(0_0,calc(100%-0.75rem)_0,100%_0.75rem,100%_100%,0_100%)] hover:bg-[#FF707C]/95 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#FF707C]"
+                  >
+                    Visit live ↗
+                  </a>
+                  ) : (
+                  <span className="inline-flex cursor-not-allowed items-center gap-3 bg-[#FF707C]/25 px-3 py-1.5 font-['IBM_Plex_Mono'] text-xs font-medium uppercase tracking-[0.16em] text-neutral-500 [clip-path:polygon(0_0,calc(100%-0.75rem)_0,100%_0.75rem,100%_100%,0_100%)]">
+                    Live link pending
+                  </span>
+                )}
+              </div>
             </div>
           </div>
         </article>
