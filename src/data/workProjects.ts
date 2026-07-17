@@ -108,7 +108,7 @@ export const projects: Project[] = [
   },
   {
     id: "prisma",
-    name: "Prisma Comunidad",
+    name: "Prisma",
     descriptor:
       "Focused one-page platform for community programs, participants and institutions.",
     role: "Co-founder / Web Developer",
@@ -126,7 +126,7 @@ export const projects: Project[] = [
   },
   {
     id: "circular-economy",
-    name: "Circular Economy Sites",
+    name: "Recycling Projects",
     descriptor:
       "Two responsive institutional websites implemented from client-approved Figma designs.",
     role: "Web Developer / Figma Implementation",

@@ -13,7 +13,7 @@ export function WorkProjectDetails({
       className="mt-8 pb-0 min-[1880px]:mt-12 min-[1880px]:pb-4"
     >
       <div className="grid gap-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:items-start lg:gap-10 min-[1880px]:gap-14">
-        <div className="relative aspect-[16/10] overflow-hidden bg-neutral-800/55 min-[1880px]:aspect-[5/4]">
+        <div className="relative hidden aspect-[16/10] overflow-hidden bg-neutral-800/55 md:block min-[1880px]:aspect-[5/4]">
           <div className="absolute inset-0 flex items-center justify-center px-6 text-center font-['IBM_Plex_Mono'] text-[0.68rem] uppercase tracking-[0.22em] text-neutral-500">
             Main project image
           </div>
@@ -40,7 +40,7 @@ export function WorkProjectDetails({
                 Role
               </dt>
 
-              <dd className="mt-1 text-[0.82rem] leading-3 text-neutral-300">
+              <dd className="mt-1 text-[0.82rem] leading-[1.45] text-neutral-300">
                 {project.role}
               </dd>
             </div>
@@ -50,7 +50,7 @@ export function WorkProjectDetails({
                 Scope
               </dt>
 
-              <dd className="mt-1 text-[0.82rem] leading-3 text-neutral-300">
+              <dd className="mt-1 text-[0.82rem] leading-[1.45] text-neutral-300">
                 {project.scope.join(" / ")}
               </dd>
             </div>
@@ -60,7 +60,7 @@ export function WorkProjectDetails({
                 Core technologies
               </dt>
 
-              <dd className="mt-1 text-[0.82rem] leading-3 text-neutral-300">
+              <dd className="mt-1 text-[0.82rem] leading-[1.45] text-neutral-300">
                 {project.coreTechnologies.join(" / ")}
               </dd>
             </div>
@@ -70,7 +70,7 @@ export function WorkProjectDetails({
                 Platform & services
               </dt>
 
-              <dd className="mt-1 text-[0.82rem] leading-3 text-neutral-300">
+              <dd className="mt-1 text-[0.82rem] leading-[1.45] text-neutral-300">
                 {project.platforms.join(" / ")}
               </dd>
             </div>

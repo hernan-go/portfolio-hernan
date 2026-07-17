@@ -5,6 +5,7 @@ import {
   type ProjectId,
 } from "../data/workProjects";
 import { WorkPreviewGrid } from "../components/work/WorkPreviewGrid";
+import { WorkBackpackSelector } from "../components/work/WorkBackpackSelector";
 import { WorkProjectDetails } from "../components/work/WorkProjectDetails";
 
 
@@ -43,14 +44,30 @@ export function Work() {
         <h2 className="sr-only">Selected work</h2>
 
         <p className="font-['IBM_Plex_Mono'] text-[0.8rem] uppercase tracking-[0.28em] text-neutral-400">
-          01 / Selected Work | Interfaces and systems built around real needs.
+          <span className="md:hidden">
+            01 / Selected Work
+          </span>
+
+          <span className="hidden md:inline">
+            01 / Selected Work | Interfaces and systems built around real needs.
+          </span>
         </p>
 
-        <WorkPreviewGrid
-          projects={projects}
-          activeProjectId={activeProjectId}
-          onSelect={setActiveProjectId}
-        />
+        <div className="md:hidden">
+          <WorkBackpackSelector
+            projects={projects}
+            activeProjectId={activeProjectId}
+            onSelect={setActiveProjectId}
+          />
+        </div>
+
+        <div className="hidden md:block">
+          <WorkPreviewGrid
+            projects={projects}
+            activeProjectId={activeProjectId}
+            onSelect={setActiveProjectId}
+          />
+        </div>
 
         <WorkProjectDetails
           key={activeProject.id}
