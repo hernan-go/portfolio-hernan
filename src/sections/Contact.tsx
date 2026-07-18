@@ -24,7 +24,7 @@ function FolderLeaf({ label, value, href }: FolderLeafProps) {
     <>
       <span
         aria-hidden="true"
-        className="absolute -left-8 top-1/2 h-px w-[3.75rem] -translate-y-1/2 bg-neutral-700"
+        className="absolute left-0 top-1/2 h-px w-5 -translate-y-1/2 bg-neutral-700 md:-left-8 md:w-[3.75rem]"
       />
 
       <Folder
@@ -34,21 +34,21 @@ function FolderLeaf({ label, value, href }: FolderLeafProps) {
         aria-hidden="true"
       />
 
-      <p className="min-w-0 font-['IBM_Plex_Mono'] text-[0.76rem] leading-5 text-neutral-400 md:text-[0.82rem]">
+      <p className="min-w-0 whitespace-nowrap font-['IBM_Plex_Mono'] text-[0.7rem] leading-5 text-neutral-400 sm:text-[0.66rem] md:text-[0.82rem]">
         <span className="text-neutral-200 transition-colors group-hover:text-[#FFDD1F]">
           {label}
         </span>
 
-        <span className="mx-2 text-neutral-700">/</span>
+        <span className="mx-0.5 text-neutral-700 md:mx-2">/</span>
 
-        <span className="break-all transition-colors group-hover:text-neutral-200">
+        <span className="transition-colors group-hover:text-neutral-200">
           {value}
         </span>
       </p>
     </>
   );
   const className =
-    "group relative flex min-w-0 items-center gap-3 py-3 pl-10";
+    "group relative flex min-w-0 items-center gap-2 py-3 pl-6 md:gap-3 md:pl-10";
 
   if (href) {
     return (
@@ -350,11 +350,11 @@ function ContactTree() {
         </span>
       </div>
 
-      <div className="relative ml-[13px] mt-4 pb-2">
-        <div className="relative border-l border-neutral-700 py-5 pl-10">
+      <div className="relative ml-[13px] mt-4 border-l border-neutral-700 pb-2">
+        <div className="relative py-5 pl-6 md:pl-10">
           <span
             aria-hidden="true"
-            className="absolute left-0 top-9 h-px w-8 bg-neutral-700"
+            className="absolute left-0 top-9 h-px w-5 bg-neutral-700 md:w-8"
           />
 
           <div className="flex items-center gap-3">
@@ -370,7 +370,7 @@ function ContactTree() {
             </h3>
           </div>
 
-          <div className="relative ml-[11px] mt-4 border-l border-neutral-700 pl-8">
+          <div className="relative ml-[10px] mt-4 border-l border-neutral-700 pl-0 md:ml-[11px] md:pl-8">
             <FolderLeaf
               label="Email"
               value="contact@hernangobulin.com"
@@ -379,23 +379,22 @@ function ContactTree() {
             <FolderLeaf
               label="Phone"
               value="+54 9 341 344-6372"
+              href="https://api.whatsapp.com/send/?phone=5493413446372&text=Hi%20Hern%C3%A1n%2C%20I%20found%20your%20portfolio%20and%20I%27d%20like%20to%20get%20in%20touch.&type=phone_number&app_absent=0"
             />
 
             <FolderLeaf
               label="Location"
-              value="Rosario | Santa Fe | Argentina"
+              value="Rosario, Argentina"
+              href="https://www.google.com/maps/search/?api=1&query=Rosario%2C%20Argentina"
             />
           </div>
         </div>
 
-        <div className="relative py-5 pl-10">
+        <div className="relative py-5 pl-6 md:pl-10">
+
           <span
             aria-hidden="true"
-            className="absolute -top-6 left-0 h-[3.75rem] w-px bg-neutral-700"
-          />
-          <span
-            aria-hidden="true"
-            className="absolute left-0 top-9 h-px w-8 bg-neutral-700"
+            className="absolute left-0 top-9 h-px w-5 bg-neutral-700 md:w-8"
           />
 
           <div className="flex items-center gap-3">
@@ -411,7 +410,7 @@ function ContactTree() {
             </h3>
           </div>
 
-          <div className="relative ml-[11px] mt-4 border-l border-neutral-700 pl-8">
+          <div className="relative -translate-x-0 ml-[9px] mt-4 border-l border-neutral-700 pl-0 md:translate-x-0 md:ml-[11px] md:pl-8 ">
             <FolderLeaf
               label="LinkedIn"
               value="linkedin.com/in/h-l-g/"
@@ -426,11 +425,11 @@ function ContactTree() {
           </div>
         </div>
       </div>
-      <div className="mt-8 flex justify-end pr-4">
-        <div className="flex flex-col items-end">
+      <div className="mt-8 flex justify-center">
+        <div className="relative h-[84px] w-[135px]">
           <span
             aria-hidden="true"
-            className="block h-[90px] w-[175px] bg-neutral-500/80"
+            className="absolute inset-0 block bg-neutral-500/80"
             style={{
               WebkitMaskImage: "url('/signature-hernan.svg')",
               maskImage: "url('/signature-hernan.svg')",
@@ -443,8 +442,8 @@ function ContactTree() {
             }}
           />
 
-          <p className="-mt-2 font-['IBM_Plex_Mono'] text-[0.72rem] tracking-[0.16em] text-neutral-500">
-            Hernán Gobulin
+          <p className="absolute left-20 top-15 z-10 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap font-['IBM_Plex_Mono'] text-[0.78rem] tracking-[0.20em] text-neutral-500">
+            Hernán
           </p>
         </div>
       </div>
