@@ -1,6 +1,7 @@
 import { Header } from "./components/Header";
 import { Hero } from "./sections/Hero";
 import { Work } from "./sections/Work";
+import Profile  from "./sections/Profile";
 import { Contact } from "./sections/Contact";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <main>
         <Hero />
         <Work />
+        <Profile />
         <Contact />
       </main>
     </div>
