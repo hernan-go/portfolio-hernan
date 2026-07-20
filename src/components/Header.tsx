@@ -28,18 +28,18 @@ export function Header () {
           aria-label="Go to homepage"
           className="
             self-start
-            text-xs
+            text-[11px]
             font-semibold
             uppercase
-            tracking-[0.28em]
-            text-neutral-100/90
+            tracking-[0.20em]
+            text-neutral-200/80
             transition-colors
             duration-300
             hover:text-neutral-100
-            md:text-sm
+            md:text-[13px]
           "
         >
-          HERNÁN.
+          Hernán.
         </a>
 
         <nav

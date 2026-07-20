@@ -53,8 +53,9 @@ export default function ProfileToolchain() {
     <section className="relative overflow-hidden pt-16 pb-24 md:pt-20 md:pb-32">
       <Container>
         <p
-        id="profile"
-        className="scroll-mt-10 mb-6 font-mono text-[11px] uppercase tracking-[0.14em] text-zinc-400 md:mb-7 md:text-xs">
+          id="profile"
+          className="scroll-mt-10 mb-6 font-['IBM_Plex_Mono'] text-[0.68rem] uppercase tracking-[0.18em] text-neutral-200 md:mb-7 md:text-[0.74rem]"
+        >
           {profileToolchainEyebrow}
         </p>
 

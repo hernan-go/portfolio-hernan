@@ -5,7 +5,7 @@ export type ProfileToolchainCard = {
 };
 
 export const profileToolchainEyebrow =
-  "03 PROFILE | FLEXIBLE TECHNOLOGIES FOR DIVERSE SOLUTIONS.";
+  "03 / Profile | Flexible technologies for diverse solutions";;
 
 export const profileToolchainCards: ProfileToolchainCard[] = [
   {

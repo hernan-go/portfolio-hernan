@@ -525,13 +525,13 @@ export function Contact() {
 }, []);
 
   return (
-    <section
-      id="contact"
-      className="relative min-h-screen overflow-hidden py-20 md:py-24"
-    >
+    <section className="relative min-h-screen overflow-hidden py-20 md:py-24">
       <Container>
-        <h2 className="font-['IBM_Plex_Mono'] text-[0.8rem] uppercase tracking-[0.22em] text-neutral-400">
-          04 / Contact | Let&apos;s build something useful.
+        <h2
+          id="contact"
+          className="scroll-mt-10 font-['IBM_Plex_Mono'] text-[0.68rem] uppercase tracking-[0.18em] text-neutral-200 md:text-[0.74rem]"
+        >
+          04 / Contact | Let&apos;s build something useful
         </h2>
 
         <div className="mx-auto mt-7 grid w-full max-w-[1100px] gap-16 lg:translate-x-32 lg:grid-cols-[310px_minmax(0,1fr)] lg:items-center lg:gap-28 xl:translate-x-38 min-[1880px]:translate-x-0">

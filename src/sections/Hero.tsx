@@ -48,8 +48,8 @@ export function Hero() {
     >
       {/* Metadata superior */}
       <Container>
-        <p className="absolute top-[17.5%] sm:top-[18%] lg:top-[19%] z-30 font-['IBM_Plex_Mono'] text-[0.68rem] uppercase tracking-[0.18em] text-neutral-500 md:text-[0.74rem]">
-          00 / Hero | {profile.role}
+        <p className="absolute top-[17.5%] sm:top-[18%] lg:top-[19%] z-30 font-['IBM_Plex_Mono'] text-[0.68rem] uppercase tracking-[0.18em] text-neutral-200 md:text-[0.74rem]">
+          00 / Index | {profile.role}
         </p>
       </Container>
 
@@ -78,16 +78,12 @@ export function Hero() {
         {/* Identificación alineada debajo del extremo derecho de NEEDS */}
         <div className="mt-7 px-6 font-['IBM_Plex_Mono'] lg:flex lg:justify-end lg:px-0 lg:pr-[0.4vw]">
           <div className="max-w-full text-left">
-            <p className="text-[0.76rem] font-semibold text-neutral-200 md:text-[0.82rem]">
+            <p className="text-[0.76rem] font-medium text-neutral-200 md:text-[0.82rem]">
               {profile.name}
-            </p>
-
-            <p className="mt-3 max-w-[20rem] text-[0.62rem] leading-[1.7] text-neutral-500 sm:text-[0.66rem] md:text-[0.72rem] lg:max-w-none lg:whitespace-nowrap">
-              {profile.stack.join(" · ")}
             </p>
           </div>
         </div>
-      </div>
+        </div>
 
       {/* Fotografía desktop/notebook */}
       <div className="pointer-events-none absolute right-[7%] top-[23.5%] z-10 hidden w-[clamp(350px,25vw,450px)] lg:block">

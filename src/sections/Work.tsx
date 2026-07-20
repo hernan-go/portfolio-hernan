@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Container } from "../components/Container";
 
 import {
   projects,
@@ -37,22 +38,24 @@ export function Work() {
         </div>
       </div>
 
-      <div
-        id="work"
-        className="relative z-10 mx-auto w-full max-w-[1400px] px-7 md:px-8"
-      >
+      <Container className="relative z-10">
         <h2 className="sr-only">Selected work</h2>
 
-        <p className="font-['IBM_Plex_Mono'] text-[0.8rem] uppercase tracking-[0.28em] text-neutral-400">
+        <p
+          id="work"
+          className="scroll-mt-10 font-['IBM_Plex_Mono'] text-[0.68rem] uppercase tracking-[0.18em] text-neutral-200 md:text-[0.74rem]"
+        >
           <span className="md:hidden">
             01 / Selected Work
           </span>
 
           <span className="hidden md:inline">
-            01 / Selected Work | Interfaces and systems built around real needs.
+            01 / Selected Work | Interfaces and systems built around real needs
           </span>
         </p>
+      </Container>
 
+      <div className="relative z-10 mx-auto w-full max-w-[1400px] px-7 md:px-8">
         <div className="md:hidden">
           <WorkBackpackSelector
             projects={projects}
