@@ -14,7 +14,7 @@ type WorkBackpackSelectorProps = {
 type ProjectPosition = {
   id: ProjectId;
   className: string;
-  align: "left" | "right";
+  align: "left" | "right" | "center";
 };
 
 const projectPositions: ProjectPosition[] = [
@@ -30,23 +30,28 @@ const projectPositions: ProjectPosition[] = [
   },
   {
     id: "claec",
-    className: "left-[0%] top-[42%]",
+    className: "left-0 top-[38%]",
     align: "left",
   },
   {
     id: "prisma",
-    className: "right-[0%] top-[42%]",
+    className: "right-0 top-[38%]",
     align: "right",
   },
   {
     id: "jardin-reiki",
-    className: "bottom-0 left-0",
+    className: "bottom-[15%] left-0",
     align: "left",
   },
   {
-    id: "circular-economy",
-    className: "bottom-0 right-0",
+    id: "tau-raee",
+    className: "bottom-[15%] right-0",
     align: "right",
+  },
+  {
+    id: "femrecicla",
+    className: "bottom-0 left-1/2 -translate-x-1/2",
+    align: "center",
   },
 ];
 
@@ -114,6 +119,14 @@ export function WorkBackpackSelector({
           strokeWidth="0.5"
           vectorEffect="non-scaling-stroke"
         />
+
+        <polyline
+          points="50,77 50,94"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="0.5"
+          vectorEffect="non-scaling-stroke"
+        />
       </svg>
 
       {/* Mochila */}
@@ -168,7 +181,13 @@ export function WorkBackpackSelector({
               focus-visible:outline-offset-4
               focus-visible:outline-[#FF707C]
               ${position.className}
-              ${position.align === "right" ? "items-end text-right" : "items-start text-left"}
+              ${
+                position.align === "right"
+                  ? "items-end text-right"
+                  : position.align === "center"
+                    ? "items-center text-center"
+                    : "items-start text-left"
+              }
             `}
           >
             <span

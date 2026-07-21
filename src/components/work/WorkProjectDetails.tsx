@@ -1,4 +1,5 @@
 import type { Project } from "../../data/workProjects";
+import { WorkProjectImage } from "./WorkProjectImage";
 
 type WorkProjectDetailsProps = {
   project: Project;
@@ -13,11 +14,11 @@ export function WorkProjectDetails({
       className="mt-8 pb-0 min-[1880px]:mt-12 min-[1880px]:pb-4"
     >
       <div className="grid gap-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:items-start lg:gap-10 min-[1880px]:gap-14">
-        <div className="relative hidden aspect-[16/10] overflow-hidden bg-neutral-800/55 md:block min-[1880px]:aspect-[5/4]">
-          <div className="absolute inset-0 flex items-center justify-center px-6 text-center font-['IBM_Plex_Mono'] text-[0.68rem] uppercase tracking-[0.22em] text-neutral-500">
-            Main project image
-          </div>
-        </div>
+        <WorkProjectImage
+           key={project.id}
+            src={project.mainImage}
+            alt={project.mainImageAlt}
+        />
 
         <div className="font-['IBM_Plex_Mono']">
           <div>

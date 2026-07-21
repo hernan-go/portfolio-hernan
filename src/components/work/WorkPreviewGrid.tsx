@@ -16,7 +16,7 @@ export function WorkPreviewGrid({
 }: WorkPreviewGridProps) {
   return (
     <div
-      className="mt-7 grid grid-cols-1 gap-x-5 gap-y-9 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 xl:gap-y-0 min-[1880px]:mt-10"
+      className="mt-7 grid grid-cols-1 gap-x-5 gap-y-9 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-7 xl:gap-y-0 min-[1880px]:mt-10"
       aria-label="Selected case studies"
     >
       {projects.map((project) => {
@@ -50,8 +50,18 @@ export function WorkPreviewGrid({
                   : "border-neutral-800 group-hover:border-neutral-500"
               }`}
             >
-              <div className="absolute inset-0 flex items-center justify-center px-3 text-center font-['IBM_Plex_Mono'] text-[0.58rem] uppercase tracking-[0.16em] text-neutral-600">
-                Preview pending
+              <div className="absolute inset-0 flex items-center justify-center">
+                <img
+                  src={project.logo}
+                  alt=""
+                  aria-hidden="true"
+                  draggable={false}
+                  className={`pointer-events-none h-full w-full select-none object-contain px-7 py-5 transition-all duration-300 ${
+                    isActive
+                      ? "scale-100 opacity-90"
+                      : "scale-[0.97] opacity-45 group-hover:scale-100 group-hover:opacity-75"
+                  }`}
+                />
               </div>
             </div>
 
