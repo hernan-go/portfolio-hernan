@@ -2,6 +2,7 @@ import { Header } from "./components/Header";
 import { NotFound } from "./pages/NotFound";
 import { Hero } from "./sections/Hero";
 import { Work } from "./sections/Work";
+import { Lab } from "./sections/Lab";
 import Profile  from "./sections/Profile";
 import { Contact } from "./sections/Contact";
 
@@ -20,6 +21,7 @@ function App() {
       <main>
         <Hero />
         <Work />
+        <Lab />
         <Profile />
         <Contact />
       </main>
