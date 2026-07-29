@@ -1,109 +1,152 @@
+import type { ReactNode } from "react";
+
 import type { Project } from "../../data/workProjects";
-import { WorkProjectImage } from "./WorkProjectImage";
 
 type WorkProjectDetailsProps = {
   project: Project;
 };
 
+type DetailRowProps = {
+  label: string;
+  children: ReactNode;
+};
+
+function DetailRow({
+  label,
+  children,
+}: DetailRowProps) {
+  return (
+    <div className="flex flex-col gap-0.3">
+      <dt
+        className="
+          inline-flex
+          w-fit
+          shrink-0
+          bg-[#d6d5d2]
+          px-2
+          py-0.5
+          pr-4
+          text-[0.68rem]
+          font-semibold
+          uppercase
+          tracking-[0.18em]
+          text-neutral-900
+          [clip-path:polygon(0_0,calc(100%-0.55rem)_0,100%_50%,calc(100%-0.55rem)_100%,0_100%)]
+        "
+      >
+        {label}
+      </dt>
+
+      <dd className="min-w-0 text-[0.82rem] leading-[1.45] text-neutral-300">
+        {children}
+      </dd>
+    </div>
+  );
+}
+
 export function WorkProjectDetails({
   project,
 }: WorkProjectDetailsProps) {
+  const actionUrl =
+    project.repositoryUrl ?? project.liveUrl;
+
+  const actionLabel = project.repositoryUrl
+    ? "View repository ↗"
+    : "Visit Live ↗";
+
   return (
     <article
       aria-live="polite"
-      className="mt-8 pb-0 min-[1880px]:mt-12 min-[1880px]:pb-4"
+      className="font-['IBM_Plex_Mono']"
     >
-      <div className="grid gap-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:items-start lg:gap-10 min-[1880px]:gap-14">
-        <WorkProjectImage
-           key={project.id}
-            src={project.mainImage}
-            alt={project.mainImageAlt}
-        />
+      <div>
+        <p className="mb-1 text-[0.7rem] uppercase tracking-[0.2em] text-neutral-500">
+          Active case
+        </p>
 
-        <div className="font-['IBM_Plex_Mono']">
-          <div>
-            <p className="mb-1 text-[0.7rem] uppercase tracking-[0.2em] text-neutral-500">
-              Active case
-            </p>
+        <h3 className="font-['Archivo_Black'] text-[clamp(1.48rem,2vw,2.1rem)] uppercase leading-none tracking-[-0.035em] text-neutral-100">
+          {project.name}
+        </h3>
+      </div>
 
-            <h3 className="font-['Archivo_Black'] text-[clamp(1.65rem,2.2vw,2.3rem)] uppercase leading-none tracking-[-0.035em] text-neutral-100 min-[1880px]:text-[clamp(1.85rem,2.5vw,2.55rem)]">
-              {project.name}
-            </h3>
-          </div>
+      <p className="mt-2.5 max-w-3xl text-[0.8rem] leading-5 text-neutral-400">
+        {project.descriptor}
+      </p>
 
-          <p className="mt-3 max-w-3xl text-[0.8rem] leading-5 text-neutral-400 min-[1880px]:mt-4 min-[1880px]:text-[0.82rem] min-[1880px]:leading-6">
-            {project.descriptor}
-          </p>
+      <dl className="mt-3 space-y-5 xl:mt-4 xl:space-y-3.5">
+        <DetailRow label="Role">
+          {project.role}
+        </DetailRow>
 
-          <dl className="mt-3 space-y-5 min-[1880px]:mt-8 min-[1880px]:space-y-5">
-            <div>
-              <dt className="text-[0.7rem] uppercase tracking-[0.2em] text-neutral-500">
-                Role
-              </dt>
+        <DetailRow label="Scope">
+          {project.scope.join(", ")}
+        </DetailRow>
 
-              <dd className="mt-1 text-[0.82rem] leading-[1.45] text-neutral-300">
-                {project.role}
-              </dd>
-            </div>
+        <DetailRow label="Core technologies">
+          {project.coreTechnologies.join(", ")}
+        </DetailRow>
 
-            <div>
-              <dt className="text-[0.7rem] uppercase tracking-[0.2em] text-neutral-500">
-                Scope
-              </dt>
+        <DetailRow label="Platform & services">
+          {project.platforms.join(", ")}
+        </DetailRow>
 
-              <dd className="mt-1 text-[0.82rem] leading-[1.45] text-neutral-300">
-                {project.scope.join(" / ")}
-              </dd>
-            </div>
+        <DetailRow label="Context">
+          <span className="block max-w-3xl">
+            {project.context}
+          </span>
+        </DetailRow>
+      </dl>
 
-            <div>
-              <dt className="text-[0.7rem] uppercase tracking-[0.2em] text-neutral-500">
-                Core technologies
-              </dt>
-
-              <dd className="mt-1 text-[0.82rem] leading-[1.45] text-neutral-300">
-                {project.coreTechnologies.join(" / ")}
-              </dd>
-            </div>
-
-            <div>
-              <dt className="text-[0.7rem] uppercase tracking-[0.2em] text-neutral-500">
-                Platform & services
-              </dt>
-
-              <dd className="mt-1 text-[0.82rem] leading-[1.45] text-neutral-300">
-                {project.platforms.join(" / ")}
-              </dd>
-            </div>
-
-            <div>
-              <dt className="text-[0.7rem] uppercase tracking-[0.2em] text-neutral-500">
-                Context
-              </dt>
-
-              <dd className="mt-1 max-w-3xl text-[0.82rem] leading-5 text-neutral-300">
-                {project.context}
-              </dd>
-            </div>
-          </dl>
-
-          <div className="mt-5 min-[1880px]:mt-8">
-            {project.liveUrl ? (
-              <a
-                href={project.liveUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-3 bg-[#FF707C]/70 px-3 py-1.5 font-['IBM_Plex_Mono'] text-xs font-semibold uppercase tracking-[0.16em] text-neutral-950 transition-colors duration-200 [clip-path:polygon(0_0,calc(100%-0.75rem)_0,100%_0.75rem,100%_100%,0_100%)] hover:bg-[#FF707C]/95 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#FF707C]"
-              >
-                Visit live ↗
-              </a>
-            ) : (
-              <span className="inline-flex cursor-not-allowed items-center gap-3 bg-[#FF707C]/25 px-3 py-1.5 font-['IBM_Plex_Mono'] text-xs font-semibold uppercase tracking-[0.16em] text-neutral-500 [clip-path:polygon(0_0,calc(100%-0.75rem)_0,100%_0.75rem,100%_100%,0_100%)]">
-                Live link pending
-              </span>
-            )}
-          </div>
-        </div>
+      <div className="mt-4">
+        {actionUrl ? (
+          <a
+            href={actionUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="
+              inline-flex
+              items-center
+              bg-[#FF707C]/80
+              px-3
+              py-1.5
+              pr-5
+              text-xs
+              font-semibold
+              uppercase
+              tracking-[0.16em]
+              text-neutral-950
+              transition-colors
+              duration-200
+              [clip-path:polygon(0_0,calc(100%-0.75rem)_0,100%_50%,calc(100%-0.75rem)_100%,0_100%)]
+              hover:bg-[#FF707C]
+              focus-visible:outline-2
+              focus-visible:outline-offset-4
+              focus-visible:outline-[#FF707C]
+            "
+          >
+            {actionLabel}
+          </a>
+        ) : (
+          <span
+            className="
+              inline-flex
+              cursor-not-allowed
+              items-center
+              bg-[#FF707C]/25
+              px-3
+              py-1.5
+              pr-5
+              text-xs
+              font-semibold
+              uppercase
+              tracking-[0.16em]
+              text-neutral-500
+              [clip-path:polygon(0_0,calc(100%-0.75rem)_0,100%_50%,calc(100%-0.75rem)_100%,0_100%)]
+            "
+          >
+            Link pending
+          </span>
+        )}
       </div>
     </article>
   );

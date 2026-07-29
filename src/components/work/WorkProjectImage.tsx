@@ -7,11 +7,13 @@ import {
 type WorkProjectImageProps = {
   src?: string;
   alt?: string;
+  mode?: "scroll" | "contain";
 };
 
 export function WorkProjectImage({
   src,
   alt = "",
+  mode = "scroll",
 }: WorkProjectImageProps) {
   const frameRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
@@ -23,6 +25,7 @@ export function WorkProjectImage({
 
     if (
       !src ||
+      mode !== "scroll" ||
       !frame ||
       !image ||
       !image.complete ||
@@ -146,12 +149,20 @@ export function WorkProjectImage({
         fill: "both",
       },
     );
-  }, [src]);
+  }, [src, mode]);
 
   useEffect(() => {
     const image = imageRef.current;
 
     if (!src || !image) {
+      return;
+    }
+
+    if (mode !== "scroll") {
+      animationRef.current?.cancel();
+      image.style.transform = "translate3d(0, 0, 0)";
+      image.style.opacity = "1";
+
       return;
     }
 
@@ -206,12 +217,12 @@ export function WorkProjectImage({
         scheduleAnimation,
       );
     };
-  }, [src, startAnimation]);
+  }, [src, mode, startAnimation]);
 
   return (
     <div
       ref={frameRef}
-      className="relative hidden aspect-[16/10] overflow-hidden bg-neutral-800/55 md:block min-[1880px]:aspect-[5/4]"
+      className="relative hidden h-[clamp(450px,56svh,600px)] overflow-hidden bg-neutral-800/55 md:block"
     >
       {src ? (
         <img
@@ -222,7 +233,11 @@ export function WorkProjectImage({
           loading="eager"
           decoding="async"
           draggable={false}
-          className="absolute inset-x-0 top-0 h-auto w-full select-none will-change-transform"
+          className={
+            mode === "contain"
+              ? "absolute inset-0 h-full w-full select-none object-contain p-3"
+              : "absolute inset-x-0 top-0 h-auto w-full select-none will-change-transform"
+          }
         />
       ) : (
         <div className="absolute inset-0 flex items-center justify-center px-6 text-center font-['IBM_Plex_Mono'] text-[0.68rem] uppercase tracking-[0.22em] text-neutral-500">

@@ -5,6 +5,7 @@ import zepelinMultimediaLogo from "../assets/work/logos/zepelin-multimedia.svg";
 import prismaLogo from "../assets/work/logos/prisma.svg";
 import tauRaeeLogo from "../assets/work/logos/tau-raee.svg";
 import femReciclaLogo from "../assets/work/logos/femrecicla.svg";
+import operationsHubLogo from "../assets/work/logos/operations-hub.svg";
 
 import claecFullpage from "../assets/work/projects/claec/claec-fullpage.webp?url";
 import luminaAcademicaFullpage from "../assets/work/projects/lumina-academica/lumina-academica-fullpage.webp?url";
@@ -13,6 +14,7 @@ import zepelinMultimediaFullpage from "../assets/work/projects/zepelin-multimedi
 import prismaFullpage from "../assets/work/projects/prisma/prisma-fullpage.webp?url";
 import tauRaeeFullpage from "../assets/work/projects/tau-raee/tau-raee-fullpage.webp?url";
 import femReciclaFullpage from "../assets/work/projects/femrecicla/femrecicla-fullpage.webp?url";
+import operationsHubDashboard from "../assets/work/projects/operations-hub/operations-hub-dashboard-fullpage.webp";
 
 export type ProjectId =
   | "claec"
@@ -21,7 +23,8 @@ export type ProjectId =
   | "zepelin"
   | "prisma"
   | "tau-raee"
-  | "femrecicla";
+  | "femrecicla"
+  | "operations-hub";
 
 
 export type Project = {
@@ -37,6 +40,8 @@ export type Project = {
   platforms: string[];
   context: string;
   liveUrl?: string;
+  repositoryUrl?: string;
+  previewMode?: "scroll" | "contain";
 };
 
 export const projects: Project[] = [
@@ -228,5 +233,41 @@ export const projects: Project[] = [
   context:
     "Implemented the FemRecicla institutional website from an approved Figma design, translating its visual system into a responsive production site for a circular-economy organization.",
   liveUrl: "https://femrecicla.coop.ar/",
+},
+{
+  id: "operations-hub",
+  name: "Operations Hub",
+  logo: operationsHubLogo,
+  mainImage: operationsHubDashboard,
+  mainImageAlt:
+    "Operations Hub custom WordPress administration dashboard showing operational metrics, integrations and internal tools.",
+  descriptor:
+    "Custom operations dashboard centralizing commerce, communication and internal workflow signals.",
+  role: "Product & Plugin Developer",
+  scope: [
+    "Custom Admin Plugin",
+    "Operations Dashboard",
+    "Workflow Signals",
+    "Internal Tools",
+  ],
+  coreTechnologies: [
+    "PHP",
+    "JavaScript",
+    "CSS",
+    "WordPress",
+    "WooCommerce",
+  ],
+  platforms: [
+    "Gmail API",
+    "OAuth 2.0",
+    "Google Calendar / iCal",
+    "RSS",
+    "Options API",
+  ],
+  context:
+    "Originally developed as WooCommerce Command Center and expanded into an internal operations hub that centralizes order metrics, customer follow-up, calendar events, Gmail signals, operational tasks and external feeds in one admin workspace.",
+  repositoryUrl:
+    "https://github.com/hernan-go/woocommerce-command-center",
+  previewMode: "contain",
 },
 ];
