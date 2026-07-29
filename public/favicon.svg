@@ -2,22 +2,25 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Creator: CorelDRAW 2020 (64-Bit) -->
 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="64px" height="64px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 6.19 6.19"
+viewBox="0 0 63.88 63.88"
  xmlns:xlink="http://www.w3.org/1999/xlink"
  xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
  <defs>
   <style type="text/css">
    <![CDATA[
-    .fil0 {fill:none}
-    .fil1 {fill:#242424}
-    .fil2 {fill:#DBD9D2;fill-rule:nonzero}
+    .fil0 {fill:#303030}
+    .fil1 {fill:white;fill-rule:nonzero}
    ]]>
   </style>
  </defs>
  <g id="Capa_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>
-  <rect class="fil0" width="6.19" height="6.19"/>
-  <rect class="fil1" x="0.29" y="0.29" width="5.61" height="5.61" rx="0.97" ry="0.97"/>
-  <polygon class="fil2" points="3.78,5.04 3.78,3.56 2.41,3.56 2.41,5.04 1.16,5.04 1.16,1.15 2.41,1.15 2.41,2.57 3.78,2.57 3.78,1.15 5.03,1.15 5.03,5.04 "/>
+  <rect class="fil0" width="63.88" height="63.88"/>
+  <g id="_1779334495296">
+   <path class="fil1" d="M39.35 14.58l10.46 0 0 34.71 -11.63 0 0 -34.71 1.17 0zm8.1 2.36l-6.92 0 0 29.99 6.92 0 0 -29.99z"/>
+   <rect class="fil0" x="15.24" y="15.76" width="9.28" height="32.35"/>
+   <path class="fil1" d="M15.24 14.58l10.46 0 0 34.71 -11.63 0 0 -34.71 1.17 0zm8.1 2.36l-6.92 0 0 29.99 6.92 0 0 -29.99z"/>
+   <path class="fil1" d="M24.52 26.34l16.01 0 0 11.92 -17.19 0 0 -11.92 1.18 0zm13.66 2.35l-12.48 0 0 7.21 12.48 0 0 -7.21z"/>
+  </g>
  </g>
 </svg>
