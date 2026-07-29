@@ -49,6 +49,9 @@ const toolchainIcons: Record<string, string> = {
 };
 
 export default function ProfileToolchain() {
+  const [sectionTitle, sectionDescriptor] =
+    profileToolchainEyebrow.split(" | ");
+
   return (
     <section className="relative overflow-hidden pt-16 pb-24 md:pt-20 md:pb-32">
       <Container>
@@ -56,7 +59,14 @@ export default function ProfileToolchain() {
           id="profile"
           className="scroll-mt-10 mb-6 font-['IBM_Plex_Mono'] text-[0.68rem] uppercase tracking-[0.18em] text-neutral-200 md:mb-7 md:text-[0.74rem]"
         >
-          {profileToolchainEyebrow}
+          <span className="md:hidden">
+            <span className="block">{sectionTitle} |</span>
+            <span className="mt-1 block">{sectionDescriptor}</span>
+          </span>
+
+          <span className="hidden md:inline">
+            {profileToolchainEyebrow}
+          </span>
         </p>
 
         <div className="relative pb-15 md:pb-52">

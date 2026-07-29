@@ -531,7 +531,16 @@ export function Contact() {
           id="contact"
           className="scroll-mt-10 font-['IBM_Plex_Mono'] text-[0.68rem] uppercase tracking-[0.18em] text-neutral-200 md:text-[0.74rem]"
         >
-          04 / Contact | Let&apos;s build something useful
+          <span className="md:hidden">
+            <span className="block">04 / Contact |</span>
+            <span className="mt-1 block">
+              Let&apos;s build something useful
+            </span>
+          </span>
+
+          <span className="hidden md:inline">
+            04 / Contact | Let&apos;s build something useful
+          </span>
         </h2>
 
         <div className="mx-auto mt-7 grid w-full max-w-[1100px] gap-16 lg:translate-x-32 lg:grid-cols-[310px_minmax(0,1fr)] lg:items-center lg:gap-28 xl:translate-x-38 min-[1880px]:translate-x-0">

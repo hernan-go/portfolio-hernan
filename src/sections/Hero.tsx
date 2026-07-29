@@ -48,9 +48,16 @@ export function Hero() {
     >
       {/* Metadata superior */}
       <Container>
-        <p className="absolute top-[17.5%] sm:top-[18%] lg:top-[19%] z-30 font-['IBM_Plex_Mono'] text-[0.68rem] uppercase tracking-[0.18em] text-neutral-200 md:text-[0.74rem]">
+       <p className="absolute top-[17.5%] z-30 font-['IBM_Plex_Mono'] text-[0.68rem] uppercase tracking-[0.18em] text-neutral-200 sm:top-[18%] md:text-[0.74rem] lg:top-[19%]">
+        <span className="md:hidden">
+          <span className="block">00 / Index |</span>
+          <span className="mt-1 block">{profile.role}</span>
+        </span>
+
+        <span className="hidden md:inline">
           00 / Index | {profile.role}
-        </p>
+        </span>
+      </p>
       </Container>
 
       {/* Statement principal fuera del Container */}
@@ -76,8 +83,8 @@ export function Hero() {
       </h1>
 
         {/* Identificación alineada debajo del extremo derecho de NEEDS */}
-        <div className="mt-7 px-6 font-['IBM_Plex_Mono'] lg:flex lg:justify-end lg:px-0 lg:pr-[0.4vw]">
-          <div className="max-w-full text-left">
+        <div className="mt-7 px-6 text-center font-['IBM_Plex_Mono'] lg:flex lg:justify-end lg:px-0 lg:pr-[0.4vw] lg:text-left">
+          <div className="max-w-full">
             <p className="text-[0.76rem] font-medium text-neutral-200 md:text-[0.82rem]">
               {profile.name}
             </p>
