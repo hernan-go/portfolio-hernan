@@ -18,6 +18,12 @@ type ProjectPosition = {
 };
 
 const projectPositions: ProjectPosition[] = [
+   {
+    id: "operations-hub",
+    className:
+      "left-1/2 top-[-2.75rem] -translate-x-1/2",
+    align: "center",
+  },
   {
     id: "lumina",
     className: "left-0 top-0",
@@ -62,9 +68,24 @@ export function WorkBackpackSelector({
 }: WorkBackpackSelectorProps) {
   return (
     <div
-      className="relative mt-8 h-[21rem] w-full"
+      className="relative mt-13 h-[21rem] w-full"
       aria-label="Selected case studies"
     >
+    {/* Conector de Operations Hub */}
+    <span
+      aria-hidden="true"
+      className="
+        pointer-events-none
+        absolute
+        left-1/2
+        top-[-0.5rem]
+        h-[4.75rem]
+        w-px
+        -translate-x-1/2
+        bg-neutral-400/80
+      "
+    />
+
       {/* Líneas conectoras */}
       <svg
         aria-hidden="true"
