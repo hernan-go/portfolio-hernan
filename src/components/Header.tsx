@@ -8,7 +8,7 @@ const navigation = [
   { label: "Contact", href: "#contact" },
 ] as const;
 
-export function Header () {
+export function Header() {
   return (
     <header className="absolute inset-x-0 top-0 z-50 py-7 md:py-8">
       <Container
@@ -42,10 +42,7 @@ export function Header () {
           Hernán.
         </a>
 
-        <nav
-          aria-label="Primary navigation"
-          className="w-full md:w-auto"
-        >
+        <nav aria-label="Primary navigation" className="w-full md:w-auto">
           <ul
             className="
               flex

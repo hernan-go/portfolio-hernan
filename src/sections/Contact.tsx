@@ -1,9 +1,4 @@
-import {
-  useEffect,
-  useRef,
-  useState,
-  type ChangeEvent,
-} from "react";
+import { useEffect, useRef, useState, type ChangeEvent } from "react";
 import { Folder, Pause, Play } from "lucide-react";
 
 import { Container } from "../components/Container";
@@ -66,13 +61,10 @@ function FolderLeaf({ label, value, href }: FolderLeafProps) {
   return <div className={className}>{content}</div>;
 }
 
-
 type PhoneMockupProps = {
   visibleMessages: number;
   typingMessage: number | null;
 };
-
-
 
 type MessageSender = "hernan" | "visitor";
 
@@ -170,8 +162,7 @@ function VoiceMessage() {
     setCurrentTime(nextTime);
   };
 
-  const displayedTime =
-    isReady && currentTime === 0 ? duration : currentTime;
+  const displayedTime = isReady && currentTime === 0 ? duration : currentTime;
 
   return (
     <div className="contact-message-enter -ml-2 flex w-[95%] items-center gap-3 self-start rounded-md bg-[#FFDD1F]/10 px-3 py-3">
@@ -186,9 +177,7 @@ function VoiceMessage() {
             return;
           }
 
-          setDuration(
-            Number.isFinite(audio.duration) ? audio.duration : 0,
-          );
+          setDuration(Number.isFinite(audio.duration) ? audio.duration : 0);
           setIsReady(true);
           setHasError(false);
         }}
@@ -253,11 +242,7 @@ function VoiceMessage() {
   );
 }
 
-
-function PhoneMockup({
-  visibleMessages,
-  typingMessage,
-}: PhoneMockupProps) {
+function PhoneMockup({ visibleMessages, typingMessage }: PhoneMockupProps) {
   return (
     <div className="flex w-full justify-center lg:justify-start">
       <div className="relative aspect-[9/19] w-full max-w-[310px] rounded-[3.4rem] border border-neutral-600/80 p-3 lg:aspect-auto lg:h-[clamp(606px,calc(70svh+3.5rem),736px)] lg:w-[310px] lg:max-w-[310px]">
@@ -275,7 +260,6 @@ function PhoneMockup({
               aria-relevant="additions"
               aria-label="Introductory conversation with Hernán"
             >
-
               {typingMessage === 0 && <TypingIndicator sender="hernan" />}
               {visibleMessages >= 1 && (
                 <div className="contact-message-enter -ml-2 w-[98%] self-start rounded-md bg-[#FFDD1F]/10 px-2.5 py-3">
@@ -371,10 +355,7 @@ function ContactTree() {
           </div>
 
           <div className="relative ml-[10px] mt-4 border-l border-neutral-700 pl-0 md:ml-[11px] md:pl-8">
-            <FolderLeaf
-              label="Email"
-              value="contact@hernangobulin.com"
-            />
+            <FolderLeaf label="Email" value="contact@hernangobulin.com" />
 
             <FolderLeaf
               label="Phone"
@@ -391,7 +372,6 @@ function ContactTree() {
         </div>
 
         <div className="relative py-5 pl-6 md:pl-10">
-
           <span
             aria-hidden="true"
             className="absolute left-0 top-9 h-px w-5 bg-neutral-700 md:w-8"
@@ -448,7 +428,6 @@ function ContactTree() {
         </div>
       </div>
     </div>
-
   );
 }
 
@@ -457,72 +436,68 @@ export function Contact() {
   const hasStartedRef = useRef(false);
 
   const [visibleMessages, setVisibleMessages] = useState(0);
-  const [typingMessage, setTypingMessage] = useState<number | null>(
-    null,
-  );
+  const [typingMessage, setTypingMessage] = useState<number | null>(null);
 
- useEffect(() => {
-  const phoneTrigger = phoneTriggerRef.current;
+  useEffect(() => {
+    const phoneTrigger = phoneTriggerRef.current;
 
-  if (!phoneTrigger) {
-    return;
-  }
-
-  const timers: number[] = [];
-
-  const startConversation = () => {
-    if (hasStartedRef.current) {
+    if (!phoneTrigger) {
       return;
     }
 
-    hasStartedRef.current = true;
+    const timers: number[] = [];
 
-    CONVERSATION_DELAYS.forEach((delay, index) => {
-      const typingDelay = Math.max(0, delay - TYPING_LEAD_MS);
-
-      const typingTimer = window.setTimeout(() => {
-        setTypingMessage(index);
-      }, typingDelay);
-
-      const messageTimer = window.setTimeout(() => {
-        setTypingMessage((currentTypingMessage) =>
-          currentTypingMessage === index
-            ? null
-            : currentTypingMessage,
-        );
-
-        setVisibleMessages(index + 1);
-      }, delay);
-
-      timers.push(typingTimer, messageTimer);
-    });
-  };
-
-  const observer = new IntersectionObserver(
-    ([entry]) => {
-      if (!entry.isIntersecting) {
+    const startConversation = () => {
+      if (hasStartedRef.current) {
         return;
       }
 
-      startConversation();
+      hasStartedRef.current = true;
+
+      CONVERSATION_DELAYS.forEach((delay, index) => {
+        const typingDelay = Math.max(0, delay - TYPING_LEAD_MS);
+
+        const typingTimer = window.setTimeout(() => {
+          setTypingMessage(index);
+        }, typingDelay);
+
+        const messageTimer = window.setTimeout(() => {
+          setTypingMessage((currentTypingMessage) =>
+            currentTypingMessage === index ? null : currentTypingMessage,
+          );
+
+          setVisibleMessages(index + 1);
+        }, delay);
+
+        timers.push(typingTimer, messageTimer);
+      });
+    };
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
+        startConversation();
+        observer.disconnect();
+      },
+      {
+        threshold: 0.55,
+        rootMargin: "0px 0px -8% 0px",
+      },
+    );
+
+    observer.observe(phoneTrigger);
+
+    return () => {
       observer.disconnect();
-    },
-    {
-      threshold: 0.55,
-      rootMargin: "0px 0px -8% 0px",
-    },
-  );
 
-  observer.observe(phoneTrigger);
-
-  return () => {
-    observer.disconnect();
-
-    timers.forEach((timer) => {
-      window.clearTimeout(timer);
-    });
-  };
-}, []);
+      timers.forEach((timer) => {
+        window.clearTimeout(timer);
+      });
+    };
+  }, []);
 
   return (
     <section className="relative min-h-screen overflow-hidden py-20 md:py-24">
@@ -546,9 +521,9 @@ export function Contact() {
         <div className="mx-auto mt-7 grid w-full max-w-[1100px] gap-16 lg:translate-x-32 lg:grid-cols-[310px_minmax(0,1fr)] lg:items-center lg:gap-28 xl:translate-x-38 min-[1880px]:translate-x-0">
           <div ref={phoneTriggerRef}>
             <PhoneMockup
-            visibleMessages={visibleMessages}
-            typingMessage={typingMessage}
-          />
+              visibleMessages={visibleMessages}
+              typingMessage={typingMessage}
+            />
           </div>
 
           <ContactTree />

@@ -21,7 +21,7 @@ export function NotFound() {
       aria-labelledby="not-found-title"
     >
       <Container className="flex min-h-[calc(100svh-5rem)] flex-col">
-        {/* Información editorial */}
+        {/* Editorial information */}
         <div className="max-w-[20rem] font-['IBM_Plex_Mono'] uppercase">
           <p className="text-[0.65rem] tracking-[0.16em] text-neutral-400 sm:text-[0.72rem]">
             404 / Route not found
@@ -45,7 +45,7 @@ export function NotFound() {
           </h1>
         </div>
 
-        {/* Código de error */}
+        {/* Error code */}
         <div
           aria-hidden="true"
           className="
@@ -74,7 +74,7 @@ export function NotFound() {
           </p>
         </div>
 
-        {/* Salidas de navegación */}
+        {/* Navigation options */}
         <div
           className="
             flex
@@ -124,10 +124,7 @@ export function NotFound() {
             [Return to Index]
           </a>
 
-          <nav
-            aria-label="404 page navigation"
-            className="mt-5"
-          >
+          <nav aria-label="404 page navigation" className="mt-5">
             <ul
               className="
                 flex

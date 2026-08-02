@@ -5,23 +5,16 @@ import { WorkBackpackSelector } from "../components/work/WorkBackpackSelector";
 import { WorkPreviewGrid } from "../components/work/WorkPreviewGrid";
 import { WorkProjectDetails } from "../components/work/WorkProjectDetails";
 import { WorkProjectImage } from "../components/work/WorkProjectImage";
-import {
-  projects,
-  type ProjectId,
-} from "../data/workProjects";
+import { projects, type ProjectId } from "../data/workProjects";
 
 export function Work() {
-  const [activeProjectId, setActiveProjectId] =
-    useState<ProjectId>("claec");
+  const [activeProjectId, setActiveProjectId] = useState<ProjectId>("claec");
 
   const activeProject =
-    projects.find(
-      (project) => project.id === activeProjectId,
-    ) ?? projects[0];
+    projects.find((project) => project.id === activeProjectId) ?? projects[0];
 
   return (
     <section className="relative overflow-hidden py-14 md:py-16 xl:py-20">
-      {/* Encabezado general de la sección */}
       <Container>
         <h2 className="sr-only">Selected work</h2>
 
@@ -30,9 +23,7 @@ export function Work() {
           className="scroll-mt-10 font-['IBM_Plex_Mono'] text-[0.68rem] uppercase tracking-[0.18em] text-neutral-200 md:text-[0.74rem]"
         >
           <span className="md:hidden">
-            <span className="block">
-              01 / Selected Work |
-            </span>
+            <span className="block">01 / Selected Work |</span>
 
             <span className="mt-1 block">
               Interfaces and systems built around real needs
@@ -40,15 +31,12 @@ export function Work() {
           </span>
 
           <span className="hidden md:inline">
-            01 / Selected Work | Interfaces and systems built
-            around real needs
+            01 / Selected Work | Interfaces and systems built around real needs
           </span>
         </p>
       </Container>
 
-      {/* Composición interna */}
       <div className="mx-auto mt-7 w-full max-w-[1740px] min-[1500px]:grid min-[1500px]:grid-cols-[236px_minmax(0,1fr)]">
-        {/* Statement lateral */}
         <div
           aria-hidden="true"
           className="relative hidden overflow-hidden select-none min-[1500px]:block"
@@ -64,10 +52,8 @@ export function Work() {
           </div>
         </div>
 
-        {/* Selector y caso activo */}
         <div className="min-w-0">
           <div className="relative z-10 mx-auto w-full max-w-[1420px] px-6 md:px-8">
-            {/* Mobile */}
             <div className="md:hidden">
               <WorkBackpackSelector
                 projects={projects}
@@ -83,16 +69,13 @@ export function Work() {
               </div>
             </div>
 
-            {/* Tablet y desktop */}
             <div className="hidden md:block">
-              {/* Selector ocupando todo el ancho */}
               <WorkPreviewGrid
                 projects={projects}
                 activeProjectId={activeProjectId}
                 onSelect={setActiveProjectId}
               />
 
-              {/* Imagen e información debajo */}
               <div className="mt-4 grid items-start gap-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:gap-12 xl:gap-16">
                 <WorkProjectImage
                   key={activeProject.id}

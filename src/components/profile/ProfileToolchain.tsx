@@ -64,9 +64,7 @@ export default function ProfileToolchain() {
             <span className="mt-1 block">{sectionDescriptor}</span>
           </span>
 
-          <span className="hidden md:inline">
-            {profileToolchainEyebrow}
-          </span>
+          <span className="hidden md:inline">{profileToolchainEyebrow}</span>
         </p>
 
         <div className="relative pb-15 md:pb-52">
