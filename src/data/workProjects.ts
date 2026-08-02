@@ -26,7 +26,6 @@ export type ProjectId =
   | "femrecicla"
   | "operations-hub";
 
-
 export type Project = {
   id: ProjectId;
   name: string;
@@ -64,12 +63,7 @@ export const projects: Project[] = [
       "CSS",
       "MySQL",
     ],
-    platforms: [
-      "WooCommerce",
-      "Google Workspace",
-      "Google Meet",
-      "SiteGround",
-    ],
+    platforms: ["WooCommerce", "Google Workspace", "Google Meet", "SiteGround"],
     context:
       "Rebuilt a fragmented educational presence into a unified platform combining course discovery, payments, academic content and Moodle-based learning operations.",
     liveUrl: "https://claec.edu.do",
@@ -93,12 +87,7 @@ export const projects: Project[] = [
       "CSS",
       "MySQL",
     ],
-    platforms: [
-      "WooCommerce",
-      "Podcast",
-      "Payment Gateways",
-      "SiteGround",
-    ],
+    platforms: ["WooCommerce", "Podcast", "Payment Gateways", "SiteGround"],
     context:
       "Turned the operational knowledge developed at CLAEC into an independently managed platform combining course sales, content delivery and ongoing LMS administration.",
     liveUrl: "https://luminaacademica.com.ar/",
@@ -114,13 +103,7 @@ export const projects: Project[] = [
       "Course, booking and commerce platform with a custom interactive frontend.",
     role: "Frontend & WordPress Developer",
     scope: ["Website", "Courses", "Bookings", "E-commerce"],
-    coreTechnologies: [
-      "WordPress",
-      "PHP",
-      "JavaScript",
-      "CSS",
-      "MySQL",
-    ],
+    coreTechnologies: ["WordPress", "PHP", "JavaScript", "CSS", "MySQL"],
     platforms: [
       "WooCommerce",
       "Google Calendar",
@@ -168,106 +151,89 @@ export const projects: Project[] = [
     ],
     context:
       "Delivered a focused one-page platform for participants and institutions, organizing activities, schedules and contact paths while adopting Divi 5 in a live project.",
-      liveUrl: "https://prismacomunidad.com.ar/",
+    liveUrl: "https://prismacomunidad.com.ar/",
   },
   {
-  id: "tau-raee",
-  name: "TAU RAEE",
-  logo: tauRaeeLogo,
-  mainImage: tauRaeeFullpage,
-  mainImageAlt:
-    "Full-page view of the TAU RAEE circular-economy institutional website.",
-  descriptor:
-    "Responsive institutional website implemented from a client-approved Figma design.",
-  role: "Web Developer / Figma Implementation",
-  scope: [
-    "Institutional Website",
-    "Responsive UI",
-    "Figma Implementation",
-    "Client Delivery",
-  ],
-  coreTechnologies: [
-    "WordPress",
-    "HTML",
-    "JavaScript",
-    "CSS",
-  ],
-  platforms: [
-    "Figma",
-    "Responsive QA",
-    "Contact Flows",
-    "Production Deployment",
-  ],
-  context:
-    "Implemented the TAU RAEE institutional website from an approved Figma design, prioritizing visual fidelity, clear service communication and responsive behavior.",
-  liveUrl: "https://tau.coop.ar/",
-},
-{
-  id: "femrecicla",
-  name: "FemRecicla",
-  logo: femReciclaLogo,
-  mainImage: femReciclaFullpage,
-  mainImageAlt:
-    "Full-page view of the FemRecicla circular-economy institutional website.",
-  descriptor:
-    "Responsive institutional website implemented from a client-approved Figma design.",
-  role: "Web Developer / Figma Implementation",
-  scope: [
-    "Institutional Website",
-    "Responsive UI",
-    "Figma Implementation",
-    "Client Delivery",
-  ],
-  coreTechnologies: [
-    "WordPress",
-    "HTML",
-    "JavaScript",
-    "CSS",
-  ],
-  platforms: [
-    "Figma",
-    "Responsive QA",
-    "Contact Flows",
-    "Production Deployment",
-  ],
-  context:
-    "Implemented the FemRecicla institutional website from an approved Figma design, translating its visual system into a responsive production site for a circular-economy organization.",
-  liveUrl: "https://femrecicla.coop.ar/",
-},
-{
-  id: "operations-hub",
-  name: "Operations Hub",
-  logo: operationsHubLogo,
-  mainImage: operationsHubDashboard,
-  mainImageAlt:
-    "Operations Hub custom WordPress administration dashboard showing operational metrics, integrations and internal tools.",
-  descriptor:
-    "Custom operations dashboard centralizing commerce, communication and internal workflow signals.",
-  role: "Product & Plugin Developer",
-  scope: [
-    "Custom Admin Plugin",
-    "Operations Dashboard",
-    "Workflow Signals",
-    "Internal Tools",
-  ],
-  coreTechnologies: [
-    "PHP",
-    "JavaScript",
-    "CSS",
-    "WordPress",
-    "WooCommerce",
-  ],
-  platforms: [
-    "Gmail API",
-    "OAuth 2.0",
-    "Google Calendar / iCal",
-    "RSS",
-    "Options API",
-  ],
-  context:
-    "Originally developed as WooCommerce Command Center and expanded into an internal operations hub that centralizes order metrics, customer follow-up, calendar events, Gmail signals, operational tasks and external feeds in one admin workspace.",
-  repositoryUrl:
-    "https://github.com/hernan-go/woocommerce-command-center",
-  previewMode: "contain",
-},
+    id: "tau-raee",
+    name: "TAU RAEE",
+    logo: tauRaeeLogo,
+    mainImage: tauRaeeFullpage,
+    mainImageAlt:
+      "Full-page view of the TAU RAEE circular-economy institutional website.",
+    descriptor:
+      "Responsive institutional website implemented from a client-approved Figma design.",
+    role: "Web Developer / Figma Implementation",
+    scope: [
+      "Institutional Website",
+      "Responsive UI",
+      "Figma Implementation",
+      "Client Delivery",
+    ],
+    coreTechnologies: ["WordPress", "HTML", "JavaScript", "CSS"],
+    platforms: [
+      "Figma",
+      "Responsive QA",
+      "Contact Flows",
+      "Production Deployment",
+    ],
+    context:
+      "Implemented the TAU RAEE institutional website from an approved Figma design, prioritizing visual fidelity, clear service communication and responsive behavior.",
+    liveUrl: "https://tau.coop.ar/",
+  },
+  {
+    id: "femrecicla",
+    name: "FemRecicla",
+    logo: femReciclaLogo,
+    mainImage: femReciclaFullpage,
+    mainImageAlt:
+      "Full-page view of the FemRecicla circular-economy institutional website.",
+    descriptor:
+      "Responsive institutional website implemented from a client-approved Figma design.",
+    role: "Web Developer / Figma Implementation",
+    scope: [
+      "Institutional Website",
+      "Responsive UI",
+      "Figma Implementation",
+      "Client Delivery",
+    ],
+    coreTechnologies: ["WordPress", "HTML", "JavaScript", "CSS"],
+    platforms: [
+      "Figma",
+      "Responsive QA",
+      "Contact Flows",
+      "Production Deployment",
+    ],
+    context:
+      "Implemented the FemRecicla institutional website from an approved Figma design, translating its visual system into a responsive production site for a circular-economy organization.",
+    liveUrl: "https://femrecicla.coop.ar/",
+  },
+  {
+    id: "operations-hub",
+    name: "Operations Hub",
+    logo: operationsHubLogo,
+    mainImage: operationsHubDashboard,
+    mainImageAlt:
+      "Operations Hub custom WordPress administration dashboard showing operational metrics, integrations and internal tools.",
+    descriptor:
+      "Custom operations dashboard centralizing commerce, communication and internal workflow signals.",
+    role: "Product & Plugin Developer",
+    scope: [
+      "Custom Admin Plugin",
+      "Operations Dashboard",
+      "Workflow Signals",
+      "Internal Tools",
+    ],
+    coreTechnologies: ["PHP", "JavaScript", "CSS", "WordPress", "WooCommerce"],
+    platforms: [
+      "Gmail API",
+      "OAuth 2.0",
+      "Google Calendar / iCal",
+      "RSS",
+      "Options API",
+    ],
+    context:
+      "Originally developed as WooCommerce Command Center and expanded into an internal operations hub that centralizes order metrics, customer follow-up, calendar events, Gmail signals, operational tasks and external feeds in one admin workspace.",
+    repositoryUrl: "https://github.com/hernan-go/woocommerce-command-center",
+    previewMode: "contain",
+  },
 ];

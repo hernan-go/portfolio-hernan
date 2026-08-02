@@ -1,8 +1,4 @@
-import {
-  useCallback,
-  useEffect,
-  useRef,
-} from "react";
+import { useCallback, useEffect, useRef } from "react";
 
 type WorkProjectImageProps = {
   src?: string;
@@ -42,24 +38,16 @@ export function WorkProjectImage({
     const imageHeight = image.offsetHeight;
     const frameHeight = frame.clientHeight;
 
-    const scrollDistance = Math.max(
-      0,
-      imageHeight - frameHeight,
-    );
+    const scrollDistance = Math.max(0, imageHeight - frameHeight);
 
     if (scrollDistance <= 1) {
       return;
     }
 
-    /*
-     * Velocidad vertical expresada en píxeles por segundo.
-     * La ajustaremos después de comprobar el funcionamiento.
-     */
     const pixelsPerSecond = 45;
 
     const initialPause = 1000;
-    const travelDuration =
-      (scrollDistance / pixelsPerSecond) * 1000;
+    const travelDuration = (scrollDistance / pixelsPerSecond) * 1000;
     const finalPause = 1000;
     const fadeOutDuration = 350;
     const resetDuration = 50;
@@ -73,36 +61,24 @@ export function WorkProjectImage({
       resetDuration +
       fadeInDuration;
 
-    const scrollStart =
-      initialPause / totalDuration;
+    const scrollStart = initialPause / totalDuration;
 
-    const scrollEnd =
-      (initialPause + travelDuration) /
-      totalDuration;
+    const scrollEnd = (initialPause + travelDuration) / totalDuration;
 
     const finalPauseEnd =
-      (
-        initialPause +
-        travelDuration +
-        finalPause
-      ) / totalDuration;
+      (initialPause + travelDuration + finalPause) / totalDuration;
 
     const fadeOutEnd =
-      (
-        initialPause +
-        travelDuration +
-        finalPause +
-        fadeOutDuration
-      ) / totalDuration;
+      (initialPause + travelDuration + finalPause + fadeOutDuration) /
+      totalDuration;
 
     const resetEnd =
-      (
-        initialPause +
+      (initialPause +
         travelDuration +
         finalPause +
         fadeOutDuration +
-        resetDuration
-      ) / totalDuration;
+        resetDuration) /
+      totalDuration;
 
     animationRef.current = image.animate(
       [
@@ -173,10 +149,7 @@ export function WorkProjectImage({
       cancelAnimationFrame(firstFrame);
       cancelAnimationFrame(secondFrame);
 
-      /*
-       * Esperamos dos frames para garantizar que el navegador
-       * haya calculado el ancho y la altura finales de la imagen.
-       */
+      // Wait two animation frames for the browser to resolve the final image dimensions.
       firstFrame = requestAnimationFrame(() => {
         secondFrame = requestAnimationFrame(() => {
           startAnimation();
@@ -184,22 +157,13 @@ export function WorkProjectImage({
       });
     };
 
-    if (
-      image.complete &&
-      image.naturalHeight > 0
-    ) {
+    if (image.complete && image.naturalHeight > 0) {
       scheduleAnimation();
     } else {
-      image.addEventListener(
-        "load",
-        scheduleAnimation,
-      );
+      image.addEventListener("load", scheduleAnimation);
     }
 
-    window.addEventListener(
-      "resize",
-      scheduleAnimation,
-    );
+    window.addEventListener("resize", scheduleAnimation);
 
     return () => {
       cancelAnimationFrame(firstFrame);
@@ -207,15 +171,9 @@ export function WorkProjectImage({
 
       animationRef.current?.cancel();
 
-      image.removeEventListener(
-        "load",
-        scheduleAnimation,
-      );
+      image.removeEventListener("load", scheduleAnimation);
 
-      window.removeEventListener(
-        "resize",
-        scheduleAnimation,
-      );
+      window.removeEventListener("resize", scheduleAnimation);
     };
   }, [src, mode, startAnimation]);
 

@@ -1,7 +1,4 @@
-import type {
-  Project,
-  ProjectId,
-} from "../../data/workProjects";
+import type { Project, ProjectId } from "../../data/workProjects";
 
 type WorkPreviewGridProps = {
   projects: Project[];
@@ -20,8 +17,7 @@ export function WorkPreviewGrid({
       aria-label="Selected case studies"
     >
       {projects.map((project) => {
-        const isActive =
-          activeProjectId === project.id;
+        const isActive = activeProjectId === project.id;
 
         return (
           <button

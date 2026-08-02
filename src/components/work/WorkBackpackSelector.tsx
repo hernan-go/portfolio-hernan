@@ -1,9 +1,6 @@
 import backpackImage from "../../assets/work-backpack.svg";
 
-import type {
-  Project,
-  ProjectId,
-} from "../../data/workProjects";
+import type { Project, ProjectId } from "../../data/workProjects";
 
 type WorkBackpackSelectorProps = {
   projects: Project[];
@@ -18,10 +15,9 @@ type ProjectPosition = {
 };
 
 const projectPositions: ProjectPosition[] = [
-   {
+  {
     id: "operations-hub",
-    className:
-      "left-1/2 top-[-2.75rem] -translate-x-1/2",
+    className: "left-1/2 top-[-2.75rem] -translate-x-1/2",
     align: "center",
   },
   {
@@ -71,10 +67,10 @@ export function WorkBackpackSelector({
       className="relative mt-13 h-[21rem] w-full"
       aria-label="Selected case studies"
     >
-    {/* Conector de Operations Hub */}
-    <span
-      aria-hidden="true"
-      className="
+      {/* Operations Hub connector */}
+      <span
+        aria-hidden="true"
+        className="
         pointer-events-none
         absolute
         left-1/2
@@ -84,9 +80,9 @@ export function WorkBackpackSelector({
         -translate-x-1/2
         bg-neutral-400/80
       "
-    />
+      />
 
-      {/* Líneas conectoras */}
+      {/* Connector lines */}
       <svg
         aria-hidden="true"
         viewBox="0 0 100 100"
@@ -150,7 +146,7 @@ export function WorkBackpackSelector({
         />
       </svg>
 
-      {/* Mochila */}
+      {/* Backpack */}
       <img
         src={backpackImage}
         alt=""
@@ -168,11 +164,9 @@ export function WorkBackpackSelector({
         "
       />
 
-      {/* Proyectos */}
+      {/* Projects */}
       {projectPositions.map((position) => {
-        const project = projects.find(
-          (item) => item.id === position.id,
-        );
+        const project = projects.find((item) => item.id === position.id);
 
         if (!project) {
           return null;

@@ -11,10 +11,7 @@ type DetailRowProps = {
   children: ReactNode;
 };
 
-function DetailRow({
-  label,
-  children,
-}: DetailRowProps) {
+function DetailRow({ label, children }: DetailRowProps) {
   return (
     <div className="flex flex-col gap-0.3">
       <dt
@@ -44,21 +41,15 @@ function DetailRow({
   );
 }
 
-export function WorkProjectDetails({
-  project,
-}: WorkProjectDetailsProps) {
-  const actionUrl =
-    project.repositoryUrl ?? project.liveUrl;
+export function WorkProjectDetails({ project }: WorkProjectDetailsProps) {
+  const actionUrl = project.repositoryUrl ?? project.liveUrl;
 
   const actionLabel = project.repositoryUrl
     ? "View repository ↗"
     : "Visit Live ↗";
 
   return (
-    <article
-      aria-live="polite"
-      className="font-['IBM_Plex_Mono']"
-    >
+    <article aria-live="polite" className="font-['IBM_Plex_Mono']">
       <div>
         <p className="mb-1 text-[0.7rem] uppercase tracking-[0.2em] text-neutral-500">
           Active case
@@ -74,13 +65,9 @@ export function WorkProjectDetails({
       </p>
 
       <dl className="mt-3 space-y-5 xl:mt-4 xl:space-y-3.5">
-        <DetailRow label="Role">
-          {project.role}
-        </DetailRow>
+        <DetailRow label="Role">{project.role}</DetailRow>
 
-        <DetailRow label="Scope">
-          {project.scope.join(", ")}
-        </DetailRow>
+        <DetailRow label="Scope">{project.scope.join(", ")}</DetailRow>
 
         <DetailRow label="Core technologies">
           {project.coreTechnologies.join(", ")}
@@ -91,9 +78,7 @@ export function WorkProjectDetails({
         </DetailRow>
 
         <DetailRow label="Context">
-          <span className="block max-w-3xl">
-            {project.context}
-          </span>
+          <span className="block max-w-3xl">{project.context}</span>
         </DetailRow>
       </dl>
 

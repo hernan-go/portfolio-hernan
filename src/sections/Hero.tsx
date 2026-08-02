@@ -9,21 +9,14 @@ type AnimatedLineProps = {
   startDelay: number;
 };
 
-function AnimatedLine({
-  text,
-  className,
-  startDelay,
-}: AnimatedLineProps) {
+function AnimatedLine({ text, className, startDelay }: AnimatedLineProps) {
   return (
     <span
       className={`block overflow-hidden pb-[0.08em] -mb-[0.08em] ${className}`}
     >
       <span className="sr-only">{text}</span>
 
-      <span
-        aria-hidden="true"
-        className="block whitespace-nowrap"
-      >
+      <span aria-hidden="true" className="block whitespace-nowrap">
         {Array.from(text).map((character, index) => (
           <span
             key={`${character}-${index}`}
@@ -46,21 +39,17 @@ export function Hero() {
       id="index"
       className="relative isolate min-h-[100svh] overflow-hidden pt-28 md:pt-32"
     >
-      {/* Metadata superior */}
       <Container>
-       <p className="absolute top-[17.5%] z-30 font-['IBM_Plex_Mono'] text-[0.68rem] uppercase tracking-[0.18em] text-neutral-200 sm:top-[18%] md:text-[0.74rem] lg:top-[19%]">
-        <span className="md:hidden">
-          <span className="block">00 / Index |</span>
-          <span className="mt-1 block">{profile.role}</span>
-        </span>
+        <p className="absolute top-[17.5%] z-30 font-['IBM_Plex_Mono'] text-[0.68rem] uppercase tracking-[0.18em] text-neutral-200 sm:top-[18%] md:text-[0.74rem] lg:top-[19%]">
+          <span className="md:hidden">
+            <span className="block">00 / Index |</span>
+            <span className="mt-1 block">{profile.role}</span>
+          </span>
 
-        <span className="hidden md:inline">
-          00 / Index | {profile.role}
-        </span>
-      </p>
+          <span className="hidden md:inline">00 / Index | {profile.role}</span>
+        </p>
       </Container>
 
-      {/* Statement principal fuera del Container */}
       <div className="absolute left-0 top-[26%] z-20 w-full lg:w-max">
         <h1 className="font-['Archivo_Black'] uppercase leading-[0.84] tracking-[-0.02em] lg:leading-[0.78]">
           <AnimatedLine
@@ -80,9 +69,8 @@ export function Hero() {
             startDelay={990}
             className="text-[14.2vw] text-[#D2CEC4] lg:text-[clamp(4.5rem,9.8vw,9.2rem)]"
           />
-      </h1>
+        </h1>
 
-        {/* Identificación alineada debajo del extremo derecho de NEEDS */}
         <div className="mt-7 px-6 text-center font-['IBM_Plex_Mono'] lg:flex lg:justify-end lg:px-0 lg:pr-[0.4vw] lg:text-left">
           <div className="max-w-full">
             <p className="text-[0.76rem] font-medium text-neutral-200 md:text-[0.82rem]">
@@ -90,9 +78,8 @@ export function Hero() {
             </p>
           </div>
         </div>
-        </div>
+      </div>
 
-      {/* Fotografía desktop/notebook */}
       <div className="pointer-events-none absolute right-[7%] top-[23.5%] z-10 hidden w-[clamp(350px,25vw,450px)] lg:block">
         <img
           src={heroImage}
@@ -110,7 +97,6 @@ export function Hero() {
         />
       </div>
 
-      {/* Fotografía mobile */}
       <div className="pointer-events-none absolute bottom-[1.5%] left-1/2 z-10 w-[68%] max-w-[290px] -translate-x-1/2 lg:hidden">
         <img
           src={heroImage}
