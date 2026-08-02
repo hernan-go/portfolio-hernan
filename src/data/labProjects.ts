@@ -1,7 +1,5 @@
 export type LabProjectId =
-  | "argentina-engine"
-  | "holistic-practice-saas"
-  | "fastwork";
+  "argentina-engine" | "holistic-practice-saas" | "fastwork";
 
 export type LabStatus =
   | "DISCOVERY"
@@ -16,6 +14,18 @@ export type LabVisualKey =
   | "holistic-consultation-flow"
   | "fastwork-marketplace-flow";
 
+export type LabStoryRings = {
+  outer: string;
+  middle: string;
+  inner: string;
+};
+
+export type LabProjectMedia = {
+  src?: string;
+  alt: string;
+  label?: string;
+};
+
 export type LabProject = {
   id: LabProjectId;
   name: string;
@@ -28,17 +38,19 @@ export type LabProject = {
   visualKey: LabVisualKey;
   repositoryUrl?: string;
   prototypeUrl?: string;
+  storyRings?: LabStoryRings;
+  image?: LabProjectMedia;
+  updatedAt?: string;
+  repositoryLabel?: string;
 };
 
 export const labProjects: LabProject[] = [
   {
     id: "argentina-engine",
     name: "Argentina Engine",
-    descriptor:
-      "A data platform for Argentina’s key productive sectors.",
+    descriptor: "A data platform for Argentina’s key productive sectors.",
     status: "DISCOVERY",
-    focus:
-      "Sector intelligence platform for Argentine productive industries.",
+    focus: "Sector intelligence platform for Argentine productive industries.",
     currentStage:
       "Defining the problem space, data model and information architecture.",
     productDirection:
