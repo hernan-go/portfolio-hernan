@@ -101,7 +101,7 @@ export const projects: Project[] = [
       "Full-page view of the Jardín Reiki course, booking and commerce website.",
     descriptor:
       "Course, booking and commerce platform with a custom interactive frontend.",
-    role: "Frontend & WordPress Developer",
+    role: "Frontend Developer",
     scope: ["Website", "Courses", "Bookings", "E-commerce"],
     coreTechnologies: ["WordPress", "PHP", "JavaScript", "CSS", "MySQL"],
     platforms: [
