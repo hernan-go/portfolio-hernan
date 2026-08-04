@@ -50,7 +50,7 @@ export function Hero() {
         </p>
       </Container>
 
-      <div className="absolute left-0 top-[26%] z-20 w-full lg:w-max">
+      <div className="absolute left-0 top-[30.5%] z-20 w-full lg:top-[26%] lg:w-max">
         <h1 className="font-['Archivo_Black'] uppercase leading-[0.84] tracking-[-0.02em] lg:leading-[0.78]">
           <AnimatedLine
             text="Software"
