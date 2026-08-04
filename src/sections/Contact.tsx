@@ -3,7 +3,7 @@ import { Folder, Pause, Play } from "lucide-react";
 
 import { Container } from "../components/Container";
 
-const CONVERSATION_DELAYS = [2500, 6500, 10700, 15950, 20400] as const;
+const CONVERSATION_DELAYS = [700, 2500, 4300, 6400, 8800] as const;
 
 const TYPING_LEAD_MS = 700;
 const AUDIO_PATH = "/audio/hernan-voice-note.mp3";
@@ -49,10 +49,12 @@ function FolderLeaf({ label, value, href }: FolderLeafProps) {
     return (
       <a
         href={href}
-        target="_blank"
-        rel="noreferrer"
+        target={href.startsWith("http") ? "_blank" : undefined}
+        rel={href.startsWith("http") ? "noreferrer" : undefined}
         className={`${className} focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#FFDD1F]`}
-        aria-label={`Open ${label} profile`}
+        aria-label={
+          label === "Email" ? "Send an email to Hernán" : `Open ${label}`
+        }
       >
         {content}
       </a>
@@ -243,6 +245,8 @@ function VoiceMessage() {
 }
 
 function PhoneMockup({ visibleMessages, typingMessage }: PhoneMockupProps) {
+  const [isTranscriptOpen, setIsTranscriptOpen] = useState(false);
+
   return (
     <div className="flex w-full justify-center lg:justify-start">
       <div className="relative aspect-[9/19] w-full max-w-[310px] rounded-[3.4rem] border border-neutral-600/80 p-3 lg:aspect-auto lg:h-[clamp(606px,calc(70svh+3.5rem),736px)] lg:w-[310px] lg:max-w-[310px]">
@@ -309,9 +313,127 @@ function PhoneMockup({ visibleMessages, typingMessage }: PhoneMockupProps) {
               )}
 
               {typingMessage === 4 && <TypingIndicator sender="hernan" />}
+
               {visibleMessages >= 5 && <VoiceMessage />}
+
+              {visibleMessages >= 5 && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setIsTranscriptOpen(true);
+                  }}
+                  className="
+                    contact-message-enter
+                    -ml-2
+                    w-[98%]
+                    self-start
+                    rounded-md
+                    border
+                    border-[#FFDD1F]/20
+                    bg-[#FFDD1F]/5
+                    px-3
+                    py-2.5
+                    text-left
+                    font-['IBM_Plex_Mono']
+                    text-[0.6rem]
+                    leading-5
+                    text-neutral-400
+                    transition-colors
+                    hover:border-[#FFDD1F]/40
+                    hover:text-[#FFDD1F]
+                    focus-visible:outline-2
+                    focus-visible:outline-offset-2
+                    focus-visible:outline-[#FFDD1F]
+                  "
+                >
+                  Can&apos;t listen right now? Read the transcript.
+                </button>
+              )}
             </div>
           </div>
+
+          {isTranscriptOpen && (
+            <div
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="voice-note-transcript-title"
+              className="
+                absolute
+                inset-x-0
+                bottom-0
+                top-10
+                z-20
+                flex
+                flex-col
+                bg-[#171717]
+                px-5
+                pb-6
+                pt-7
+              "
+            >
+              <div className="flex items-start justify-between gap-4">
+                <h3
+                  id="voice-note-transcript-title"
+                  className="
+                    font-['IBM_Plex_Mono']
+                    text-[0.62rem]
+                    uppercase
+                    leading-5
+                    tracking-[0.14em]
+                    text-[#FFDD1F]
+                  "
+                >
+                  Voice note transcript
+                </h3>
+
+                <button
+                  type="button"
+                  onClick={() => {
+                    setIsTranscriptOpen(false);
+                  }}
+                  className="
+                    shrink-0
+                    font-['IBM_Plex_Mono']
+                    text-[0.58rem]
+                    uppercase
+                    leading-5
+                    tracking-[0.12em]
+                    text-neutral-500
+                    transition-colors
+                    hover:text-[#FFDD1F]
+                    focus-visible:outline-2
+                    focus-visible:outline-offset-2
+                    focus-visible:outline-[#FFDD1F]
+                  "
+                  aria-label="Close voice note transcript"
+                >
+                  [Close]
+                </button>
+              </div>
+
+              <div className="mt-5 min-h-0 flex-1 overflow-y-auto pr-2">
+                <div className="space-y-4 font-['IBM_Plex_Mono'] text-[0.66rem] leading-5 text-neutral-300">
+                  <p>
+                    I really appreciate you checking out my portfolio, so
+                    basically, I&apos;m a software developer with a strong
+                    frontend focus, building useful and reliable digital
+                    products around real needs.
+                  </p>
+
+                  <p>
+                    I care about choosing the right approach for each project,
+                    from custom interfaces to practical content and e-commerce
+                    platforms.
+                  </p>
+
+                  <p>
+                    If my experience fits your team or project, I&apos;d be glad
+                    to connect.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
@@ -355,7 +477,11 @@ function ContactTree() {
           </div>
 
           <div className="relative ml-[10px] mt-4 border-l border-neutral-700 pl-0 md:ml-[11px] md:pl-8">
-            <FolderLeaf label="Email" value="contact@hernangobulin.com" />
+            <FolderLeaf
+              label="Email"
+              value="contact@hernangobulin.com"
+              href="mailto:contact@hernangobulin.com"
+            />
 
             <FolderLeaf
               label="Phone"
@@ -447,6 +573,29 @@ export function Contact() {
 
     const timers: number[] = [];
 
+    const motionPreference = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    );
+
+    let observer: IntersectionObserver | null = null;
+
+    const clearConversationTimers = () => {
+      timers.forEach((timer) => {
+        window.clearTimeout(timer);
+      });
+
+      timers.length = 0;
+    };
+
+    const showCompleteConversation = () => {
+      clearConversationTimers();
+
+      hasStartedRef.current = true;
+
+      setTypingMessage(null);
+      setVisibleMessages(CONVERSATION_DELAYS.length);
+    };
+
     const startConversation = () => {
       if (hasStartedRef.current) {
         return;
@@ -473,29 +622,61 @@ export function Contact() {
       });
     };
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry.isIntersecting) {
-          return;
-        }
+    const observeConversation = () => {
+      if (observer || hasStartedRef.current) {
+        return;
+      }
 
-        startConversation();
-        observer.disconnect();
-      },
-      {
-        threshold: 0.55,
-        rootMargin: "0px 0px -8% 0px",
-      },
-    );
+      observer = new IntersectionObserver(
+        ([entry]) => {
+          if (!entry.isIntersecting) {
+            return;
+          }
 
-    observer.observe(phoneTrigger);
+          startConversation();
+
+          observer?.disconnect();
+          observer = null;
+        },
+        {
+          threshold: 0.55,
+          rootMargin: "0px 0px -8% 0px",
+        },
+      );
+
+      observer.observe(phoneTrigger);
+    };
+
+    const handleMotionPreferenceChange = () => {
+      if (motionPreference.matches) {
+        observer?.disconnect();
+        observer = null;
+
+        showCompleteConversation();
+
+        return;
+      }
+
+      observeConversation();
+    };
+
+    if (motionPreference.matches) {
+      showCompleteConversation();
+    } else {
+      observeConversation();
+    }
+
+    motionPreference.addEventListener("change", handleMotionPreferenceChange);
 
     return () => {
-      observer.disconnect();
+      observer?.disconnect();
 
-      timers.forEach((timer) => {
-        window.clearTimeout(timer);
-      });
+      clearConversationTimers();
+
+      motionPreference.removeEventListener(
+        "change",
+        handleMotionPreferenceChange,
+      );
     };
   }, []);
 
