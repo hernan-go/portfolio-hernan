@@ -55,13 +55,13 @@ export function Hero() {
           <AnimatedLine
             text="Software"
             startDelay={250}
-            className="text-[16.1vw] text-[#555555] lg:text-[clamp(4.5rem,9.8vw,9.2rem)]"
+            className="text-[16.1vw] text-[#6A6A6A] lg:text-[clamp(4.5rem,9.8vw,9.2rem)]"
           />
 
           <AnimatedLine
             text="Built for"
             startDelay={620}
-            className="text-[16.7vw] text-[#8A8A8A] lg:text-[clamp(4.5rem,9.8vw,9.2rem)]"
+            className="text-[16.7vw] text-[#969696] lg:text-[clamp(4.5rem,9.8vw,9.2rem)]"
           />
 
           <AnimatedLine
