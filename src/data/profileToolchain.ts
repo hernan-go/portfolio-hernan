@@ -15,12 +15,6 @@ export const profileToolchainCards: ProfileToolchainCard[] = [
       "Responsive interfaces, reusable components and frontend systems designed around real product needs.",
   },
   {
-    title: "PLATFORMS",
-    items: ["WordPress", "WooCommerce", "Moodle"],
-    description:
-      "Content, commerce and learning platforms configured for real teams, users and operational workflows.",
-  },
-  {
     title: "DATA & INTEGRATION",
     items: ["REST APIs", "MySQL", "JSON"],
     description:
@@ -31,5 +25,11 @@ export const profileToolchainCards: ProfileToolchainCard[] = [
     items: ["Git", "GitHub", "Vite", "Figma", "CorelDRAW", "Trello"],
     description:
       "From interface planning and visual production to version control, builds and deployment.",
+  },
+  {
+    title: "PLATFORMS",
+    items: ["WordPress", "WooCommerce", "Moodle"],
+    description:
+      "Content, commerce and learning platforms configured for real teams, users and operational workflows.",
   },
 ];
