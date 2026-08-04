@@ -47,7 +47,12 @@ export function LabProjectBoxes({
               className={`
                 relative
                 block
+                rounded-sm
                 aspect-[1.18/1]
+                transition-shadow
+                duration-200
+                group-focus-visible:ring-2
+                group-focus-visible:ring-[#8C82A7]
                 ${
                   orientation === "vertical"
                     ? "w-[104px]"
@@ -90,6 +95,7 @@ export function LabProjectBoxes({
                     ? "text-neutral-100"
                     : "text-neutral-500 group-hover:text-neutral-300"
                 }
+                group-focus-visible:text-neutral-100
               `}
             >
               {String(index + 1).padStart(2, "0")}
@@ -172,11 +178,14 @@ function OpenBoxIcon() {
       {/* interior light */}
       <ellipse
         cx="90"
-        cy="75"
-        rx="46"
-        ry="24"
-        fill="rgba(140,130,167,0.28)"
-        className="animate-[pulse_3.8s_ease-in-out_infinite]"
+        cy="72"
+        rx="56"
+        ry="31"
+        fill="rgba(140,130,167,1)"
+        style={{
+          filter: "blur(60px)",
+        }}
+        className="animate-[pulse_3.8s_ease-in-out_infinite] motion-reduce:animate-none"
       />
 
       {/* Left body: now extends to the center of the flaps */}

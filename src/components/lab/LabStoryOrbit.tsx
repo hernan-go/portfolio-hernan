@@ -36,20 +36,117 @@ export function LabStoryOrbit({
 
   const innerAnimationRef = useRef<SVGAnimateTransformElement>(null);
 
+  const orbitRef = useRef<HTMLDivElement>(null);
+  const svgRef = useRef<SVGSVGElement>(null);
+
   useEffect(() => {
-    const frameId = requestAnimationFrame(() => {
-      outerAnimationRef.current?.beginElement();
-      middleAnimationRef.current?.beginElement();
-      innerAnimationRef.current?.beginElement();
-    });
+    const orbit = orbitRef.current;
+    const svg = svgRef.current;
+
+    if (!orbit || !svg) {
+      return;
+    }
+
+    let frameId = 0;
+    let isVisible = false;
+    let hasStarted = false;
+
+    const motionPreference = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    );
+
+    const startAnimations = () => {
+      cancelAnimationFrame(frameId);
+
+      frameId = requestAnimationFrame(() => {
+        outerAnimationRef.current?.beginElement();
+        middleAnimationRef.current?.beginElement();
+        innerAnimationRef.current?.beginElement();
+
+        svg.unpauseAnimations();
+        hasStarted = true;
+      });
+    };
+
+    const stopAnimations = () => {
+      cancelAnimationFrame(frameId);
+
+      svg.pauseAnimations();
+
+      outerAnimationRef.current?.endElement();
+      middleAnimationRef.current?.endElement();
+      innerAnimationRef.current?.endElement();
+
+      hasStarted = false;
+    };
+
+    const pauseAnimations = () => {
+      cancelAnimationFrame(frameId);
+      svg.pauseAnimations();
+    };
+
+    const resumeAnimations = () => {
+      if (motionPreference.matches) {
+        stopAnimations();
+        return;
+      }
+
+      if (hasStarted) {
+        svg.unpauseAnimations();
+        return;
+      }
+
+      startAnimations();
+    };
+
+    const handleMotionPreferenceChange = () => {
+      if (motionPreference.matches) {
+        stopAnimations();
+        return;
+      }
+
+      if (isVisible) {
+        startAnimations();
+      }
+    };
+
+    const visibilityObserver = new IntersectionObserver(
+      ([entry]) => {
+        isVisible = entry.isIntersecting;
+
+        if (!isVisible) {
+          pauseAnimations();
+          return;
+        }
+
+        resumeAnimations();
+      },
+      {
+        threshold: 0.1,
+      },
+    );
+
+    visibilityObserver.observe(orbit);
+
+    motionPreference.addEventListener("change", handleMotionPreferenceChange);
 
     return () => {
       cancelAnimationFrame(frameId);
+
+      visibilityObserver.disconnect();
+
+      svg.pauseAnimations();
+
+      motionPreference.removeEventListener(
+        "change",
+        handleMotionPreferenceChange,
+      );
     };
   }, [project.id]);
 
   return (
     <div
+      ref={orbitRef}
       className="
         relative
         mx-auto
@@ -59,6 +156,7 @@ export function LabStoryOrbit({
       "
     >
       <svg
+        ref={svgRef}
         viewBox="0 0 700 700"
         role="img"
         aria-labelledby={titleId}

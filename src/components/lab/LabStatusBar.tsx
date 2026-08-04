@@ -78,6 +78,7 @@ export function LabStatusBar({ status, isActive }: LabStatusBarProps) {
               isActive
                 ? `
                   animate-[pulse_2.2s_ease-in-out_1]
+                  motion-reduce:animate-none
                   border-[#E4DFF0]
                   bg-[#D6CFE6]
                   opacity-100

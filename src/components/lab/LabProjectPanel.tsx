@@ -13,9 +13,9 @@ export function LabProjectPanel({ project, isActive }: LabProjectPanelProps) {
       aria-labelledby={`${project.id}-panel-title`}
       className="
         relative
-        flex
+        grid
         h-[37rem]
-        flex-col
+        grid-rows-[auto_minmax(0,1fr)_2.35rem]
         overflow-hidden
         border
         border-white/15
@@ -45,7 +45,18 @@ export function LabProjectPanel({ project, isActive }: LabProjectPanelProps) {
         <LabProjectMedia image={project.image} projectName={project.name} />
       </div>
 
-      <div className="flex-1 px-5 pt-5 pb-12">
+      <div
+        className="
+          min-h-0
+          overflow-y-auto
+          overscroll-contain
+          px-5
+          pb-12
+          pt-5
+          [scrollbar-width:none]
+          [&::-webkit-scrollbar]:hidden
+          "
+      >
         <header>
           <h3
             id={`${project.id}-panel-title`}
