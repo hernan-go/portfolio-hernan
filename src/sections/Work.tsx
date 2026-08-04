@@ -62,6 +62,15 @@ export function Work() {
               />
 
               <div className="mt-7">
+                <WorkProjectImage
+                  key={activeProject.id}
+                  src={activeProject.mainImage}
+                  alt={activeProject.mainImageAlt}
+                  mode={activeProject.previewMode}
+                />
+              </div>
+
+              <div className="mt-7">
                 <WorkProjectDetails
                   key={activeProject.id}
                   project={activeProject}

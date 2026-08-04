@@ -30,6 +30,15 @@ export function WorkProjectImage({
       return;
     }
 
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      animationRef.current?.cancel();
+
+      image.style.transform = "translate3d(0, 0, 0)";
+      image.style.opacity = "1";
+
+      return;
+    }
+
     animationRef.current?.cancel();
 
     image.style.transform = "translate3d(0, 0, 0)";
@@ -128,14 +137,17 @@ export function WorkProjectImage({
   }, [src, mode]);
 
   useEffect(() => {
+    const frame = frameRef.current;
     const image = imageRef.current;
 
-    if (!src || !image) {
+    if (!src || !frame || !image) {
       return;
     }
 
     if (mode !== "scroll") {
       animationRef.current?.cancel();
+      animationRef.current = null;
+
       image.style.transform = "translate3d(0, 0, 0)";
       image.style.opacity = "1";
 
@@ -144,43 +156,125 @@ export function WorkProjectImage({
 
     let firstFrame = 0;
     let secondFrame = 0;
+    let isVisible = false;
+
+    const motionPreference = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    );
+
+    const resetImage = () => {
+      cancelAnimationFrame(firstFrame);
+      cancelAnimationFrame(secondFrame);
+
+      animationRef.current?.cancel();
+      animationRef.current = null;
+
+      image.style.transform = "translate3d(0, 0, 0)";
+      image.style.opacity = "1";
+    };
 
     const scheduleAnimation = () => {
       cancelAnimationFrame(firstFrame);
       cancelAnimationFrame(secondFrame);
 
-      // Wait two animation frames for the browser to resolve the final image dimensions.
+      if (!isVisible || motionPreference.matches) {
+        return;
+      }
+
+      // Wait two animation frames for the browser to resolve
+      // the final image dimensions.
       firstFrame = requestAnimationFrame(() => {
         secondFrame = requestAnimationFrame(() => {
+          if (!isVisible || motionPreference.matches) {
+            return;
+          }
+
           startAnimation();
         });
       });
     };
 
-    if (image.complete && image.naturalHeight > 0) {
-      scheduleAnimation();
-    } else {
+    const handleMotionPreferenceChange = () => {
+      if (motionPreference.matches) {
+        resetImage();
+        return;
+      }
+
+      if (isVisible) {
+        scheduleAnimation();
+      }
+    };
+
+    const visibilityObserver = new IntersectionObserver(
+      ([entry]) => {
+        isVisible = entry.isIntersecting;
+
+        if (!isVisible) {
+          animationRef.current?.pause();
+          return;
+        }
+
+        if (motionPreference.matches) {
+          resetImage();
+          return;
+        }
+
+        if (animationRef.current) {
+          animationRef.current.play();
+          return;
+        }
+
+        scheduleAnimation();
+      },
+      {
+        threshold: 0.1,
+      },
+    );
+
+    if (motionPreference.matches) {
+      resetImage();
+    }
+
+    if (!image.complete || image.naturalHeight === 0) {
       image.addEventListener("load", scheduleAnimation);
     }
 
+    visibilityObserver.observe(frame);
+
     window.addEventListener("resize", scheduleAnimation);
+
+    motionPreference.addEventListener("change", handleMotionPreferenceChange);
 
     return () => {
       cancelAnimationFrame(firstFrame);
       cancelAnimationFrame(secondFrame);
 
+      visibilityObserver.disconnect();
+
       animationRef.current?.cancel();
+      animationRef.current = null;
 
       image.removeEventListener("load", scheduleAnimation);
 
       window.removeEventListener("resize", scheduleAnimation);
+
+      motionPreference.removeEventListener(
+        "change",
+        handleMotionPreferenceChange,
+      );
     };
   }, [src, mode, startAnimation]);
 
   return (
     <div
       ref={frameRef}
-      className="relative hidden h-[clamp(450px,56svh,600px)] overflow-hidden bg-neutral-800/55 md:block"
+      className="
+      relative
+      h-[clamp(250px,72vw,340px)]
+      overflow-hidden
+      bg-neutral-800/55
+      md:h-[clamp(450px,56svh,600px)]
+      "
     >
       {src ? (
         <img
