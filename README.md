@@ -1,75 +1,111 @@
-# React + TypeScript + Vite
+# Hernán Gobulin — Software Developer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Frontend & Product Systems
 
-Currently, two official plugins are available:
+I build digital products, interfaces and systems around real operational needs — combining frontend development, product thinking and practical implementation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Live portfolio:** [hernangobulin.com](https://hernangobulin.com)
 
-## React Compiler
+![Hernán Gobulin — Software Developer Portfolio](docs/images/portfolio-home-hero.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## About this portfolio
 
-## Expanding the ESLint configuration
+This portfolio was designed and developed as a product in itself: not only to showcase finished websites, but to explain the systems, decisions and real-world problems behind my work.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+The experience is organized around two main areas:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Selected Work** — production projects, digital platforms and systems developed for real organizations, businesses and operational contexts.
+- **LAB** — products, prototypes and technical explorations where I investigate ideas, architecture, interfaces and new ways of solving problems.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+The product defines the stack — technology is selected according to the problem, context and constraints rather than forcing every project into the same solution.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Tech Stack
 
+**Core**
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+
+**Development & quality**
+
+- ESLint
+- Prettier
+- Git / GitHub
+- Responsive development
+- Accessibility-aware interactions
+
+## Engineering & Product Decisions
+
+Some of the principles behind the implementation:
+
+- Component-based architecture with reusable UI patterns.
+- Project content separated from presentation logic.
+- Responsive layouts designed across mobile, tablet and desktop.
+- Keyboard navigation and visible focus states.
+- Reduced-motion support for users who prefer less animation.
+- Optimized visual assets and production builds.
+- Interactive elements designed to support the narrative instead of functioning as decoration alone.
+
+## Portfolio Structure
+
+```text
+src/
+├── assets/       # Images, logos and visual resources
+├── components/   # Reusable UI and interaction components
+├── data/         # Structured project content
+├── pages/        # Page-level composition
+├── sections/     # Main portfolio sections
+├── App.tsx
+├── index.css
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+The main experience is divided into:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Index** — professional positioning and introduction.
+- **Work** — selected production work and real-world implementations.
+- **LAB** — systems, prototypes and product explorations.
+- **Profile** — technologies, tools and professional approach.
+- **Contact** — direct communication channels.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Run Locally
 
+Clone the repository and install the dependencies:
+
+```bash
+npm install
 ```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+Run the linter:
+
+```bash
+npm run lint
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## Project Status
+
+**Active / Production portfolio**
+
+The portfolio continues to evolve as new products, experiments and professional work are developed.
+
+→ [View the live portfolio](https://hernangobulin.com)
