@@ -8,7 +8,7 @@ import { WorkProjectImage } from "../components/work/WorkProjectImage";
 import { projects, type ProjectId } from "../data/workProjects";
 
 export function Work() {
-  const [activeProjectId, setActiveProjectId] = useState<ProjectId>("claec");
+  const [activeProjectId, setActiveProjectId] = useState<ProjectId>("operations-hub");
 
   const activeProject =
     projects.find((project) => project.id === activeProjectId) ?? projects[0];

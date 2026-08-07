@@ -45,6 +45,35 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "operations-hub",
+    name: "Operations Hub",
+    logo: operationsHubLogo,
+    mainImage: operationsHubDashboard,
+    mainImageAlt:
+      "Operations Hub custom WordPress administration dashboard showing operational metrics, integrations and internal tools.",
+    descriptor:
+      "Custom operations dashboard centralizing commerce, communication and internal workflow signals.",
+    role: "Product & Plugin Developer",
+    scope: [
+      "Custom Admin Plugin",
+      "Operations Dashboard",
+      "Workflow Signals",
+      "Internal Tools",
+    ],
+    coreTechnologies: ["PHP", "JavaScript", "CSS", "WordPress", "WooCommerce"],
+    platforms: [
+      "Gmail API",
+      "OAuth 2.0",
+      "Google Calendar / iCal",
+      "RSS",
+      "Options API",
+    ],
+    context:
+      "Originally developed as WooCommerce Command Center and expanded into an internal operations hub that centralizes order metrics, customer follow-up, calendar events, Gmail signals, operational tasks and external feeds in one admin workspace.",
+    repositoryUrl: "https://github.com/hernan-go/woocommerce-command-center",
+    previewMode: "contain",
+  },
+  {
     id: "claec",
     name: "CLAEC",
     logo: claecLogo,
@@ -206,34 +235,5 @@ export const projects: Project[] = [
     context:
       "Implemented the FemRecicla institutional website from an approved Figma design, translating its visual system into a responsive production site for a circular-economy organization.",
     liveUrl: "https://femrecicla.coop.ar/",
-  },
-  {
-    id: "operations-hub",
-    name: "Operations Hub",
-    logo: operationsHubLogo,
-    mainImage: operationsHubDashboard,
-    mainImageAlt:
-      "Operations Hub custom WordPress administration dashboard showing operational metrics, integrations and internal tools.",
-    descriptor:
-      "Custom operations dashboard centralizing commerce, communication and internal workflow signals.",
-    role: "Product & Plugin Developer",
-    scope: [
-      "Custom Admin Plugin",
-      "Operations Dashboard",
-      "Workflow Signals",
-      "Internal Tools",
-    ],
-    coreTechnologies: ["PHP", "JavaScript", "CSS", "WordPress", "WooCommerce"],
-    platforms: [
-      "Gmail API",
-      "OAuth 2.0",
-      "Google Calendar / iCal",
-      "RSS",
-      "Options API",
-    ],
-    context:
-      "Originally developed as WooCommerce Command Center and expanded into an internal operations hub that centralizes order metrics, customer follow-up, calendar events, Gmail signals, operational tasks and external feeds in one admin workspace.",
-    repositoryUrl: "https://github.com/hernan-go/woocommerce-command-center",
-    previewMode: "contain",
   },
 ];
