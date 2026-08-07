@@ -8,18 +8,12 @@ type LabStoryOrbitProps = {
   compact?: boolean;
 };
 
-const fallbackStory = {
-  outer: "A QUESTION WORTH EXPLORING • A NEED OBSERVED IN A REAL CONTEXT • ",
-  middle: "FROM AN INITIAL IDEA TO A POSSIBLE DIGITAL SYSTEM • ",
-  inner: "UNDERSTAND • ORGANIZE • CONNECT • BUILD • ",
-};
-
 export function LabStoryOrbit({
   project,
   compact = false,
 }: LabStoryOrbitProps) {
   const uniqueId = useId().replace(/:/g, "");
-  const story = project.storyRings ?? fallbackStory;
+  const story = project.storyRings;
 
   const durations = compact
     ? ["260s", "230s", "190s"]
@@ -209,8 +203,8 @@ export function LabStoryOrbit({
           />
 
           <text className="fill-neutral-300 font-['IBM_Plex_Mono'] text-[19px] uppercase tracking-[0.12em]">
-            <textPath href={`#${outerPathId}`} startOffset="2%">
-              {repeatText(story.outer, 4)}
+            <textPath href={`#${outerPathId}`} startOffset="0%">
+              {story.outer}
             </textPath>
           </text>
         </g>
@@ -228,8 +222,8 @@ export function LabStoryOrbit({
           />
 
           <text className="fill-neutral-400 font-['IBM_Plex_Mono'] text-[17px] uppercase tracking-[0.11em]">
-            <textPath href={`#${middlePathId}`} startOffset="8%">
-              {repeatText(story.middle, 4)}
+            <textPath href={`#${middlePathId}`} startOffset="35%">
+              {story.middle}
             </textPath>
           </text>
         </g>
@@ -247,8 +241,8 @@ export function LabStoryOrbit({
           />
 
           <text className="fill-neutral-500 font-['IBM_Plex_Mono'] text-[15px] uppercase tracking-[0.1em]">
-            <textPath href={`#${innerPathId}`} startOffset="4%">
-              {repeatText(story.inner, 4)}
+            <textPath href={`#${innerPathId}`} startOffset="5%">
+              {story.inner}
             </textPath>
           </text>
         </g>
@@ -284,13 +278,5 @@ export function LabStoryOrbit({
         </div>
       </div>
     </div>
-  );
-}
-
-function repeatText(text: string, repetitions: number) {
-  const normalizedText = text.trim();
-
-  return Array.from({ length: repetitions }, () => `${normalizedText} • `).join(
-    "",
   );
 }

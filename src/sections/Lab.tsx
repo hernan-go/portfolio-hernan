@@ -37,7 +37,7 @@ export function Lab() {
     <section
       className="
      relative
-      overflow-x-hidden
+      overflow-x-clip
       overflow-y-visible
       py-14
       md:py-16

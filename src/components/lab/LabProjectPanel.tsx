@@ -14,8 +14,11 @@ export function LabProjectPanel({ project, isActive }: LabProjectPanelProps) {
       className="
         relative
         grid
-        h-[37rem]
-        grid-rows-[auto_minmax(0,1fr)_2.35rem]
+        h-auto
+        min-h-[38rem]
+        grid-rows-[auto_1fr_2.35rem]
+        sm:h-[37rem]
+        sm:grid-rows-[auto_minmax(0,1fr)_2.35rem]
         overflow-hidden
         border
         border-white/15
@@ -47,14 +50,14 @@ export function LabProjectPanel({ project, isActive }: LabProjectPanelProps) {
 
       <div
         className="
-          min-h-0
-          overflow-y-auto
-          overscroll-contain
           px-5
           pb-12
           pt-5
-          [scrollbar-width:none]
-          [&::-webkit-scrollbar]:hidden
+          sm:min-h-0
+          sm:overflow-y-auto
+          sm:overscroll-contain
+          sm:[scrollbar-width:none]
+          sm:[&::-webkit-scrollbar]:hidden
           "
       >
         <header>
@@ -82,7 +85,16 @@ export function LabProjectPanel({ project, isActive }: LabProjectPanelProps) {
             value={project.productDirection}
           />
 
-          <ProjectField label="Next milestone" value={project.nextMilestone} />
+          {project.nextMilestone && (
+              <ProjectField label="Next milestone" value={project.nextMilestone} />
+            )}
+
+            {project.projectCollaborators && (
+              <ProjectField
+                label="Project collaborators"
+                value={project.projectCollaborators}
+              />
+            )}
         </dl>
 
         {(project.updatedAt ||
