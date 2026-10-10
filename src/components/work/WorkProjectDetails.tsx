@@ -89,27 +89,35 @@ export function WorkProjectDetails({ project }: WorkProjectDetailsProps) {
             target="_blank"
             rel="noreferrer"
             className="
+              group
               inline-flex
               items-center
-              bg-[#FF707C]/80
-              px-3
-              py-1.5
-              pr-5
               text-xs
               font-semibold
               uppercase
               tracking-[0.16em]
               text-neutral-950
-              transition-colors
-              duration-200
-              [clip-path:polygon(0_0,calc(100%-0.75rem)_0,100%_50%,calc(100%-0.75rem)_100%,0_100%)]
-              hover:bg-[#FF707C]
               focus-visible:outline-2
               focus-visible:outline-offset-4
               focus-visible:outline-[#FF707C]
             "
           >
-            {actionLabel}
+            <span
+              className="
+                inline-flex
+                items-center
+                bg-[#FF707C]/80
+                px-3
+                py-1.5
+                pr-5
+                transition-colors
+                duration-200
+                [clip-path:polygon(0_0,calc(100%-0.75rem)_0,100%_50%,calc(100%-0.75rem)_100%,0_100%)]
+                group-hover:bg-[#FF707C]
+              "
+            >
+              {actionLabel}
+            </span>
           </a>
         ) : (
           <span

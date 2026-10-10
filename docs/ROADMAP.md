@@ -2,7 +2,7 @@
 
 Updated: 2026-10-10. Source: [complete audit](AUDIT-2026-10-10.md). Current state: [PROJECT_STATE.md](PROJECT_STATE.md).
 
-**This roadmap does not authorize implementation, hosting changes, Git operations or deployment.** The owner must approve the scope of each intervention. H1 is implemented and validated for its original 320 px clipping problem, with owner approval. H2 is implemented and validated within the checked scope, with owner technical approval and remaining verification limits below. H3–H11 remain outstanding and have not been implemented; priorities express impact, not permission.
+**This roadmap does not authorize implementation, hosting changes, Git operations or deployment.** The owner must approve the scope of each intervention. H1 is implemented and validated for its original 320 px clipping problem, with owner approval. H2 and H3 are implemented and validated within their checked scopes, with owner approval and remaining verification limits below. H4–H11 remain outstanding and have not been implemented; priorities express impact, not permission.
 
 P0: critical; P1: important; P2: optional. No P0 issues were identified within the audited scope. H7 is P1 for verification: a Googlebot block has not been demonstrated. H10 is P2 subject to measurement.
 
@@ -14,7 +14,7 @@ Prerequisite: Iteration 0 review and authorization of specific files/changes. Pr
 |---|---|---|
 | H1 / P1 — implemented and validated | Original Contact clipping at 320 px; corrected in `src/sections/Contact.tsx` with an explicit mobile grid column, minimum-width handling and wrapping of long values while keeping labels and separators together. | Original 320 px problem validated in the local browser and confirmed by the owner's visual review: complete links/values, correct wrapping and preserved tree aesthetic. Enlarged-text limitations are recorded separately below. |
 | H2 / P1 — implemented and validated within the checked scope | Transcript accessibility corrected in `PhoneMockup`, within `src/sections/Contact.tsx`: titled non-modal region, expansion/control relationship, coordinated focus and local `inert`. | Initial title focus, normal Tab/Shift+Tab navigation, keyboard scrolling, Close/Escape dismissal and trigger focus restoration checked. Audio continuity and responsive behavior checked; real screen reader, other browsers and real zoom remain unverified. |
-| H3 / P1 | Focus clipped by the CTA shape; `src/components/work/WorkProjectDetails.tsx:105`. | Perceptible keyboard focus indicator without losing the link's visual shape. |
+| H3 / P1 — implemented and validated within the checked scope | Work CTA focus clipping corrected in `src/components/work/WorkProjectDetails.tsx`: original polygon, background, padding and transition moved to one internal span; link semantics and focus remain on the anchor. | Complete exterior rectangular `focus-visible` outline checked through keyboard navigation and screenshots at 320, 390, 768, 1024 and 1440 px. Original dimensions, normal/hover appearance and destinations preserved; other browsers, real zoom and a real screen reader remain unverified. |
 | H4 / P1 | Contrast of unselected names; `src/components/work/WorkPreviewGrid.tsx:33`. | Normal informational text has at least 4.5:1 contrast, accounting for backgrounds and transparency; distinguish decorations. Review visual hierarchy and relevant sizes. |
 | H11 / P2 | SVG narrative alternative; `src/components/lab/LabStoryOrbit.tsx:155`. | All three passages have an accessible equivalent without redundant announcements; verify with a real screen reader. |
 | H5 / P1 | Continuous motion in Work and the orbit; `src/components/work/WorkProjectImage.tsx:132`, `src/components/lab/LabStoryOrbit.tsx:202`. | **Evaluate first** the pause mechanism and applicability of WCAG 2.2.2. Present a proposal and obtain separate authorization before implementation. If approved, validate keyboard control, pause/resume and reduced motion without removing existing animations. |
@@ -29,7 +29,7 @@ Completed checks: ESLint without autofix or caching; application and configurati
 
 **Independent pending follow-up:** Contact still clips at 1024 px with enlarged text because of the preexisting desktop horizontal translation. This was reproduced in HEAD; H1 neither introduced nor corrected it. It needs separate analysis and authorization and does not reopen the validated original 320 px issue. The 200% check was a targeted text simulation; manual testing with real browser zoom and other browsers remains pending.
 
-H1 remains complete within Iteration 1; its implementation and documentation are incorporated in commit `fb064c8`. The subsequent H2 closure is recorded below. H3–H11 retain their outstanding states and have not been implemented.
+H1 remains complete within Iteration 1; its implementation and documentation are incorporated in commit `fb064c8`. Subsequent H2 and H3 closures are recorded below. H4–H11 retain their outstanding states and have not been implemented.
 
 ### H2 closure — Iteration 1
 
@@ -41,7 +41,19 @@ No substantial visual changes were made: phone/panel geometry, typography, color
 
 **Pending verification limits:** no real screen reader was available, and other browsers and real zoom were not tested. Enlarged text was simulated in memory; these checks do not certify complete accessibility conformance.
 
-This documentary closure changes only `PROJECT_STATE.md` and `ROADMAP.md`, preserves the historical audit and awaits owner review. It does not authorize further implementation, commits, staging, deployment or other Git writes. H1 remains complete and H3–H11 keep their current states.
+H2 implementation and documentation are incorporated in commit `ebf1573`. H1 and H2 remain complete within their checked scopes, with the pending verification limits above.
+
+### H3 closure — Iteration 1
+
+The owner authorized the active CTA correction only in `src/components/work/WorkProjectDetails.tsx`, then reviewed and approved the implementation. H3 is implemented and validated within the checked scope. The original `clip-path` coordinates, background, padding and 200 ms color transition now belong to a single internal `<span>`. The `<a>` retains its semantics, `href`, `target`, `rel`, one focus stop and the existing `focus-visible` outline; the span adds no interactive role, `tabIndex` or `aria-hidden`. `group` and `group-hover` preserve hover behavior. The exterior rectangular focus outline is fully visible without clipping in the checked layouts.
+
+Completed checks: Tab/Shift+Tab navigation and a single focus stop; real `:focus-visible` activation; Enter activation and preserved destinations for "View repository" and "Visit Live"; before/after CTA measurements at 320, 390, 768, 1024 and 1440 px; screenshots of the full outline at those widths and clipping-ancestor inspection; and normal/hover visual comparison. "View repository" retained its 188.625 × 28 px dimensions at all five widths, with unchanged typography, polygon and responsive composition. GitHub redirected the repository destination to sign-in. "Link pending" was unchanged in the diff but was not exercised at runtime.
+
+ESLint without autofix/cache, application and configuration TypeScript without emission/incremental compilation, and `git diff --check` passed during implementation. Documentary closure checks document consistency, `git diff --check` and Git status; it does not rerun the functional or static implementation tests. See [PROJECT_STATE.md](PROJECT_STATE.md) for commands and details.
+
+**Pending verification limits:** tests used the integrated browser; other browsers, real browser zoom and a real screen reader were not tested. These checks do not certify complete accessibility conformance.
+
+This documentary closure changes only `PROJECT_STATE.md` and `ROADMAP.md`, preserves the approved H3 code and historical audit, and awaits owner review. H3 implementation and closure documents remain unstaged local changes on `main`, with `ebf1573` as HEAD. No staging, commits, pushes or deployment were performed. H1 and H2 remain complete; H4–H11 retain their current outstanding states. Further implementation and Git writes require separate authorization.
 
 ## Iteration 2 — SEO and verification
 
