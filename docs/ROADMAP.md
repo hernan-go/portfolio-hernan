@@ -2,7 +2,7 @@
 
 Updated: 2026-10-10. Source: [complete audit](AUDIT-2026-10-10.md). Current state: [PROJECT_STATE.md](PROJECT_STATE.md).
 
-**This roadmap does not authorize implementation, hosting changes, Git operations or deployment.** The owner must approve the scope of each intervention. H1 is implemented and validated for its original 320 px clipping problem, with owner approval. H2–H11 remain outstanding and have not been implemented; priorities express impact, not permission.
+**This roadmap does not authorize implementation, hosting changes, Git operations or deployment.** The owner must approve the scope of each intervention. H1 is implemented and validated for its original 320 px clipping problem, with owner approval. H2 is implemented and validated within the checked scope, with owner technical approval and remaining verification limits below. H3–H11 remain outstanding and have not been implemented; priorities express impact, not permission.
 
 P0: critical; P1: important; P2: optional. No P0 issues were identified within the audited scope. H7 is P1 for verification: a Googlebot block has not been demonstrated. H10 is P2 subject to measurement.
 
@@ -13,7 +13,7 @@ Prerequisite: Iteration 0 review and authorization of specific files/changes. Pr
 | ID / priority | Proposed scope and original evidence | Acceptance criteria |
 |---|---|---|
 | H1 / P1 — implemented and validated | Original Contact clipping at 320 px; corrected in `src/sections/Contact.tsx` with an explicit mobile grid column, minimum-width handling and wrapping of long values while keeping labels and separators together. | Original 320 px problem validated in the local browser and confirmed by the owner's visual review: complete links/values, correct wrapping and preserved tree aesthetic. Enlarged-text limitations are recorded separately below. |
-| H2 / P1 | Transcript: modality, focus and Escape; `src/sections/Contact.tsx:355`. | First choose a modal or non-modal panel. If modal: initial focus, containment, Escape and focus restoration; if non-modal: coherent semantics and navigation. Validate keyboard operation and closing. |
+| H2 / P1 — implemented and validated within the checked scope | Transcript accessibility corrected in `PhoneMockup`, within `src/sections/Contact.tsx`: titled non-modal region, expansion/control relationship, coordinated focus and local `inert`. | Initial title focus, normal Tab/Shift+Tab navigation, keyboard scrolling, Close/Escape dismissal and trigger focus restoration checked. Audio continuity and responsive behavior checked; real screen reader, other browsers and real zoom remain unverified. |
 | H3 / P1 | Focus clipped by the CTA shape; `src/components/work/WorkProjectDetails.tsx:105`. | Perceptible keyboard focus indicator without losing the link's visual shape. |
 | H4 / P1 | Contrast of unselected names; `src/components/work/WorkPreviewGrid.tsx:33`. | Normal informational text has at least 4.5:1 contrast, accounting for backgrounds and transparency; distinguish decorations. Review visual hierarchy and relevant sizes. |
 | H11 / P2 | SVG narrative alternative; `src/components/lab/LabStoryOrbit.tsx:155`. | All three passages have an accessible equivalent without redundant announcements; verify with a real screen reader. |
@@ -29,7 +29,19 @@ Completed checks: ESLint without autofix or caching; application and configurati
 
 **Independent pending follow-up:** Contact still clips at 1024 px with enlarged text because of the preexisting desktop horizontal translation. This was reproduced in HEAD; H1 neither introduced nor corrected it. It needs separate analysis and authorization and does not reopen the validated original 320 px issue. The 200% check was a targeted text simulation; manual testing with real browser zoom and other browsers remains pending.
 
-Only H1 is closing within Iteration 1. H2–H11 have not been implemented. This closure changes only `PROJECT_STATE.md` and `ROADMAP.md`, preserves the historical audit and awaits owner review; it authorizes no further implementation or Git/deployment operations.
+H1 remains complete within Iteration 1; its implementation and documentation are incorporated in commit `fb064c8`. The subsequent H2 closure is recorded below. H3–H11 retain their outstanding states and have not been implemented.
+
+### H2 closure — Iteration 1
+
+The owner authorized transcript changes only in `PhoneMockup`, within `src/sections/Contact.tsx`, then technically reviewed and approved the implementation. H2 is implemented and validated within the checked scope. Dialog/modal semantics were replaced by a region identified through its title. The trigger uses `aria-expanded` and `aria-controls` only while its panel exists. Focus moves to the title on opening and returns to the trigger after local `inert` is removed on closing. Close and Escape inside the panel dismiss it; normal Tab/Shift+Tab navigation can leave it. Only the covered phone conversation is inert, and the text area supports keyboard scrolling.
+
+Completed checks: click/Enter/Space opening; initial focus; forward/backward navigation and exclusion of covered controls; Escape inside/outside the panel; Close; focus restoration; repeated cycles; valid ARIA control references; End/Home scrolling to the bottom/top using a temporary enlarged-text fixture at 320 px; screenshot review and measurements at 320, 390, 768, 1024 and 1440 px; and operation in the development application with React StrictMode enabled. Audio playback continued across opening/closing without pause or reset, with advancing time and one mounted audio element. ESLint without autofix/cache, application and configuration TypeScript without emission/incremental compilation, and `git diff --check` passed. See [PROJECT_STATE.md](PROJECT_STATE.md) for commands and details.
+
+No substantial visual changes were made: phone/panel geometry, typography, colors, spacing, transcript content, buttons and animations were preserved. The title and scrollable area gained focus indicators; browser focus can scroll to reveal its target. H1 and the audio implementation remain unchanged.
+
+**Pending verification limits:** no real screen reader was available, and other browsers and real zoom were not tested. Enlarged text was simulated in memory; these checks do not certify complete accessibility conformance.
+
+This documentary closure changes only `PROJECT_STATE.md` and `ROADMAP.md`, preserves the historical audit and awaits owner review. It does not authorize further implementation, commits, staging, deployment or other Git writes. H1 remains complete and H3–H11 keep their current states.
 
 ## Iteration 2 — SEO and verification
 

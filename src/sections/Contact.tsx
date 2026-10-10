@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type ChangeEvent } from "react";
+import { useEffect, useLayoutEffect, useRef, useState, type ChangeEvent } from "react";
 import { Folder, Pause, Play } from "lucide-react";
 
 import { Container } from "../components/Container";
@@ -247,6 +247,20 @@ function VoiceMessage() {
 
 function PhoneMockup({ visibleMessages, typingMessage }: PhoneMockupProps) {
   const [isTranscriptOpen, setIsTranscriptOpen] = useState(false);
+  const transcriptTriggerRef = useRef<HTMLButtonElement>(null);
+  const transcriptTitleRef = useRef<HTMLHeadingElement>(null);
+  const wasTranscriptOpenRef = useRef(false);
+
+  useLayoutEffect(() => {
+    // The committed DOM has already applied or removed inert before focusing.
+    if (isTranscriptOpen) {
+      transcriptTitleRef.current?.focus();
+    } else if (wasTranscriptOpenRef.current) {
+      transcriptTriggerRef.current?.focus();
+    }
+
+    wasTranscriptOpenRef.current = isTranscriptOpen;
+  }, [isTranscriptOpen]);
 
   return (
     <div className="flex w-full justify-center lg:justify-start">
@@ -257,7 +271,10 @@ function PhoneMockup({ visibleMessages, typingMessage }: PhoneMockupProps) {
         />
 
         <div className="relative h-full overflow-hidden rounded-[2.7rem] border border-neutral-700/80 bg-neutral-950/20">
-          <div className="flex h-full flex-col px-3 pb-7 pt-16">
+          <div
+            inert={isTranscriptOpen}
+            className="flex h-full flex-col px-3 pb-7 pt-16"
+          >
             <div
               className="flex flex-1 flex-col gap-6"
               role="log"
@@ -319,7 +336,12 @@ function PhoneMockup({ visibleMessages, typingMessage }: PhoneMockupProps) {
 
               {visibleMessages >= 5 && (
                 <button
+                  ref={transcriptTriggerRef}
                   type="button"
+                  aria-expanded={isTranscriptOpen}
+                  aria-controls={
+                    isTranscriptOpen ? "voice-note-transcript" : undefined
+                  }
                   onClick={() => {
                     setIsTranscriptOpen(true);
                   }}
@@ -355,9 +377,16 @@ function PhoneMockup({ visibleMessages, typingMessage }: PhoneMockupProps) {
 
           {isTranscriptOpen && (
             <div
-              role="dialog"
-              aria-modal="true"
+              id="voice-note-transcript"
+              role="region"
               aria-labelledby="voice-note-transcript-title"
+              onKeyDown={(event) => {
+                if (event.key === "Escape") {
+                  event.preventDefault();
+                  event.stopPropagation();
+                  setIsTranscriptOpen(false);
+                }
+              }}
               className="
                 absolute
                 inset-x-0
@@ -374,7 +403,9 @@ function PhoneMockup({ visibleMessages, typingMessage }: PhoneMockupProps) {
             >
               <div className="flex items-start justify-between gap-4">
                 <h3
+                  ref={transcriptTitleRef}
                   id="voice-note-transcript-title"
+                  tabIndex={-1}
                   className="
                     font-['IBM_Plex_Mono']
                     text-[0.62rem]
@@ -382,6 +413,9 @@ function PhoneMockup({ visibleMessages, typingMessage }: PhoneMockupProps) {
                     leading-5
                     tracking-[0.14em]
                     text-[#FFDD1F]
+                    focus-visible:outline-2
+                    focus-visible:outline-offset-2
+                    focus-visible:outline-[#FFDD1F]
                   "
                 >
                   Voice note transcript
@@ -412,7 +446,12 @@ function PhoneMockup({ visibleMessages, typingMessage }: PhoneMockupProps) {
                 </button>
               </div>
 
-              <div className="mt-5 min-h-0 flex-1 overflow-y-auto pr-2">
+              <div
+                tabIndex={0}
+                role="group"
+                aria-labelledby="voice-note-transcript-title"
+                className="mt-5 min-h-0 flex-1 overflow-y-auto pr-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FFDD1F]"
+              >
                 <div className="space-y-4 font-['IBM_Plex_Mono'] text-[0.66rem] leading-5 text-neutral-300">
                   <p>
                     I really appreciate you checking out my portfolio, so
