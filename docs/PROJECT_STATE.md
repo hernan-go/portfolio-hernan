@@ -15,11 +15,11 @@ Updated: **2026-10-10** (owner reference date, America/Buenos_Aires).
 
 ## Activity and authorization
 
-Previous activity: comprehensive code and production audit, preserved in full in [AUDIT-2026-10-10.md](AUDIT-2026-10-10.md). No P0 issues were identified within the audited scope; ESLint and TypeScript passed without emitting files or caching. These results belong to the historical audit; H1, H2 and H3 implementation checks are recorded separately below.
+Previous activity: comprehensive code and production audit, preserved in full in [AUDIT-2026-10-10.md](AUDIT-2026-10-10.md). No P0 issues were identified within the audited scope; ESLint and TypeScript passed without emitting files or caching. These results belong to the historical audit; H1–H4 implementation checks are recorded separately below. H12 was confirmed during H4 verification and is an independent finding outside the historical H1–H11 report.
 
 Iteration 0 — structural documentation: only `AGENTS.md` and the five requested Markdown documents in `docs/` were created. Consistency, paths, new content, Git state and the absence of functional changes were checked. No builds were run in that phase and production was not changed.
 
-Current iteration: **1 — H3 documentary closure**. H1 began on `main`, with documentation commit `70a7828` as HEAD and a clean working tree. The owner authorized H1 implementation exclusively in `src/sections/Contact.tsx`, then approved the result after visually reviewing Contact at 320 px: complete links and values are visible, text wraps correctly and the tree's aesthetic is preserved. H1 implementation and documentation are incorporated in commit `fb064c8`.
+Current iteration: **1 — H4 documentary closure and H12 registration**. H1 began on `main`, with documentation commit `70a7828` as HEAD and a clean working tree. The owner authorized H1 implementation exclusively in `src/sections/Contact.tsx`, then approved the result after visually reviewing Contact at 320 px: complete links and values are visible, text wraps correctly and the tree's aesthetic is preserved. H1 implementation and documentation are incorporated in commit `fb064c8`.
 
 H1 is **implemented and validated for the original clipping problem at 320 px**. The change adds an explicit mobile grid column and `min-w-0` on the tree, allows the paragraph to use the remaining row width and wrap, keeps each label with its separator, and applies `overflow-wrap: anywhere` to long values. Font sizes, icons, connectors, colors, contact text, link destinations and functionality were preserved.
 
@@ -70,13 +70,45 @@ Checks performed during H3 implementation:
 
 **Pending verification limits:** testing used the integrated browser. Other browsers, real browser zoom and a real screen reader were not tested; these results do not certify complete accessibility conformance.
 
-This H3 documentary closure is authorized only for `PROJECT_STATE.md` and `ROADMAP.md`. It preserves the approved code and historical audit and awaits owner review. HEAD remains `ebf1573`; the H3 implementation and closure documents are unstaged local changes. No staging, commits, pushes or deployment were performed. H4–H11 retain their outstanding states and have not been implemented; further implementation or Git writes require separate authorization.
+H3 implementation and documentation are incorporated in commit `e3585fb`. H1, H2 and H3 remain complete within their checked scopes, with the pending verification limits above.
+
+### H4 — Contrast of unselected Work project names
+
+H4 analysis and implementation began on `main`, with `e3585fb` as HEAD and a clean working tree. The owner authorized only the unselected name color adjustment in `src/components/work/WorkPreviewGrid.tsx`, then technically and visually reviewed and approved the implementation, including the hierarchy between selected and unselected projects. H4 is **implemented and validated within the checked scope**.
+
+The unselected `<h3>` replaces `text-neutral-500` with `text-[#B8B8B8]`, preserves `group-hover:text-neutral-200` and adds `group-focus-visible:text-neutral-200`. Selected names retain `text-neutral-100`; the pink selection underline remains. Typography, sizes, spacing, layout, logos, backgrounds and animations were preserved. The global gradient and grain texture were not changed. The separate mobile selector retains its original colors.
+
+Checks performed during H4 implementation:
+
+- Before/after screenshot review and geometry measurements against `e3585fb` at 320, 390, 640, 767, 768, 1024, 1279, 1280, 1440 and 1500 px covered mobile, tablet, desktop and breakpoint boundaries. Button positions/dimensions and label font sizes/line heights matched. Normal, hover, selected and keyboard-focus text states retained their visual hierarchy.
+- Tab activated `:focus-visible` without simultaneous hover; Shift+Tab returned to the preceding selector. Enter and Space selected projects, with the selected label retaining `neutral-100`. Hover and keyboard focus use `neutral-200` on unselected names. These text-state checks do not imply that the button outline is visible; H12 remains open below.
+- `eslint . --no-cache` without autofix, `tsc -p tsconfig.app.json --noEmit --incremental false` and `tsc -p tsconfig.node.json --noEmit --incremental false` all passed. `git diff --check` passed. Documentary closure does not rerun the implementation tests; it checks document consistency, `git diff --check` and Git status.
+
+Contrast evidence is separated by method:
+
+| Method | Result and interpretation |
+|---|---|
+| Calculation from CSS colors using relative sRGB luminance | `#B8B8B8` against `#1b1b1b`: **8.68:1**, compared with **3.64:1** for the original `neutral-500`. This is a color-pair calculation, not a measurement of rendered glyphs. |
+| Real screenshot sampling | Text-free background patches near labels at 768, 1024, 1279, 1280, 1440 and 1500 px contained grayscale values from **27 to 57** on the 0–255 scale, including the rendered gradient and grain. Samples were decoded from JPEG captures in memory; compression introduces imprecision and the samples are not an exhaustive pixel survey. |
+| Conservative calculation based on those samples | Accounting for possible text attenuation by the grain overlay yields approximately **5.25:1** against the brightest sampled background. This is a modeled ratio based on measured background values, not a direct glyph contrast measurement. |
+| Extreme texture simulation | Compositing white at 25% over both `#B8B8B8` and the lightest gradient endpoint, `#1b1b1b`, yields **4.61:1**. This conservative scenario does not assert that the actual grain reaches that extreme. |
+
+**Pending verification limits:** tests used the integrated browser; other browsers, real browser zoom and a real screen reader were not tested. The calculations and sampled JPEG backgrounds do not certify every rendered pixel or complete accessibility conformance.
+
+### H12 — Invisible keyboard focus outline in the Work project selector
+
+**Priority: P1. Status: confirmed, pending implementation.** During H4 verification, keyboard focus matched `:focus-visible`, but the button's computed outline style remained `none` with a 2 px width. This reproduced in the original and corrected versions of `WorkPreviewGrid.tsx`; it is independent of H4 and was not introduced or corrected by the color adjustment.
+
+The generated CSS confirms the cause: `focus:outline-none` sets `--tw-outline-style: none` and `outline-style: none`. `focus-visible:outline-2` sets the width but reuses `var(--tw-outline-style)`, so it does not restore a visible outline style. H12 requires separate analysis, authorization and implementation in a later intervention. No H12 code changes were made, and the historical H1–H11 audit remains unchanged.
+
+This H4 documentary closure changes only `PROJECT_STATE.md` and `ROADMAP.md` and awaits owner review. HEAD remains `e3585fb`; the previously approved H4 implementation and these two documents are unstaged local changes. No builds, installations, staging, commits, pushes or deployment were performed. H1–H4 remain complete within their checked scopes; H5–H11 retain their outstanding states, and H12 is pending. Further implementation or Git writes require separate authorization.
 
 ## Known outstanding items
 
 | Findings | Status |
 |---|---|
-| H4 | Work label contrast; unresolved, not implemented. |
+| H12 / P1 | Invisible keyboard focus outline in the Work project selector; confirmed, independent of H4, pending analysis and implementation. |
+| H4 verification follow-up | Implemented and validated in the checked scope, with owner technical and visual approval; other browsers, real zoom and a real screen reader remain unverified. |
 | H3 verification follow-up | Implemented and validated in the checked scope; other browsers, real zoom and a real screen reader remain unverified. |
 | H2 verification follow-up | Implemented and validated in the checked scope; real screen reader, other browsers and real zoom remain unverified. |
 | Independent Contact follow-up | Preexisting clipping at 1024 px with enlarged text, associated with the desktop horizontal translation. Reproduced in baseline commit `70a7828` and still pending; not introduced or corrected by H1. |
@@ -90,6 +122,6 @@ Details and priorities are recorded in [ROADMAP.md](ROADMAP.md); do not mark fin
 
 ## Proposed next stage and open verification items
 
-Await owner review of the H3 closure documents. Any further implementation or Git writes require approval of a bounded scope. H1's original 320 px clipping remains closed; the independent 1024 px enlarged-text issue still needs separate analysis and authorization. H2 and H3 remain complete within their checked scopes, with remaining verification limits recorded above. H4–H11 are still outstanding. H5 requires evaluation before any implementation authorization.
+Await owner review of the H4 closure documents and H12 registration. Any further implementation or Git writes require approval of a bounded scope. H1's original 320 px clipping remains closed; the independent 1024 px enlarged-text issue still needs separate analysis and authorization. H2–H4 remain complete within their checked scopes, with remaining verification limits recorded above. H5–H11 are still outstanding, and H12 requires a separate intervention. H5 requires evaluation before any implementation authorization.
 
 Still pending: access/indexing verification through Search Console and hosting logs; Core Web Vitals, transfer/caching and performance traces; testing with a real screen reader and complete WCAG conformance; dependency-tree advisories; equivalence between `dist` and production and the deployment procedure. The PRISMA CRM repository has not been audited: its full-stack description and production use were provided by the owner.

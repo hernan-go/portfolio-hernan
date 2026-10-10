@@ -33,7 +33,7 @@ export function WorkPreviewGrid({
                 className={`text-[0.50rem] uppercase leading-[1.5] tracking-[0.07em] transition-colors duration-200 xl:text-[0.62rem] ${
                   isActive
                     ? "text-neutral-100"
-                    : "text-neutral-500 group-hover:text-neutral-200"
+                    : "text-[#B8B8B8] group-hover:text-neutral-200 group-focus-visible:text-neutral-200"
                 }`}
               >
                 {project.name}
