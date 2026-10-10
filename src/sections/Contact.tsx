@@ -29,14 +29,15 @@ function FolderLeaf({ label, value, href }: FolderLeafProps) {
         aria-hidden="true"
       />
 
-      <p className="min-w-0 whitespace-nowrap font-['IBM_Plex_Mono'] text-[0.7rem] leading-5 text-neutral-400 sm:text-[0.66rem] md:text-[0.82rem]">
-        <span className="text-neutral-200 transition-colors group-hover:text-[#FFDD1F]">
-          {label}
+      <p className="min-w-0 flex-1 whitespace-normal font-['IBM_Plex_Mono'] text-[0.7rem] leading-5 text-neutral-400 sm:text-[0.66rem] md:text-[0.82rem]">
+        <span className="inline-block whitespace-nowrap">
+          <span className="text-neutral-200 transition-colors group-hover:text-[#FFDD1F]">
+            {label}
+          </span>
+          <span className="mx-0.5 text-neutral-700 md:mx-2">/</span>
         </span>
 
-        <span className="mx-0.5 text-neutral-700 md:mx-2">/</span>
-
-        <span className="transition-colors group-hover:text-neutral-200">
+        <span className="[overflow-wrap:anywhere] transition-colors group-hover:text-neutral-200">
           {value}
         </span>
       </p>
@@ -442,7 +443,7 @@ function PhoneMockup({ visibleMessages, typingMessage }: PhoneMockupProps) {
 
 function ContactTree() {
   return (
-    <div className="w-full max-w-[650px] font-['IBM_Plex_Mono'] lg:justify-self-end">
+    <div className="min-w-0 w-full max-w-[650px] font-['IBM_Plex_Mono'] lg:justify-self-end">
       <div className="flex items-center gap-3">
         <Folder
           size={29}
@@ -699,7 +700,7 @@ export function Contact() {
           </span>
         </h2>
 
-        <div className="mx-auto mt-7 grid w-full max-w-[1100px] gap-16 lg:translate-x-32 lg:grid-cols-[310px_minmax(0,1fr)] lg:items-center lg:gap-28 xl:translate-x-38 min-[1880px]:translate-x-0">
+        <div className="mx-auto mt-7 grid w-full max-w-[1100px] grid-cols-1 gap-16 lg:translate-x-32 lg:grid-cols-[310px_minmax(0,1fr)] lg:items-center lg:gap-28 xl:translate-x-38 min-[1880px]:translate-x-0">
           <div ref={phoneTriggerRef}>
             <PhoneMockup
               visibleMessages={visibleMessages}

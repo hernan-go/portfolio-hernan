@@ -2,7 +2,7 @@
 
 Updated: 2026-10-10. Source: [complete audit](AUDIT-2026-10-10.md). Current state: [PROJECT_STATE.md](PROJECT_STATE.md).
 
-**This roadmap does not authorize implementation, hosting changes, Git operations or deployment.** The owner must approve the scope of each intervention. All findings remain outstanding; priorities express impact, not permission.
+**This roadmap does not authorize implementation, hosting changes, Git operations or deployment.** The owner must approve the scope of each intervention. H1 is implemented and validated for its original 320 px clipping problem, with owner approval. H2–H11 remain outstanding and have not been implemented; priorities express impact, not permission.
 
 P0: critical; P1: important; P2: optional. No P0 issues were identified within the audited scope. H7 is P1 for verification: a Googlebot block has not been demonstrated. H10 is P2 subject to measurement.
 
@@ -12,7 +12,7 @@ Prerequisite: Iteration 0 review and authorization of specific files/changes. Pr
 
 | ID / priority | Proposed scope and original evidence | Acceptance criteria |
 |---|---|---|
-| H1 / P1 | Contact at 320 px: long values and clipping; `src/sections/Contact.tsx:32,684`. | Complete email/profile values, usable controls and reflow without information loss; check narrow screens and text enlargement while preserving the tree. |
+| H1 / P1 — implemented and validated | Original Contact clipping at 320 px; corrected in `src/sections/Contact.tsx` with an explicit mobile grid column, minimum-width handling and wrapping of long values while keeping labels and separators together. | Original 320 px problem validated in the local browser and confirmed by the owner's visual review: complete links/values, correct wrapping and preserved tree aesthetic. Enlarged-text limitations are recorded separately below. |
 | H2 / P1 | Transcript: modality, focus and Escape; `src/sections/Contact.tsx:355`. | First choose a modal or non-modal panel. If modal: initial focus, containment, Escape and focus restoration; if non-modal: coherent semantics and navigation. Validate keyboard operation and closing. |
 | H3 / P1 | Focus clipped by the CTA shape; `src/components/work/WorkProjectDetails.tsx:105`. | Perceptible keyboard focus indicator without losing the link's visual shape. |
 | H4 / P1 | Contrast of unselected names; `src/components/work/WorkPreviewGrid.tsx:33`. | Normal informational text has at least 4.5:1 contrast, accounting for backgrounds and transparency; distinguish decorations. Review visual hierarchy and relevant sizes. |
@@ -20,6 +20,16 @@ Prerequisite: Iteration 0 review and authorization of specific files/changes. Pr
 | H5 / P1 | Continuous motion in Work and the orbit; `src/components/work/WorkProjectImage.tsx:132`, `src/components/lab/LabStoryOrbit.tsx:202`. | **Evaluate first** the pause mechanism and applicability of WCAG 2.2.2. Present a proposal and obtain separate authorization before implementation. If approved, validate keyboard control, pause/resume and reduced motion without removing existing animations. |
 
 Separate functional corrections from brightness or layout adjustments so that they can be reviewed in bounded changes. Proposed validation: lint/TypeScript without emitting files when appropriate, responsive review, focus/keyboard checks and visual comparison. A build may only run if the phase permits it.
+
+### H1 closure — Iteration 1
+
+The owner approved implementation in `src/sections/Contact.tsx` and subsequently approved the result after a visual review at 320 px. The change preserves font sizes, icons, connectors, colors, contact text, link destinations and functionality.
+
+Completed checks: ESLint without autofix or caching; application and configuration TypeScript without emission or incremental compilation; local browser measurements and screenshot review at 320, 390, 768, 1024 and 1440 px against HEAD; long-value and 200% contact-row text simulations at those widths; multiline icon/connector alignment; keyboard navigation and visible focus at 320 px; and `git diff --check`. All static checks passed. At 320 px, internal width decreased from 336 to 305 px, matching the usable width; original text geometry at the other four widths was unchanged. Preview and test variants were held in memory without generating build artifacts. See [PROJECT_STATE.md](PROJECT_STATE.md) for commands and verification limits.
+
+**Independent pending follow-up:** Contact still clips at 1024 px with enlarged text because of the preexisting desktop horizontal translation. This was reproduced in HEAD; H1 neither introduced nor corrected it. It needs separate analysis and authorization and does not reopen the validated original 320 px issue. The 200% check was a targeted text simulation; manual testing with real browser zoom and other browsers remains pending.
+
+Only H1 is closing within Iteration 1. H2–H11 have not been implemented. This closure changes only `PROJECT_STATE.md` and `ROADMAP.md`, preserves the historical audit and awaits owner review; it authorizes no further implementation or Git/deployment operations.
 
 ## Iteration 2 — SEO and verification
 
