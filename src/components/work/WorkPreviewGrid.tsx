@@ -26,7 +26,7 @@ export function WorkPreviewGrid({
             aria-pressed={isActive}
             aria-label={`Show ${project.name} case study`}
             onClick={() => onSelect(project.id)}
-            className="group min-w-0 text-left focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#FF707C]"
+            className="group min-w-0 text-left focus:outline-none focus-visible:outline-solid focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#FF707C]"
           >
             <div className="1.5 min-h-7 font-['IBM_Plex_Mono']">
               <h3

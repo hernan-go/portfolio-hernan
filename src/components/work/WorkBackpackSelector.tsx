@@ -192,6 +192,7 @@ export function WorkBackpackSelector({
               justify-center
               font-['IBM_Plex_Mono']
               focus:outline-none
+              focus-visible:outline-solid
               focus-visible:outline-2
               focus-visible:outline-offset-4
               focus-visible:outline-[#FF707C]
