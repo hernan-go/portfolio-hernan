@@ -4,7 +4,6 @@ import jardinReikiLogo from "../assets/work/logos/jardin-reiki.svg";
 import zepelinMultimediaLogo from "../assets/work/logos/zepelin-multimedia.svg";
 import prismaLogo from "../assets/work/logos/prisma.svg";
 import tauRaeeLogo from "../assets/work/logos/tau-raee.svg";
-import femReciclaLogo from "../assets/work/logos/femrecicla.svg";
 import operationsHubLogo from "../assets/work/logos/operations-hub.svg";
 
 import claecFullpage from "../assets/work/projects/claec/claec-fullpage.webp?url";
@@ -13,7 +12,6 @@ import jardinReikiFullpage from "../assets/work/projects/jardin-reiki/jardin-rei
 import zepelinMultimediaFullpage from "../assets/work/projects/zepelin-multimedia/zepelin-multimedia-fullpage.webp?url";
 import prismaFullpage from "../assets/work/projects/prisma/prisma-fullpage.webp?url";
 import tauRaeeFullpage from "../assets/work/projects/tau-raee/tau-raee-fullpage.webp?url";
-import femReciclaFullpage from "../assets/work/projects/femrecicla/femrecicla-fullpage.webp?url";
 import operationsHubDashboard from "../assets/work/projects/operations-hub/operations-hub-dashboard-fullpage.webp";
 
 export type ProjectId =
@@ -23,7 +21,6 @@ export type ProjectId =
   | "zepelin"
   | "prisma"
   | "tau-raee"
-  | "femrecicla"
   | "operations-hub";
 
 export type Project = {
@@ -208,32 +205,5 @@ export const projects: Project[] = [
     context:
       "Implemented the TAU RAEE institutional website from an approved Figma design, prioritizing visual fidelity, clear service communication and responsive behavior.",
     liveUrl: "https://tau.coop.ar/",
-  },
-  {
-    id: "femrecicla",
-    name: "FemRecicla",
-    logo: femReciclaLogo,
-    mainImage: femReciclaFullpage,
-    mainImageAlt:
-      "Full-page view of the FemRecicla circular-economy institutional website.",
-    descriptor:
-      "Responsive institutional website implemented from a client-approved Figma design.",
-    role: "Web Developer / Figma Implementation",
-    scope: [
-      "Institutional Website",
-      "Responsive UI",
-      "Figma Implementation",
-      "Client Delivery",
-    ],
-    coreTechnologies: ["WordPress", "HTML", "JavaScript", "CSS"],
-    platforms: [
-      "Figma",
-      "Responsive QA",
-      "Contact Flows",
-      "Production Deployment",
-    ],
-    context:
-      "Implemented the FemRecicla institutional website from an approved Figma design, translating its visual system into a responsive production site for a circular-economy organization.",
-    liveUrl: "https://femrecicla.coop.ar/",
   },
 ];

@@ -13,7 +13,7 @@ export function WorkPreviewGrid({
 }: WorkPreviewGridProps) {
   return (
     <div
-      className="grid grid-cols-2 gap-x-4 gap-y-7 sm:grid-cols-4 xl:grid-cols-8 xl:gap-x-5 xl:gap-y-0"
+      className="grid grid-cols-2 gap-x-4 gap-y-7 sm:grid-cols-8 xl:grid-cols-7 xl:gap-x-5 xl:gap-y-0"
       aria-label="Selected case studies"
     >
       {projects.map((project) => {
@@ -26,7 +26,7 @@ export function WorkPreviewGrid({
             aria-pressed={isActive}
             aria-label={`Show ${project.name} case study`}
             onClick={() => onSelect(project.id)}
-            className="group min-w-0 text-left focus:outline-none focus-visible:outline-solid focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#FF707C]"
+            className="group min-w-0 text-left focus:outline-none focus-visible:outline-solid focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#FF707C] sm:col-span-2 sm:[&:nth-child(5)]:col-start-2 xl:col-span-1 xl:[&:nth-child(5)]:col-start-auto"
           >
             <div className="1.5 min-h-7 font-['IBM_Plex_Mono']">
               <h3

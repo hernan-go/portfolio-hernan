@@ -41,7 +41,7 @@ const projectPositions: ProjectPosition[] = [
     align: "right",
   },
   {
-    id: "femrecicla",
+    id: "jardin-reiki",
     className: "bottom-[0%] left-2",
     align: "left",
   },
@@ -49,11 +49,6 @@ const projectPositions: ProjectPosition[] = [
     id: "tau-raee",
     className: "bottom-[0%] right-3",
     align: "right",
-  },
-  {
-    id: "jardin-reiki",
-    className: "top-78 left-1/2 -translate-x-1/2",
-    align: "center",
   },
 ];
 
@@ -131,14 +126,6 @@ export function WorkBackpackSelector({
 
         <polyline
           points="76,93 76,93 60,77"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="0.5"
-          vectorEffect="non-scaling-stroke"
-        />
-
-        <polyline
-          points="50,79 50,98"
           fill="none"
           stroke="currentColor"
           strokeWidth="0.5"

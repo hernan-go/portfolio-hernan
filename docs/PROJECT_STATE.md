@@ -2,6 +2,16 @@
 
 Updated: **2026-10-11** (America/Buenos_Aires).
 
+## Current Work selection — 2026-10-11
+
+Work now presents seven projects. FemRecicla was removed from the public data and `ProjectId` by editorial decision; its original logo and capture remain in the repository as historical resources. The remaining project content and relative data order are unchanged.
+
+Desktop uses seven equal columns; tablet centers four cards above three. Mobile retains the backpack, with Operations Hub at the top center, Lúmina/Zepelin at the upper sides, CLAEC/Prisma at the middle sides and Jardín Reiki/TAU RAEE at the lower sides. The unused bottom-center connector was removed.
+
+ESLint without autofix/cache, both TypeScript configurations without emission/incremental compilation, `git diff --check` and the production build passed. Local browser checks at effective viewport widths of 390 and 1440 px confirmed seven visible selectors, Enter/Space activation for every project, Tab/Shift+Tab navigation, visible focus and matching active-case headings, with no captured console errors or warnings. Tablet geometry also confirmed centered rows of four and three. Visual review found no overlapping or clipped mobile names. Other browsers and real screen readers were not tested.
+
+The earlier iteration records below retain their original project counts and verification context. This intervention does not deploy to SiteGround.
+
 ## Verified state at the end of Iteration 0
 
 - Directory: `C:\dev\personal\portfolio-hernan`.

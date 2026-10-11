@@ -54,7 +54,7 @@ The homepage mounts `Header` and a `main` containing Hero → Work → LAB → P
 | Section | Main code and data | Current behavior |
 |---|---|---|
 | Hero | `src/sections/Hero.tsx`, `src/data/profile.ts` | Professional role and name, “Software Built for Real Needs” title, animated letters and portrait. The visual letters have an `sr-only` text alternative. |
-| Work | `src/sections/Work.tsx`, `src/data/workProjects.ts` | Eight case studies; local `activeProjectId` state, initially `operations-hub`; selection through buttons with `aria-pressed`. |
+| Work | `src/sections/Work.tsx`, `src/data/workProjects.ts` | Seven case studies; local `activeProjectId` state, initially `operations-hub`; selection through buttons with `aria-pressed`. |
 | LAB | `src/sections/Lab.tsx`, `src/data/labProjects.ts` | Three projects; local `activeProjectId` state, initially `holistic-practice-saas`; composition selected through `matchMedia` and `isDesktop` state. |
 | Profile | `src/sections/Profile.tsx`, `src/components/profile/ProfileToolchain.tsx`, `src/data/profileToolchain.ts` | “The Product Defines the Stack” principle and four tool groups: Interfaces, Data & Integration, Workflow and Platforms. |
 | Contact | `src/sections/Contact.tsx` | Contact tree, animated conversation, audio and transcript. It is neither a connected chat nor a submission form. |
@@ -90,7 +90,7 @@ There are no custom breakpoints in `vite.config.ts` or the global CSS. Tailwind 
 - `sm` (640 px): typography, grid and panel adjustments; the LAB body may have internal scrolling with a hidden scrollbar.
 - `md` (768 px): horizontal Header and Work selector change; section labels switch away from the mobile variant.
 - `lg` (1024 px): desktop Hero portrait, Work image/details in columns and Contact columns with an explicit horizontal offset.
-- `xl` (1280 px): Work displays eight logo columns; LAB mounts its desktop composition through `matchMedia('(min-width: 1280px)')`.
+- `xl` (1280 px): Work displays seven logo columns; below `xl`, its tablet grid centers rows of four and three cards. LAB mounts its desktop composition through `matchMedia('(min-width: 1280px)')`.
 - `2xl` (1536 px): LAB offset and spacing adjustments.
 - 1500 px: Work's vertical decoration appears; 1880 px: Contact's horizontal offset is removed.
 
