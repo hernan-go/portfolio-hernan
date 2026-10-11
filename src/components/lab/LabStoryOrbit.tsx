@@ -16,6 +16,7 @@ export function LabStoryOrbit({
   const story = project.storyRings;
 
   const titleId = `${uniqueId}-orbit-title`;
+  const descriptionId = `${uniqueId}-orbit-description`;
   const outerPathId = `${uniqueId}-outer-path`;
   const middlePathId = `${uniqueId}-middle-path`;
   const innerPathId = `${uniqueId}-inner-path`;
@@ -142,9 +143,13 @@ export function LabStoryOrbit({
         viewBox="0 0 700 700"
         role="img"
         aria-labelledby={titleId}
+        aria-describedby={descriptionId}
         className="absolute inset-0 h-full w-full overflow-visible"
       >
         <title id={titleId}>Narrative context for {project.name}</title>
+        <desc id={descriptionId}>
+          Outer ring: {story.outer}. Middle ring: {story.middle}. Inner ring: {story.inner}.
+        </desc>
 
         <defs>
           <path
