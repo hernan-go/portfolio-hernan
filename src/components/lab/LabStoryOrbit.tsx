@@ -1,7 +1,7 @@
 import { useEffect, useId, useRef, type RefObject } from "react";
 
+import orbitCenter from "../../assets/lab/orbit_center.svg";
 import type { LabProject } from "../../data/labProjects";
-import { LabProjectMedia } from "./LabProjectMedia";
 
 type LabStoryOrbitProps = {
   project: LabProject;
@@ -251,22 +251,13 @@ export function LabStoryOrbit({
           -translate-y-1/2
         "
       >
-        <div
-          className="
-            overflow-hidden
-            border
-            border-white/10
-            bg-[#e5e2da]
-            p-1
-            shadow-[0_20px_45px_rgba(0,0,0,0.3)]
-          "
-        >
-          <LabProjectMedia
-            image={project.image}
-            projectName={project.name}
-            variant="orbit"
-          />
-        </div>
+        <img
+          src={orbitCenter}
+          alt=""
+          aria-hidden="true"
+          draggable={false}
+          className="block h-auto w-full"
+        />
       </div>
     </div>
   );

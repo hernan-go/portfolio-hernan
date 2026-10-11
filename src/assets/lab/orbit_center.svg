@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="30.0567mm" height="30.0567mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 388 388"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str1 {stroke:#8980A2;stroke-width:2.19;stroke-miterlimit:22.9256;stroke-opacity:0.003922}
+    .str5 {stroke:#8980A2;stroke-width:0.6;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.003922}
+    .str47 {stroke:#8980A2;stroke-width:1.4;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.011765}
+    .str44 {stroke:#8980A2;stroke-width:1.48;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.011765}
+    .str40 {stroke:#8980A2;stroke-width:1.48;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.011765}
+    .str46 {stroke:#8980A2;stroke-width:1.08;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.011765}
+    .str42 {stroke:#8980A2;stroke-width:1.57;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.011765}
+    .str36 {stroke:#8980A2;stroke-width:1.76;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.011765}
+    .str9 {stroke:#8980A2;stroke-width:1.25;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.011765}
+    .str11 {stroke:#8980A2;stroke-width:1.27;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.011765}
+    .str2 {stroke:#8980A2;stroke-width:2;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.011765}
+    .str41 {stroke:#8980A2;stroke-width:2.03;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.011765}
+    .str45 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.015686}
+    .str26 {stroke:#8980A2;stroke-width:2.11;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.015686}
+    .str35 {stroke:#8980A2;stroke-width:2.12;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.015686}
+    .str43 {stroke:#8980A2;stroke-width:2.13;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.015686}
+    .str15 {stroke:#8980A2;stroke-width:2.26;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.015686}
+    .str20 {stroke:#8980A2;stroke-width:2.42;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.015686}
+    .str38 {stroke:#8980A2;stroke-width:2.42;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.015686}
+    .str39 {stroke:#8980A2;stroke-width:2.49;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.019608}
+    .str18 {stroke:#8980A2;stroke-width:2.56;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.019608}
+    .str17 {stroke:#8980A2;stroke-width:2.58;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.019608}
+    .str48 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.019608}
+    .str33 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.019608}
+    .str7 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.019608}
+    .str31 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.019608}
+    .str34 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.019608}
+    .str37 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.019608}
+    .str3 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.019608}
+    .str21 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.023529}
+    .str13 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.023529}
+    .str32 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.023529}
+    .str19 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.023529}
+    .str27 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.023529}
+    .str22 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.023529}
+    .str29 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.023529}
+    .str24 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.023529}
+    .str49 {stroke:#8980A2;stroke-width:2.19;stroke-miterlimit:22.9256;stroke-opacity:0.027451}
+    .str23 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.027451}
+    .str28 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.027451}
+    .str6 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.027451}
+    .str25 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.027451}
+    .str10 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.027451}
+    .str8 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.031373}
+    .str4 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.031373}
+    .str14 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.035294}
+    .str12 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.039216}
+    .str16 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.043137}
+    .str30 {stroke:#8980A2;stroke-width:2.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.043137}
+    .str0 {stroke:#8980A2;stroke-width:2.19;stroke-miterlimit:22.9256;stroke-opacity:0.050980}
+    .str142 {stroke:#8980A2;stroke-width:0.51;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.125490}
+    .str143 {stroke:#8980A2;stroke-width:0.74;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.203922}
+    .str80 {stroke:#8980A2;stroke-width:1.05;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.219608}
+    .str145 {stroke:#8980A2;stroke-width:0.79;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.219608}
+    .str62 {stroke:#8980A2;stroke-width:0.84;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.219608}
+    .str97 {stroke:#8980A2;stroke-width:1.17;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.223529}
+    .str51 {stroke:#8980A2;stroke-width:1.18;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.223529}
+    .str67 {stroke:#8980A2;stroke-width:1.19;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.223529}
+    .str138 {stroke:#8980A2;stroke-width:1.23;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.223529}
+    .str63 {stroke:#8980A2;stroke-width:1.32;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.231373}
+    .str64 {stroke:#8980A2;stroke-width:1.01;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.239216}
+    .str137 {stroke:#8980A2;stroke-width:1.42;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.239216}
+    .str139 {stroke:#8980A2;stroke-width:1.47;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.243137}
+    .str106 {stroke:#8980A2;stroke-width:1.47;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.243137}
+    .str121 {stroke:#8980A2;stroke-width:1.49;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.247059}
+    .str69 {stroke:#8980A2;stroke-width:1.5;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.247059}
+    .str88 {stroke:#8980A2;stroke-width:1.51;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.250980}
+    .str119 {stroke:#8980A2;stroke-width:1.52;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.250980}
+    .str144 {stroke:#8980A2;stroke-width:1.55;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.254902}
+    .str90 {stroke:#8980A2;stroke-width:1.55;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.254902}
+    .str87 {stroke:#8980A2;stroke-width:1.57;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.258824}
+    .str60 {stroke:#8980A2;stroke-width:1.58;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.258824}
+    .str65 {stroke:#8980A2;stroke-width:1.59;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.262745}
+    .str86 {stroke:#8980A2;stroke-width:1.59;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.262745}
+    .str124 {stroke:#8980A2;stroke-width:1.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.262745}
+    .str99 {stroke:#8980A2;stroke-width:1.61;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.266667}
+    .str71 {stroke:#8980A2;stroke-width:1.65;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.270588}
+    .str61 {stroke:#8980A2;stroke-width:1.67;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.274510}
+    .str92 {stroke:#8980A2;stroke-width:1.67;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.274510}
+    .str57 {stroke:#8980A2;stroke-width:1.68;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.278431}
+    .str120 {stroke:#8980A2;stroke-width:1.7;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.282353}
+    .str125 {stroke:#8980A2;stroke-width:1.7;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.282353}
+    .str73 {stroke:#8980A2;stroke-width:1.73;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.290196}
+    .str141 {stroke:#8980A2;stroke-width:1.74;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.294118}
+    .str146 {stroke:#8980A2;stroke-width:1.76;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.298039}
+    .str76 {stroke:#8980A2;stroke-width:1.77;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.301961}
+    .str104 {stroke:#8980A2;stroke-width:1.82;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.313725}
+    .str83 {stroke:#8980A2;stroke-width:1.83;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.317647}
+    .str52 {stroke:#8980A2;stroke-width:1.84;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.321569}
+    .str72 {stroke:#8980A2;stroke-width:1.85;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.321569}
+    .str118 {stroke:#8980A2;stroke-width:1.85;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.321569}
+    .str134 {stroke:#8980A2;stroke-width:1.86;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.325490}
+    .str75 {stroke:#8980A2;stroke-width:1.87;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.325490}
+    .str108 {stroke:#8980A2;stroke-width:1.88;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.329412}
+    .str101 {stroke:#8980A2;stroke-width:1.9;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.337255}
+    .str58 {stroke:#8980A2;stroke-width:1.91;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.337255}
+    .str94 {stroke:#8980A2;stroke-width:1.92;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.341176}
+    .str68 {stroke:#8980A2;stroke-width:1.94;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.345098}
+    .str79 {stroke:#8980A2;stroke-width:1.97;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.352941}
+    .str130 {stroke:#8980A2;stroke-width:1.98;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.356863}
+    .str93 {stroke:#8980A2;stroke-width:2;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.360784}
+    .str84 {stroke:#8980A2;stroke-width:2.01;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.360784}
+    .str107 {stroke:#8980A2;stroke-width:2.02;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.364706}
+    .str117 {stroke:#8980A2;stroke-width:2.03;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.364706}
+    .str110 {stroke:#8980A2;stroke-width:2.04;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.368627}
+    .str95 {stroke:#8980A2;stroke-width:2.04;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.368627}
+    .str140 {stroke:#8980A2;stroke-width:2.04;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.368627}
+    .str105 {stroke:#8980A2;stroke-width:2.05;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.372549}
+    .str122 {stroke:#8980A2;stroke-width:2.06;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.372549}
+    .str53 {stroke:#8980A2;stroke-width:2.07;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.376471}
+    .str112 {stroke:#8980A2;stroke-width:2.08;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.376471}
+    .str132 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.380392}
+    .str81 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.388235}
+    .str111 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.400000}
+    .str116 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.407843}
+    .str98 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.411765}
+    .str115 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.415686}
+    .str77 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.419608}
+    .str91 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.423529}
+    .str78 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.427451}
+    .str123 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.431373}
+    .str56 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.435294}
+    .str133 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.439216}
+    .str55 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.443137}
+    .str131 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.447059}
+    .str103 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.458824}
+    .str66 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.470588}
+    .str109 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.474510}
+    .str82 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.486275}
+    .str128 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.490196}
+    .str70 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.494118}
+    .str102 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.498039}
+    .str136 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.501961}
+    .str96 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.505882}
+    .str100 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.517647}
+    .str54 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.521569}
+    .str135 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.537255}
+    .str129 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.541176}
+    .str126 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.552941}
+    .str85 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.596078}
+    .str89 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.623529}
+    .str74 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.678431}
+    .str114 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.721569}
+    .str113 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.756863}
+    .str127 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.815686}
+    .str59 {stroke:#8980A2;stroke-width:2.09;stroke-linecap:round;stroke-miterlimit:22.9256;stroke-opacity:0.831373}
+    .str50 {stroke:#8980A2;stroke-width:2.19;stroke-miterlimit:22.9256}
+    .fil118 {fill:none}
+    .fil117 {fill:none;fill-rule:nonzero}
+    .fil5 {fill:none;fill-rule:nonzero}
+    .fil41 {fill:none;fill-rule:nonzero}
+    .fil36 {fill:none;fill-rule:nonzero}
+    .fil38 {fill:none;fill-rule:nonzero}
+    .fil9 {fill:none;fill-rule:nonzero}
+    .fil2 {fill:none;fill-rule:nonzero}
+    .fil37 {fill:none;fill-rule:nonzero}
+    .fil40 {fill:none;fill-rule:nonzero}
+    .fil25 {fill:none;fill-rule:nonzero}
+    .fil39 {fill:none;fill-rule:nonzero}
+    .fil14 {fill:none;fill-rule:nonzero}
+    .fil19 {fill:none;fill-rule:nonzero}
+    .fil35 {fill:none;fill-rule:nonzero}
+    .fil17 {fill:none;fill-rule:nonzero}
+    .fil16 {fill:none;fill-rule:nonzero}
+    .fil42 {fill:none;fill-rule:nonzero}
+    .fil32 {fill:none;fill-rule:nonzero}
+    .fil7 {fill:none;fill-rule:nonzero}
+    .fil30 {fill:none;fill-rule:nonzero}
+    .fil33 {fill:none;fill-rule:nonzero}
+    .fil34 {fill:none;fill-rule:nonzero}
+    .fil3 {fill:none;fill-rule:nonzero}
+    .fil20 {fill:none;fill-rule:nonzero}
+    .fil12 {fill:none;fill-rule:nonzero}
+    .fil31 {fill:none;fill-rule:nonzero}
+    .fil18 {fill:none;fill-rule:nonzero}
+    .fil26 {fill:none;fill-rule:nonzero}
+    .fil21 {fill:none;fill-rule:nonzero}
+    .fil28 {fill:none;fill-rule:nonzero}
+    .fil23 {fill:none;fill-rule:nonzero}
+    .fil22 {fill:none;fill-rule:nonzero}
+    .fil27 {fill:none;fill-rule:nonzero}
+    .fil6 {fill:none;fill-rule:nonzero}
+    .fil24 {fill:none;fill-rule:nonzero}
+    .fil10 {fill:none;fill-rule:nonzero}
+    .fil8 {fill:none;fill-rule:nonzero}
+    .fil4 {fill:none;fill-rule:nonzero}
+    .fil13 {fill:none;fill-rule:nonzero}
+    .fil11 {fill:none;fill-rule:nonzero}
+    .fil15 {fill:none;fill-rule:nonzero}
+    .fil29 {fill:none;fill-rule:nonzero}
+    .fil113 {fill:none;fill-rule:nonzero}
+    .fil114 {fill:none;fill-rule:nonzero}
+    .fil56 {fill:none;fill-rule:nonzero}
+    .fil45 {fill:none;fill-rule:nonzero}
+    .fil57 {fill:none;fill-rule:nonzero}
+    .fil58 {fill:none;fill-rule:nonzero}
+    .fil91 {fill:none;fill-rule:nonzero}
+    .fil62 {fill:none;fill-rule:nonzero}
+    .fil77 {fill:none;fill-rule:nonzero}
+    .fil79 {fill:none;fill-rule:nonzero}
+    .fil54 {fill:none;fill-rule:nonzero}
+    .fil59 {fill:none;fill-rule:nonzero}
+    .fil85 {fill:none;fill-rule:nonzero}
+    .fil64 {fill:none;fill-rule:nonzero}
+    .fil55 {fill:none;fill-rule:nonzero}
+    .fil51 {fill:none;fill-rule:nonzero}
+    .fil100 {fill:none;fill-rule:nonzero}
+    .fil65 {fill:none;fill-rule:nonzero}
+    .fil112 {fill:none;fill-rule:nonzero}
+    .fil115 {fill:none;fill-rule:nonzero}
+    .fil68 {fill:none;fill-rule:nonzero}
+    .fil89 {fill:none;fill-rule:nonzero}
+    .fil74 {fill:none;fill-rule:nonzero}
+    .fil46 {fill:none;fill-rule:nonzero}
+    .fil67 {fill:none;fill-rule:nonzero}
+    .fil93 {fill:none;fill-rule:nonzero}
+    .fil52 {fill:none;fill-rule:nonzero}
+    .fil81 {fill:none;fill-rule:nonzero}
+    .fil61 {fill:none;fill-rule:nonzero}
+    .fil71 {fill:none;fill-rule:nonzero}
+    .fil106 {fill:none;fill-rule:nonzero}
+    .fil75 {fill:none;fill-rule:nonzero}
+    .fil92 {fill:none;fill-rule:nonzero}
+    .fil82 {fill:none;fill-rule:nonzero}
+    .fil90 {fill:none;fill-rule:nonzero}
+    .fil47 {fill:none;fill-rule:nonzero}
+    .fil108 {fill:none;fill-rule:nonzero}
+    .fil72 {fill:none;fill-rule:nonzero}
+    .fil95 {fill:none;fill-rule:nonzero}
+    .fil99 {fill:none;fill-rule:nonzero}
+    .fil84 {fill:none;fill-rule:nonzero}
+    .fil98 {fill:none;fill-rule:nonzero}
+    .fil69 {fill:none;fill-rule:nonzero}
+    .fil80 {fill:none;fill-rule:nonzero}
+    .fil70 {fill:none;fill-rule:nonzero}
+    .fil101 {fill:none;fill-rule:nonzero}
+    .fil50 {fill:none;fill-rule:nonzero}
+    .fil109 {fill:none;fill-rule:nonzero}
+    .fil49 {fill:none;fill-rule:nonzero}
+    .fil107 {fill:none;fill-rule:nonzero}
+    .fil88 {fill:none;fill-rule:nonzero}
+    .fil60 {fill:none;fill-rule:nonzero}
+    .fil94 {fill:none;fill-rule:nonzero}
+    .fil73 {fill:none;fill-rule:nonzero}
+    .fil104 {fill:none;fill-rule:nonzero}
+    .fil63 {fill:none;fill-rule:nonzero}
+    .fil87 {fill:none;fill-rule:nonzero}
+    .fil111 {fill:none;fill-rule:nonzero}
+    .fil83 {fill:none;fill-rule:nonzero}
+    .fil86 {fill:none;fill-rule:nonzero}
+    .fil48 {fill:none;fill-rule:nonzero}
+    .fil110 {fill:none;fill-rule:nonzero}
+    .fil105 {fill:none;fill-rule:nonzero}
+    .fil102 {fill:none;fill-rule:nonzero}
+    .fil76 {fill:none;fill-rule:nonzero}
+    .fil78 {fill:none;fill-rule:nonzero}
+    .fil66 {fill:none;fill-rule:nonzero}
+    .fil97 {fill:none;fill-rule:nonzero}
+    .fil96 {fill:none;fill-rule:nonzero}
+    .fil103 {fill:none;fill-rule:nonzero}
+    .fil53 {fill:none;fill-rule:nonzero}
+    .fil44 {fill:#8980A2;fill-rule:nonzero}
+    .fil1 {fill:#8980A2;fill-rule:nonzero;fill-opacity:0.003922}
+    .fil43 {fill:#8980A2;fill-rule:nonzero;fill-opacity:0.027451}
+    .fil0 {fill:#8980A2;fill-rule:nonzero;fill-opacity:0.050980}
+    .fil116 {fill:#8980A2;fill-rule:nonzero;fill-opacity:0.501961}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <path d="M-0 0l388 0 0 388 -388 0 0 -388z"/>
+   </clipPath>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g>
+  </g>
+  <g style="clip-path:url(#id0)">
+   <g>
+    <g id="_1419203141232">
+     <path class="fil0 str0" d="M155.09 311.16c2.16,-1.11 4.81,-0.25 5.92,1.91 1.11,2.16 0.25,4.81 -1.91,5.92 -2.16,1.1 -4.81,0.25 -5.92,-1.91 -1.11,-2.16 -0.25,-4.81 1.91,-5.92z"/>
+     <path class="fil0 str0" d="M77.82 296.99c-2.33,-0.05 -4.25,1.8 -4.29,4.12 -0.05,2.32 1.8,4.25 4.12,4.3 2.33,0.05 4.25,-1.8 4.29,-4.13 0.05,-2.32 -1.8,-4.25 -4.12,-4.29z"/>
+     <path class="fil0 str0" d="M105.75 320.85c0,-3.03 -2.46,-5.49 -5.49,-5.49 -3.03,0 -5.49,2.46 -5.49,5.49 0,3.04 2.46,5.49 5.49,5.49 3.04,0 5.49,-2.46 5.49,-5.49z"/>
+     <path class="fil0 str0" d="M310.32 116.18c-0.83,-2.69 -3.69,-4.2 -6.38,-3.38 -2.69,0.83 -4.2,3.69 -3.38,6.38 0.83,2.7 3.69,4.21 6.38,3.38 2.7,-0.83 4.21,-3.69 3.38,-6.38z"/>
+     <path class="fil0 str0" d="M51.22 285.67c2.02,-1.03 4.5,-0.23 5.53,1.79 1.04,2.02 0.23,4.5 -1.79,5.53 -2.02,1.03 -4.5,0.23 -5.53,-1.79 -1.03,-2.02 -0.23,-4.5 1.79,-5.53z"/>
+     <path class="fil0 str0" d="M175.28 172.73c-2.27,-2.27 -5.94,-2.27 -8.21,0 -2.27,2.26 -2.27,5.94 0,8.21 2.27,2.27 5.94,2.27 8.21,0 2.27,-2.27 2.27,-5.95 0,-8.21z"/>
+     <path class="fil0 str0" d="M202.43 188.91c-1.1,-1.98 -3.6,-2.69 -5.58,-1.58 -1.98,1.1 -2.69,3.6 -1.59,5.58 1.11,1.98 3.61,2.69 5.58,1.58 1.98,-1.1 2.69,-3.6 1.58,-5.58z"/>
+     <path class="fil0 str0" d="M76.91 174.02c1.48,-0.76 3.3,-0.17 4.05,1.31 0.76,1.48 0.18,3.29 -1.31,4.05 -1.48,0.76 -3.3,0.17 -4.05,-1.31 -0.75,-1.48 -0.17,-3.3 1.31,-4.06z"/>
+     <path class="fil0 str0" d="M199.71 178.75c1.1,-0.56 2.45,-0.13 3.01,0.98 0.56,1.1 0.13,2.44 -0.97,3.01 -1.1,0.56 -2.45,0.13 -3.01,-0.98 -0.56,-1.1 -0.13,-2.45 0.97,-3.01z"/>
+     <path class="fil0 str0" d="M202.84 182.18c-3.06,-0.38 -5.85,1.79 -6.24,4.84 -0.38,3.06 1.78,5.86 4.84,6.24 3.06,0.38 5.85,-1.79 6.24,-4.84 0.38,-3.06 -1.79,-5.85 -4.84,-6.24z"/>
+     <path class="fil0 str0" d="M137.01 150.73c1.68,-0.86 3.73,-0.2 4.59,1.48 0.86,1.68 0.2,3.73 -1.48,4.59 -1.67,0.86 -3.73,0.19 -4.58,-1.48 -0.86,-1.67 -0.19,-3.73 1.48,-4.58z"/>
+     <path class="fil0 str0" d="M218.37 40.63c-1.5,-2.43 -4.69,-3.19 -7.12,-1.69 -2.43,1.5 -3.19,4.68 -1.69,7.12 1.5,2.43 4.68,3.19 7.12,1.69 2.44,-1.5 3.19,-4.68 1.69,-7.12z"/>
+     <path class="fil0 str0" d="M85.03 297.32c2.07,-1.06 4.6,-0.24 5.65,1.83 1.06,2.07 0.24,4.59 -1.83,5.65 -2.06,1.06 -4.6,0.24 -5.65,-1.83 -1.06,-2.06 -0.24,-4.59 1.82,-5.65z"/>
+     <path class="fil0 str0" d="M134.21 199.38c-2.04,-2.57 -5.79,-2.99 -8.36,-0.94 -2.57,2.05 -2.99,5.79 -0.94,8.37 2.05,2.57 5.79,2.99 8.36,0.94 2.57,-2.05 2.99,-5.79 0.94,-8.37z"/>
+     <path class="fil0 str0" d="M291.27 210.97c2.04,-1.04 4.55,-0.23 5.59,1.81 1.05,2.04 0.24,4.54 -1.81,5.59 -2.04,1.05 -4.55,0.24 -5.59,-1.81 -1.04,-2.04 -0.23,-4.55 1.81,-5.59z"/>
+     <path class="fil0 str0" d="M154.84 248.74c-2.53,-1.32 -5.65,-0.34 -6.98,2.19 -1.32,2.53 -0.34,5.66 2.2,6.98 2.53,1.32 5.65,0.34 6.98,-2.19 1.32,-2.53 0.34,-5.66 -2.19,-6.98z"/>
+     <path class="fil0 str0" d="M200.29 157c2.45,-1.25 5.44,-0.28 6.7,2.16 1.25,2.45 0.28,5.45 -2.16,6.7 -2.45,1.26 -5.45,0.29 -6.69,-2.16 -1.25,-2.45 -0.28,-5.45 2.16,-6.7z"/>
+     <path class="fil0 str0" d="M232.56 75.9c-1.03,-2.51 -3.89,-3.71 -6.4,-2.69 -2.51,1.02 -3.71,3.89 -2.69,6.4 1.03,2.51 3.9,3.71 6.4,2.69 2.51,-1.03 3.72,-3.89 2.69,-6.4z"/>
+     <path class="fil0 str0" d="M199.5 168.18c-2.29,-0.72 -4.72,0.56 -5.44,2.85 -0.72,2.28 0.56,4.72 2.85,5.44 2.29,0.72 4.73,-0.56 5.44,-2.85 0.72,-2.29 -0.56,-4.73 -2.85,-5.44z"/>
+     <path class="fil0 str0" d="M114.88 328.05c1.76,-0.9 3.92,-0.2 4.82,1.56 0.9,1.76 0.21,3.92 -1.56,4.83 -1.76,0.9 -3.92,0.2 -4.82,-1.56 -0.9,-1.76 -0.2,-3.92 1.56,-4.83z"/>
+     <path class="fil0 str0" d="M174.59 229c-1.25,-3.71 -5.27,-5.71 -8.99,-4.46 -3.71,1.25 -5.71,5.27 -4.45,8.98 1.25,3.71 5.27,5.71 8.98,4.46 3.72,-1.25 5.71,-5.28 4.46,-8.99z"/>
+     <path class="fil0 str0" d="M91.04 152.15c-2.72,-0.86 -5.63,0.64 -6.49,3.37 -0.86,2.72 0.64,5.63 3.36,6.49 2.73,0.86 5.63,-0.64 6.5,-3.37 0.87,-2.72 -0.64,-5.63 -3.37,-6.49z"/>
+     <path class="fil0 str0" d="M88.09 193.33c-1.75,-0.58 -3.63,0.38 -4.21,2.12 -0.57,1.75 0.38,3.63 2.13,4.21 1.75,0.57 3.63,-0.38 4.2,-2.13 0.57,-1.75 -0.38,-3.63 -2.13,-4.2z"/>
+     <path class="fil1 str1" d="M162.75 144.96c-1.86,-2.18 -5.13,-2.43 -7.31,-0.57 -2.18,1.86 -2.43,5.13 -0.57,7.31 1.86,2.18 5.13,2.43 7.31,0.57 2.18,-1.86 2.43,-5.13 0.58,-7.31z"/>
+     <path class="fil0 str0" d="M154.68 237.51c-2.47,-0.8 -5.13,0.56 -5.92,3.03 -0.8,2.47 0.56,5.13 3.03,5.93 2.47,0.8 5.12,-0.56 5.92,-3.03 0.8,-2.47 -0.56,-5.12 -3.03,-5.92z"/>
+     <path class="fil0 str0" d="M262.65 69.91c-1.77,-1.33 -4.29,-0.98 -5.63,0.79 -1.34,1.77 -0.98,4.29 0.78,5.63 1.77,1.34 4.29,0.98 5.63,-0.78 1.34,-1.77 0.98,-4.29 -0.79,-5.63z"/>
+     <path class="fil0 str0" d="M106.05 239.74c1.27,-0.64 2.82,-0.14 3.46,1.12 0.65,1.27 0.15,2.82 -1.12,3.46 -1.26,0.65 -2.81,0.14 -3.46,-1.12 -0.65,-1.27 -0.15,-2.81 1.12,-3.46z"/>
+     <path class="fil1 str1" d="M101.6 37.37c-3.74,-1.24 -7.79,0.79 -9.03,4.54 -1.24,3.75 0.79,7.79 4.54,9.03 3.75,1.24 7.79,-0.79 9.03,-4.54 1.24,-3.75 -0.79,-7.79 -4.54,-9.03z"/>
+     <path class="fil0 str0" d="M43.6 267.64c0,-4.05 -3.28,-7.34 -7.34,-7.34 -4.05,0 -7.34,3.29 -7.34,7.34 0,4.05 3.28,7.33 7.34,7.33 4.05,0 7.34,-3.28 7.34,-7.33z"/>
+     <path class="fil1 str1" d="M277.32 45.56c1.79,-0.91 3.98,-0.21 4.9,1.58 0.91,1.79 0.21,3.98 -1.58,4.9 -1.79,0.91 -3.99,0.21 -4.9,-1.58 -0.92,-1.79 -0.21,-3.98 1.59,-4.9z"/>
+     <path class="fil0 str0" d="M178.54 101.83c-3.23,-1.01 -6.66,0.78 -7.68,4.01 -1.01,3.23 0.78,6.67 4.01,7.68 3.23,1.02 6.67,-0.78 7.68,-4.01 1.02,-3.23 -0.78,-6.66 -4.01,-7.68z"/>
+     <path class="fil0 str0" d="M101.68 216.76c-1.5,-0.15 -2.85,0.94 -3,2.45 -0.15,1.51 0.94,2.85 2.45,3 1.51,0.15 2.85,-0.94 3,-2.45 0.15,-1.5 -0.94,-2.85 -2.45,-3z"/>
+     <path class="fil0 str0" d="M236.78 33.99c-3.71,-0.44 -7.07,2.2 -7.51,5.9 -0.44,3.7 2.2,7.06 5.9,7.51 3.7,0.44 7.07,-2.19 7.51,-5.9 0.45,-3.7 -2.19,-7.07 -5.9,-7.51z"/>
+     <path class="fil0 str0" d="M203.38 215.33c-0.54,-2.21 -2.77,-3.56 -4.99,-3.02 -2.21,0.54 -3.56,2.78 -3.01,4.99 0.54,2.21 2.78,3.56 4.99,3.01 2.21,-0.54 3.56,-2.77 3.01,-4.99z"/>
+     <path class="fil0 str0" d="M117.56 57.26c2.42,-1.24 5.38,-0.28 6.62,2.14 1.24,2.42 0.28,5.38 -2.14,6.62 -2.42,1.24 -5.38,0.28 -6.61,-2.14 -1.24,-2.41 -0.28,-5.38 2.14,-6.62z"/>
+     <line class="fil2 str2" x1="77.71" y1="301.18" x2="157.1" y2= "315.07" />
+     <line class="fil3 str3" x1="157.1" y1="315.07" x2="100.26" y2= "320.85" />
+     <line class="fil4 str4" x1="77.71" y1="301.18" x2="100.26" y2= "320.85" />
+     <line class="fil5 str5" x1="157.1" y1="315.07" x2="53.09" y2= "289.33" />
+     <line class="fil6 str6" x1="77.71" y1="301.18" x2="53.09" y2= "289.33" />
+     <line class="fil7 str7" x1="100.26" y1="320.85" x2="53.09" y2= "289.33" />
+     <line class="fil8 str8" x1="198.88" y1="190.91" x2="171.17" y2= "176.83" />
+     <line class="fil9 str9" x1="77.71" y1="301.18" x2="86.95" y2= "301.06" />
+     <line class="fil10 str10" x1="171.17" y1="176.83" x2="200.73" y2= "180.75" />
+     <line class="fil9 str11" x1="100.26" y1="320.85" x2="86.95" y2= "301.06" />
+     <line class="fil11 str12" x1="198.88" y1="190.91" x2="200.73" y2= "180.75" />
+     <line class="fil12 str13" x1="138.56" y1="153.76" x2="171.17" y2= "176.83" />
+     <line class="fil13 str14" x1="202.16" y1="187.71" x2="198.88" y2= "190.91" />
+     <line class="fil14 str15" x1="53.09" y1="289.33" x2="86.95" y2= "301.06" />
+     <line class="fil15 str16" x1="202.16" y1="187.71" x2="200.73" y2= "180.75" />
+     <line class="fil16 str17" x1="138.56" y1="153.76" x2="78.28" y2= "176.7" />
+     <line class="fil17 str18" x1="138.56" y1="153.76" x2="200.73" y2= "180.75" />
+     <line class="fil18 str19" x1="61.33" y1="224.19" x2="78.28" y2= "176.7" />
+     <line class="fil19 str20" x1="78.28" y1="176.7" x2="129.58" y2= "203.12" />
+     <line class="fil18 str19" x1="202.56" y1="161.43" x2="200.73" y2= "180.75" />
+     <line class="fil20 str21" x1="198.22" y1="172.36" x2="200.73" y2= "180.75" />
+     <line class="fil21 str22" x1="138.56" y1="153.76" x2="129.58" y2= "203.12" />
+     <line class="fil22 str23" x1="202.16" y1="187.71" x2="202.56" y2= "161.43" />
+     <line class="fil23 str24" x1="202.16" y1="187.71" x2="198.22" y2= "172.36" />
+     <line class="fil24 str25" x1="213.92" y1="43.37" x2="228.03" y2= "77.77" />
+     <line class="fil25 str26" x1="152.5" y1="253.31" x2="86.95" y2= "301.06" />
+     <line class="fil26 str27" x1="152.5" y1="253.31" x2="129.58" y2= "203.12" />
+     <line class="fil27 str28" x1="116.51" y1="331.24" x2="86.95" y2= "301.06" />
+     <line class="fil28 str29" x1="167.85" y1="231.25" x2="129.58" y2= "203.12" />
+     <line class="fil29 str30" x1="202.56" y1="161.43" x2="198.22" y2= "172.36" />
+     <line class="fil8 str8" x1="167.85" y1="231.25" x2="152.5" y2= "253.31" />
+     <line class="fil30 str31" x1="167.85" y1="231.25" x2="198.22" y2= "172.36" />
+     <line class="fil31 str32" x1="87.05" y1="196.52" x2="44.76" y2= "207.2" />
+     <line class="fil32 str33" x1="158.78" y1="148.35" x2="202.56" y2= "161.43" />
+     <line class="fil33 str34" x1="158.78" y1="148.35" x2="198.22" y2= "172.36" />
+     <line class="fil25 str35" x1="152.5" y1="253.31" x2="153.26" y2= "241.96" />
+     <line class="fil19 str20" x1="158.78" y1="148.35" x2="89.47" y2= "157.11" />
+     <line class="fil9 str36" x1="260.25" y1="73.12" x2="228.03" y2= "77.77" />
+     <line class="fil34 str37" x1="167.85" y1="231.25" x2="153.26" y2= "241.96" />
+     <line class="fil19 str38" x1="73.44" y1="132.72" x2="89.47" y2= "157.11" />
+     <line class="fil27 str28" x1="153.26" y1="241.96" x2="107.23" y2= "242.03" />
+     <line class="fil35 str39" x1="278.97" y1="48.8" x2="260.25" y2= "73.12" />
+     <line class="fil36 str40" x1="99.32" y1="44.17" x2="73.44" y2= "132.72" />
+     <line class="fil37 str41" x1="107.23" y1="242.03" x2="36.26" y2= "267.64" />
+     <line class="fil38 str42" x1="235.97" y1="40.72" x2="260.25" y2= "73.12" />
+     <line class="fil39 str43" x1="101.42" y1="219.52" x2="107.23" y2= "242.03" />
+     <line class="fil36 str44" x1="99.32" y1="44.17" x2="176.71" y2= "107.71" />
+     <line class="fil40 str45" x1="101.42" y1="219.52" x2="36.26" y2= "267.64" />
+     <line class="fil37 str41" x1="235.97" y1="40.72" x2="176.71" y2= "107.71" />
+     <line class="fil38 str46" x1="199.42" y1="216.3" x2="176.71" y2= "107.71" />
+     <line class="fil41 str47" x1="199.42" y1="216.3" x2="101.42" y2= "219.52" />
+     <line class="fil42 str48" x1="44.04" y1="247.04" x2="101.42" y2= "219.52" />
+     <path class="fil43 str49" d="M149.13 225.72c1.07,-0.54 2.37,-0.12 2.91,0.94 0.55,1.07 0.13,2.37 -0.94,2.91 -1.06,0.55 -2.37,0.12 -2.91,-0.94 -0.54,-1.06 -0.12,-2.36 0.94,-2.91z"/>
+     <path class="fil43 str49" d="M255.62 175.19c1.39,-0.71 3.1,-0.16 3.82,1.23 0.71,1.39 0.16,3.1 -1.24,3.82 -1.39,0.71 -3.1,0.16 -3.82,-1.24 -0.71,-1.39 -0.16,-3.1 1.24,-3.82z"/>
+     <path class="fil43 str49" d="M257.38 65.81c1.14,-0.59 2.54,-0.13 3.13,1.01 0.58,1.14 0.13,2.55 -1.01,3.13 -1.14,0.58 -2.54,0.13 -3.13,-1.01 -0.58,-1.15 -0.13,-2.55 1.01,-3.13z"/>
+     <path class="fil43 str49" d="M247.81 171.1c1.14,-0.58 2.53,-0.13 3.12,1.01 0.58,1.14 0.13,2.54 -1.01,3.12 -1.14,0.58 -2.54,0.13 -3.12,-1.01 -0.58,-1.14 -0.13,-2.53 1.01,-3.11z"/>
+     <path class="fil43 str49" d="M257.22 128.57c0,-1.69 -1.38,-3.06 -3.07,-3.06 -1.69,0 -3.06,1.37 -3.06,3.06 0,1.69 1.37,3.07 3.06,3.07 1.69,0 3.07,-1.37 3.07,-3.07z"/>
+     <path class="fil43 str49" d="M203.69 229.27c-0.8,-2.08 -3.14,-3.12 -5.22,-2.32 -2.08,0.8 -3.12,3.14 -2.32,5.22 0.81,2.08 3.14,3.12 5.22,2.32 2.08,-0.8 3.12,-3.14 2.32,-5.22z"/>
+     <path class="fil43 str49" d="M292.04 184.11c0.74,-0.38 1.65,-0.09 2.04,0.66 0.38,0.75 0.09,1.66 -0.66,2.04 -0.75,0.38 -1.66,0.09 -2.04,-0.66 -0.38,-0.75 -0.09,-1.66 0.66,-2.04z"/>
+     <path class="fil43 str49" d="M252.84 103.36c-0.84,-0.83 -2.19,-0.82 -3.03,0.02 -0.83,0.84 -0.82,2.2 0.02,3.03 0.85,0.83 2.2,0.82 3.03,-0.02 0.83,-0.84 0.82,-2.2 -0.03,-3.02z"/>
+     <path class="fil43 str49" d="M92.31 300.17c-1.88,-0.61 -3.89,0.43 -4.5,2.3 -0.61,1.88 0.42,3.9 2.3,4.51 1.88,0.6 3.9,-0.43 4.5,-2.31 0.61,-1.88 -0.42,-3.9 -2.31,-4.51z"/>
+     <path class="fil43 str49" d="M251.43 189.18c1.43,-0.73 3.19,-0.16 3.92,1.27 0.74,1.43 0.17,3.18 -1.26,3.92 -1.44,0.73 -3.19,0.17 -3.92,-1.27 -0.74,-1.43 -0.17,-3.19 1.26,-3.92z"/>
+     <path class="fil43 str49" d="M104.41 271.91c1.26,-0.64 2.81,-0.15 3.45,1.12 0.64,1.26 0.14,2.8 -1.12,3.44 -1.26,0.65 -2.8,0.15 -3.45,-1.11 -0.64,-1.26 -0.14,-2.81 1.12,-3.45z"/>
+     <path class="fil43 str49" d="M290.01 191.17c1.04,-0.54 2.32,-0.12 2.85,0.92 0.54,1.04 0.12,2.32 -0.92,2.85 -1.04,0.54 -2.32,0.12 -2.85,-0.92 -0.54,-1.04 -0.13,-2.32 0.92,-2.85z"/>
+     <path class="fil43 str49" d="M259.35 235.33c0.81,-0.42 1.8,-0.1 2.22,0.72 0.41,0.81 0.09,1.8 -0.71,2.21 -0.81,0.42 -1.8,0.09 -2.22,-0.71 -0.42,-0.81 -0.1,-1.8 0.72,-2.22z"/>
+     <path class="fil43 str49" d="M271.92 268.78c1.12,-0.57 2.49,-0.13 3.06,0.99 0.57,1.12 0.13,2.49 -0.99,3.06 -1.12,0.57 -2.49,0.13 -3.06,-0.99 -0.57,-1.12 -0.13,-2.49 0.99,-3.07z"/>
+     <path class="fil43 str49" d="M96.24 70.28c1.36,-0.7 3.01,-0.16 3.7,1.2 0.7,1.35 0.16,3.01 -1.19,3.7 -1.36,0.69 -3.01,0.16 -3.7,-1.2 -0.69,-1.35 -0.16,-3.01 1.2,-3.7z"/>
+     <path class="fil43 str49" d="M130.76 120.99c1.55,-0.79 3.45,-0.17 4.24,1.37 0.79,1.55 0.18,3.45 -1.37,4.24 -1.55,0.79 -3.44,0.18 -4.24,-1.37 -0.79,-1.55 -0.17,-3.45 1.37,-4.24z"/>
+     <path class="fil43 str49" d="M145.45 171.32c1.29,-0.66 2.86,-0.15 3.51,1.13 0.66,1.28 0.15,2.86 -1.13,3.52 -1.29,0.66 -2.86,0.14 -3.52,-1.14 -0.65,-1.29 -0.15,-2.86 1.14,-3.52z"/>
+     <path class="fil43 str49" d="M88.78 51.77c0.63,-0.32 1.42,-0.07 1.74,0.56 0.33,0.63 0.07,1.41 -0.56,1.74 -0.64,0.32 -1.41,0.07 -1.74,-0.56 -0.32,-0.64 -0.07,-1.41 0.56,-1.74z"/>
+     <path class="fil43 str49" d="M167.04 224.13c0.69,-0.35 1.53,-0.08 1.88,0.61 0.35,0.69 0.08,1.53 -0.61,1.88 -0.69,0.35 -1.53,0.08 -1.87,-0.61 -0.36,-0.69 -0.08,-1.53 0.6,-1.88z"/>
+     <path class="fil43 str49" d="M115.79 298.84c0.8,-0.41 1.79,-0.09 2.2,0.71 0.41,0.8 0.09,1.79 -0.71,2.2 -0.8,0.41 -1.79,0.1 -2.2,-0.71 -0.41,-0.8 -0.09,-1.79 0.71,-2.2z"/>
+     <path class="fil44 str50" d="M261.01 164.18c-1.12,1.86 -3.53,2.46 -5.38,1.34 -1.86,-1.12 -2.46,-3.53 -1.34,-5.38 1.12,-1.86 3.53,-2.46 5.38,-1.34 1.86,1.12 2.46,3.53 1.34,5.38z"/>
+     <path class="fil44 str50" d="M188.62 176.59c-0.58,0.96 -1.82,1.27 -2.78,0.69 -0.96,-0.58 -1.27,-1.83 -0.69,-2.79 0.58,-0.96 1.82,-1.27 2.78,-0.69 0.96,0.58 1.27,1.83 0.69,2.79z"/>
+     <path class="fil44 str50" d="M179.65 335.84c-1.22,2.03 -3.87,2.69 -5.9,1.47 -2.04,-1.22 -2.69,-3.86 -1.47,-5.9 1.22,-2.03 3.87,-2.69 5.9,-1.47 2.04,1.22 2.69,3.86 1.47,5.9z"/>
+     <path class="fil44 str50" d="M53.67 167.94c-0.73,1.21 -2.3,1.6 -3.52,0.88 -1.21,-0.73 -1.6,-2.3 -0.88,-3.52 0.73,-1.21 2.3,-1.6 3.52,-0.88 1.21,0.73 1.6,2.3 0.88,3.52z"/>
+     <circle class="fil44 str50" cx="217.18" cy="172.92" r="3.74"/>
+     <path class="fil44 str50" d="M176.27 211.8c-1.54,2.56 -4.86,3.39 -7.42,1.85 -2.56,-1.54 -3.39,-4.86 -1.85,-7.42 1.54,-2.56 4.86,-3.39 7.42,-1.85 2.56,1.54 3.39,4.86 1.85,7.42z"/>
+     <path class="fil44 str50" d="M230.92 175.45c-0.9,1.5 -2.85,1.99 -4.35,1.08 -1.5,-0.9 -1.99,-2.85 -1.08,-4.35 0.9,-1.5 2.85,-1.99 4.35,-1.08 1.5,0.9 1.99,2.85 1.08,4.35z"/>
+     <circle class="fil44 str50" transform="matrix(0.333889 -0.240085 0.240085 0.333889 147.125 280.116)" r="10.08"/>
+     <path class="fil44 str50" d="M178.67 41.42c-0.67,1.12 -2.12,1.48 -3.24,0.81 -1.12,-0.67 -1.48,-2.12 -0.81,-3.24 0.67,-1.12 2.12,-1.48 3.24,-0.81 1.12,0.67 1.48,2.12 0.81,3.24z"/>
+     <path class="fil44 str50" d="M112.97 153.8c-0.62,1.04 -1.96,1.37 -3,0.75 -1.03,-0.62 -1.37,-1.96 -0.75,-3 0.62,-1.04 1.96,-1.37 3,-0.75 1.03,0.62 1.37,1.96 0.75,3z"/>
+     <circle class="fil44 str50" cx="91.08" cy="236.94" r="5.67"/>
+     <circle class="fil44 str50" transform="matrix(0.40561 -0.0678142 0.0678142 0.40561 146.377 146.242)" r="10.99"/>
+     <circle class="fil44 str50" transform="matrix(0.249009 -0.327268 0.327268 0.249009 176.1 228.454)" r="14.31"/>
+     <path class="fil44 str50" d="M168.04 86.49c-0.77,1.29 -2.44,1.7 -3.73,0.93 -1.29,-0.77 -1.7,-2.44 -0.93,-3.73 0.77,-1.29 2.44,-1.7 3.73,-0.93 1.29,0.77 1.7,2.44 0.93,3.73z"/>
+     <path class="fil44 str50" d="M214.64 280.04c-1.26,2.1 -3.99,2.78 -6.08,1.52 -2.1,-1.26 -2.78,-3.99 -1.51,-6.08 1.26,-2.1 3.99,-2.78 6.08,-1.51 2.1,1.26 2.78,3.99 1.51,6.08z"/>
+     <path class="fil44 str50" d="M169.18 148.95c-0.76,1.26 -2.4,1.67 -3.66,0.91 -1.26,-0.76 -1.67,-2.4 -0.91,-3.66 0.76,-1.26 2.4,-1.67 3.66,-0.91 1.26,0.76 1.67,2.4 0.91,3.66z"/>
+     <circle class="fil44 str50" transform="matrix(0.399072 -0.0993567 0.0993567 0.399072 142.808 334.005)" r="16.26"/>
+     <circle class="fil44 str50" transform="matrix(0.146403 -0.384308 0.384308 0.146403 224.095 232.478)" r="15.83"/>
+     <circle class="fil44 str50" transform="matrix(0.361525 -0.19604 0.19604 0.361525 224.905 332.695)" r="12.65"/>
+     <circle class="fil44 str50" transform="matrix(0.398825 -0.100385 0.100385 0.398825 287.367 106.99)" r="11.44"/>
+     <path class="fil44 str50" d="M206.23 221.56c-0.21,0.35 -0.66,0.46 -1,0.25 -0.35,-0.21 -0.46,-0.66 -0.25,-1 0.21,-0.35 0.66,-0.46 1,-0.25 0.35,0.21 0.46,0.66 0.25,1z"/>
+     <circle class="fil44 str50" transform="matrix(0.398784 -0.100549 0.100549 0.398784 130.987 181.767)" r="8.58"/>
+     <circle class="fil44 str50" transform="matrix(0.344829 -0.224087 0.224087 0.344829 231.234 143.548)" r="12.73"/>
+     <path class="fil44 str50" d="M144.1 188.35c-1.04,1.73 -3.28,2.29 -5.01,1.25 -1.73,-1.04 -2.29,-3.28 -1.25,-5.01 1.04,-1.73 3.28,-2.29 5.01,-1.25 1.73,1.04 2.29,3.28 1.25,5.01z"/>
+     <path class="fil44 str50" d="M44.81 293.51c-1.16,1.93 -3.67,2.56 -5.61,1.4 -1.94,-1.16 -2.56,-3.67 -1.4,-5.61 1.16,-1.93 3.67,-2.56 5.61,-1.4 1.93,1.16 2.56,3.67 1.4,5.61z"/>
+     <circle class="fil44 str50" transform="matrix(0.398948 -0.0997268 0.0997268 0.398948 270.102 211.32)" r="9.76"/>
+     <path class="fil44 str50" d="M238.98 196.42c-1.19,1.99 -3.77,2.63 -5.76,1.43 -1.99,-1.19 -2.63,-3.77 -1.44,-5.76 1.2,-1.99 3.77,-2.63 5.76,-1.43 1.99,1.19 2.63,3.77 1.44,5.76z"/>
+     <path class="fil44 str50" d="M97.6 258.2c-0.74,1.23 -2.34,1.63 -3.58,0.89 -1.23,-0.74 -1.63,-2.34 -0.89,-3.58 0.74,-1.23 2.34,-1.63 3.58,-0.89 1.24,0.74 1.63,2.34 0.89,3.58z"/>
+     <path class="fil44 str50" d="M93.07 298.42c-0.94,1.56 -2.96,2.06 -4.52,1.13 -1.56,-0.94 -2.06,-2.96 -1.13,-4.52 0.94,-1.56 2.96,-2.06 4.52,-1.13 1.56,0.94 2.06,2.96 1.13,4.52z"/>
+     <circle class="fil44 str50" transform="matrix(0.293875 -0.287666 0.287666 0.293875 117.272 105.963)" r="9.58"/>
+     <path class="fil44 str50" d="M172.51 275.77c-0.74,1.23 -2.34,1.63 -3.58,0.89 -1.23,-0.74 -1.63,-2.34 -0.89,-3.58 0.74,-1.23 2.34,-1.63 3.58,-0.89 1.23,0.74 1.63,2.34 0.89,3.58z"/>
+     <circle class="fil44 str50" transform="matrix(0.39936 -0.0980818 0.0980818 0.39936 103.875 68.3705)" r="11.17"/>
+     <circle class="fil44 str50" transform="matrix(0.399072 -0.0993978 0.0993978 0.399072 218.532 247.898)" r="9.89"/>
+     <path class="fil44 str50" d="M154.23 161.72c-0.93,1.55 -2.94,2.05 -4.49,1.12 -1.55,-0.93 -2.05,-2.94 -1.12,-4.49 0.93,-1.55 2.94,-2.05 4.49,-1.12 1.55,0.93 2.05,2.94 1.12,4.49z"/>
+     <path class="fil44 str50" d="M189.11 317.45c-0.87,1.44 -2.74,1.91 -4.19,1.04 -1.44,-0.87 -1.91,-2.74 -1.04,-4.19 0.87,-1.44 2.74,-1.91 4.19,-1.04 1.44,0.87 1.91,2.74 1.04,4.19z"/>
+     <path class="fil44 str50" d="M229.5 310.79c-0.71,1.18 -2.24,1.56 -3.42,0.85 -1.18,-0.71 -1.56,-2.24 -0.85,-3.42 0.71,-1.18 2.24,-1.56 3.42,-0.85 1.18,0.71 1.56,2.24 0.85,3.42z"/>
+     <path class="fil44 str50" d="M82.53 229.15c-1.06,1.77 -3.35,2.34 -5.12,1.28 -1.76,-1.06 -2.34,-3.35 -1.27,-5.12 1.06,-1.77 3.35,-2.34 5.12,-1.27 1.77,1.06 2.34,3.35 1.28,5.12z"/>
+     <path class="fil44 str50" d="M246.38 311.51c-1.23,2.04 -3.88,2.71 -5.93,1.48 -2.04,-1.23 -2.71,-3.88 -1.48,-5.93 1.23,-2.04 3.88,-2.7 5.93,-1.48 2.04,1.23 2.7,3.88 1.48,5.93z"/>
+     <circle class="fil44 str50" transform="matrix(0.397098 -0.106965 0.106965 0.397098 263.434 122.694)" r="10.28"/>
+     <path class="fil44 str50" d="M182.28 310.88c-0.66,1.1 -2.09,1.45 -3.18,0.79 -1.1,-0.66 -1.45,-2.09 -0.79,-3.18 0.66,-1.1 2.09,-1.45 3.18,-0.79 1.1,0.66 1.45,2.09 0.79,3.18z"/>
+     <circle class="fil44 str50" transform="matrix(0.399072 -0.0993567 0.0993567 0.399072 126.649 260.831)" r="11.03"/>
+     <path class="fil44 str50" d="M188.63 45.86c-1.48,2.46 -4.66,3.25 -7.12,1.77 -2.46,-1.48 -3.25,-4.66 -1.77,-7.12 1.48,-2.46 4.66,-3.25 7.12,-1.77 2.46,1.48 3.25,4.66 1.77,7.12z"/>
+     <path class="fil44 str50" d="M241.62 82.75c-0.62,1.03 -1.95,1.36 -2.97,0.74 -1.03,-0.62 -1.36,-1.95 -0.74,-2.98 0.62,-1.03 1.95,-1.36 2.98,-0.74 1.02,0.62 1.36,1.95 0.74,2.97z"/>
+     <path class="fil44 str50" d="M305.41 41.25c-0.73,1.22 -2.32,1.62 -3.54,0.88 -1.22,-0.73 -1.62,-2.32 -0.88,-3.54 0.73,-1.22 2.32,-1.62 3.54,-0.88 1.22,0.73 1.62,2.32 0.88,3.54z"/>
+     <circle class="fil44 str50" transform="matrix(0.398702 -0.100837 0.100837 0.398702 214.951 145.168)" r="8.53"/>
+     <circle class="fil44 str50" transform="matrix(0.319126 -0.259372 0.259372 0.319126 140.435 192.724)" r="12.12"/>
+     <circle class="fil44 str50" transform="matrix(0.407297 -0.0567929 0.0567929 0.407297 233.951 87.9776)" r="8.5"/>
+     <circle class="fil44 str50" transform="matrix(0.0182181 -0.410833 0.410833 0.0182181 149.394 116.927)" r="14.57"/>
+     <circle class="fil44 str50" transform="matrix(0.345898 -0.222401 0.222401 0.345898 177.071 117.909)" r="13.74"/>
+     <circle class="fil44 str50" transform="matrix(0.0293217 -0.410216 0.410216 0.0293217 154.989 65.4393)" r="8.11"/>
+     <path class="fil44 str50" d="M156.93 326.8c-0.67,1.12 -2.12,1.48 -3.23,0.8 -1.12,-0.67 -1.48,-2.12 -0.81,-3.23 0.67,-1.11 2.12,-1.47 3.23,-0.8 1.12,0.67 1.48,2.12 0.81,3.23z"/>
+     <path class="fil44 str50" d="M269.85 98.65c-0.6,1 -1.9,1.32 -2.89,0.72 -1,-0.6 -1.32,-1.9 -0.72,-2.89 0.6,-1 1.9,-1.32 2.89,-0.72 1,0.6 1.32,1.9 0.72,2.89z"/>
+     <circle class="fil44 str50" transform="matrix(0.0845107 -0.402485 0.402485 0.0845107 203.634 188.107)" r="13.32"/>
+     <path class="fil44 str50" d="M226.8 40.24c-0.74,1.23 -2.33,1.62 -3.56,0.89 -1.23,-0.74 -1.63,-2.33 -0.89,-3.56 0.74,-1.23 2.33,-1.62 3.56,-0.89 1.23,0.74 1.63,2.33 0.89,3.56z"/>
+     <path class="fil44 str50" d="M168.7 275.93c-0.51,0.85 -1.61,1.12 -2.46,0.61 -0.85,-0.51 -1.12,-1.61 -0.61,-2.46 0.51,-0.85 1.61,-1.12 2.46,-0.61 0.85,0.51 1.12,1.61 0.61,2.46z"/>
+     <path class="fil44 str50" d="M195.26 309.52c-1.09,1.82 -3.45,2.4 -5.26,1.31 -1.82,-1.09 -2.4,-3.45 -1.31,-5.26 1.09,-1.82 3.45,-2.4 5.26,-1.31 1.82,1.09 2.4,3.45 1.31,5.26z"/>
+     <path class="fil44 str50" d="M289.02 190.32c-0.99,1.65 -3.14,2.19 -4.79,1.19 -1.65,-0.99 -2.19,-3.14 -1.19,-4.79 0.99,-1.65 3.14,-2.19 4.79,-1.19 1.65,0.99 2.19,3.14 1.19,4.79z"/>
+     <path class="fil44 str50" d="M146.72 336.43c-1.37,2.28 -4.32,3.01 -6.6,1.64 -2.28,-1.37 -3.01,-4.32 -1.64,-6.6 1.37,-2.28 4.32,-3.01 6.6,-1.64 2.28,1.37 3.01,4.32 1.64,6.6z"/>
+     <path class="fil44 str50" d="M292.53 316.95c-1.03,1.71 -3.24,2.26 -4.95,1.23 -1.71,-1.03 -2.26,-3.24 -1.23,-4.95 1.03,-1.71 3.24,-2.26 4.95,-1.23 1.71,1.03 2.26,3.24 1.23,4.95z"/>
+     <circle class="fil44 str50" transform="matrix(0.0683077 -0.405528 0.405528 0.0683077 253.167 98.3713)" r="11.15"/>
+     <path class="fil44 str50" d="M295.6 43.3c-1.24,2.06 -3.92,2.73 -5.98,1.49 -2.06,-1.24 -2.73,-3.92 -1.49,-5.98 1.24,-2.06 3.92,-2.73 5.98,-1.49 2.06,1.24 2.73,3.92 1.49,5.98z"/>
+     <line class="fil45 str51" x1="257.65" y1="162.16" x2="186.88" y2= "175.54" />
+     <line class="fil46 str52" x1="257.65" y1="162.16" x2="217.18" y2= "172.92" />
+     <line class="fil47 str53" x1="228.2" y1="173.81" x2="257.65" y2= "162.16" />
+     <line class="fil48 str54" x1="186.88" y1="175.54" x2="217.18" y2= "172.92" />
+     <line class="fil49 str55" x1="171.63" y1="209.01" x2="186.88" y2= "175.54" />
+     <line class="fil50 str56" x1="228.2" y1="173.81" x2="186.88" y2= "175.54" />
+     <line class="fil51 str57" x1="175.96" y1="333.63" x2="147.12" y2= "280.12" />
+     <line class="fil52 str58" x1="171.63" y1="209.01" x2="217.18" y2= "172.92" />
+     <line class="fil53 str59" x1="228.2" y1="173.81" x2="217.18" y2= "172.92" />
+     <line class="fil54 str60" x1="228.2" y1="173.81" x2="171.63" y2= "209.01" />
+     <line class="fil55 str61" x1="51.48" y1="166.62" x2="111.09" y2= "152.68" />
+     <line class="fil56 str62" x1="51.48" y1="166.62" x2="91.08" y2= "236.94" />
+     <line class="fil57 str63" x1="186.88" y1="175.54" x2="166.89" y2= "147.58" />
+     <line class="fil58 str64" x1="175.96" y1="333.63" x2="210.84" y2= "277.76" />
+     <line class="fil59 str65" x1="175.96" y1="333.63" x2="142.81" y2= "333.95" />
+     <line class="fil60 str66" x1="176.12" y1="228.43" x2="171.63" y2= "209.01" />
+     <line class="fil45 str67" x1="175.96" y1="333.63" x2="224.87" y2= "332.69" />
+     <line class="fil61 str68" x1="165.71" y1="85.09" x2="176.64" y2= "40.2" />
+     <line class="fil62 str69" x1="147.12" y1="280.12" x2="210.84" y2= "277.76" />
+     <line class="fil63 str70" x1="111.09" y1="152.68" x2="146.39" y2= "146.22" />
+     <line class="fil64 str71" x1="147.12" y1="280.12" x2="142.81" y2= "333.95" />
+     <line class="fil46 str72" x1="111.09" y1="152.68" x2="166.89" y2= "147.58" />
+     <line class="fil65 str73" x1="165.71" y1="85.09" x2="146.39" y2= "146.22" />
+     <line class="fil66 str74" x1="166.89" y1="147.58" x2="146.39" y2= "146.22" />
+     <line class="fil67 str75" x1="176.12" y1="228.43" x2="210.84" y2= "277.76" />
+     <line class="fil68 str76" x1="165.71" y1="85.09" x2="166.89" y2= "147.58" />
+     <line class="fil69 str77" x1="176.12" y1="228.43" x2="224.07" y2= "232.47" />
+     <line class="fil70 str78" x1="210.84" y1="277.76" x2="224.07" y2= "232.47" />
+     <line class="fil71 str79" x1="210.84" y1="277.76" x2="224.87" y2= "332.69" />
+     <line class="fil56 str80" x1="142.81" y1="333.95" x2="224.87" y2= "332.69" />
+     <line class="fil72 str81" x1="130.95" y1="181.78" x2="146.39" y2= "146.22" />
+     <line class="fil73 str82" x1="176.12" y1="228.43" x2="205.6" y2= "221.18" />
+     <line class="fil74 str83" x1="210.84" y1="277.76" x2="205.6" y2= "221.18" />
+     <line class="fil75 str84" x1="130.95" y1="181.78" x2="166.89" y2= "147.58" />
+     <line class="fil76 str85" x1="224.07" y1="232.47" x2="205.6" y2= "221.18" />
+     <line class="fil59 str86" x1="231.24" y1="143.57" x2="166.89" y2= "147.58" />
+     <line class="fil54 str87" x1="231.24" y1="143.57" x2="287.32" y2= "107" />
+     <line class="fil77 str88" x1="140.98" y1="186.47" x2="166.89" y2= "147.58" />
+     <line class="fil78 str89" x1="130.95" y1="181.78" x2="140.98" y2= "186.47" />
+     <line class="fil79 str90" x1="270.15" y1="211.3" x2="205.6" y2= "221.18" />
+     <line class="fil80 str91" x1="235.39" y1="194.26" x2="205.6" y2= "221.18" />
+     <line class="fil55 str92" x1="224.3" y1="366.14" x2="224.87" y2= "332.69" />
+     <line class="fil75 str93" x1="231.24" y1="143.57" x2="235.39" y2= "194.26" />
+     <line class="fil81 str94" x1="218.49" y1="247.92" x2="205.6" y2= "221.18" />
+     <line class="fil82 str95" x1="130.95" y1="181.78" x2="151.42" y2= "160.04" />
+     <line class="fil83 str96" x1="235.39" y1="194.26" x2="270.15" y2= "211.3" />
+     <line class="fil45 str97" x1="287.32" y1="107" x2="263.42" y2= "122.71" />
+     <line class="fil84 str98" x1="41.31" y1="291.4" x2="90.25" y2= "296.72" />
+     <line class="fil85 str99" x1="231.24" y1="143.57" x2="263.42" y2= "122.71" />
+     <line class="fil86 str100" x1="151.42" y1="160.04" x2="140.98" y2= "186.47" />
+     <line class="fil63 str70" x1="95.37" y1="256.86" x2="90.25" y2= "296.72" />
+     <line class="fil52 str101" x1="235.39" y1="194.26" x2="218.49" y2= "247.92" />
+     <line class="fil87 str102" x1="117.28" y1="105.94" x2="103.9" y2= "68.39" />
+     <line class="fil72 str81" x1="170.27" y1="274.43" x2="218.49" y2= "247.92" />
+     <line class="fil88 str103" x1="170.27" y1="274.43" x2="186.5" y2= "315.87" />
+     <line class="fil89 str104" x1="224.3" y1="366.14" x2="186.5" y2= "315.87" />
+     <line class="fil90 str105" x1="224.3" y1="366.14" x2="227.36" y2= "309.51" />
+     <line class="fil87 str102" x1="79.34" y1="227.23" x2="95.37" y2= "256.86" />
+     <line class="fil91 str106" x1="79.34" y1="227.23" x2="90.25" y2= "296.72" />
+     <line class="fil73 str82" x1="227.36" y1="309.51" x2="186.5" y2= "315.87" />
+     <line class="fil92 str107" x1="140.46" y1="192.74" x2="140.98" y2= "186.47" />
+     <line class="fil93 str108" x1="224.3" y1="366.14" x2="242.68" y2= "309.28" />
+     <line class="fil94 str109" x1="95.37" y1="256.86" x2="126.64" y2= "260.79" />
+     <line class="fil82 str110" x1="90.25" y1="296.72" x2="126.64" y2= "260.79" />
+     <line class="fil60 str66" x1="180.29" y1="309.68" x2="170.27" y2= "274.43" />
+     <line class="fil95 str111" x1="170.27" y1="274.43" x2="126.64" y2= "260.79" />
+     <line class="fil47 str112" x1="242.68" y1="309.28" x2="186.5" y2= "315.87" />
+     <line class="fil96 str113" x1="227.36" y1="309.51" x2="242.68" y2= "309.28" />
+     <line class="fil97 str114" x1="180.29" y1="309.68" x2="186.5" y2= "315.87" />
+     <line class="fil98 str115" x1="227.36" y1="309.51" x2="180.29" y2= "309.68" />
+     <line class="fil99 str116" x1="149.43" y1="116.93" x2="117.28" y2= "105.94" />
+     <line class="fil92 str117" x1="79.34" y1="227.23" x2="126.64" y2= "260.79" />
+     <line class="fil50 str56" x1="140.46" y1="192.74" x2="151.42" y2= "160.04" />
+     <line class="fil99 str116" x1="149.43" y1="116.93" x2="151.42" y2= "160.04" />
+     <line class="fil46 str118" x1="154.97" y1="65.47" x2="103.9" y2= "68.39" />
+     <line class="fil92 str107" x1="177.11" y1="117.92" x2="151.42" y2= "160.04" />
+     <line class="fil50 str56" x1="239.76" y1="81.63" x2="263.42" y2= "122.71" />
+     <line class="fil77 str119" x1="79.34" y1="227.23" x2="140.46" y2= "192.74" />
+     <line class="fil80 str91" x1="187.43" y1="342.07" x2="186.5" y2= "315.87" />
+     <line class="fil100 str120" x1="184.18" y1="43.18" x2="239.76" y2= "81.63" />
+     <line class="fil62 str121" x1="203.59" y1="188.12" x2="151.42" y2= "160.04" />
+     <line class="fil90 str122" x1="214.93" y1="145.2" x2="263.42" y2= "122.71" />
+     <line class="fil101 str123" x1="263.42" y1="122.71" x2="233.97" y2= "87.96" />
+     <line class="fil59 str124" x1="140.46" y1="192.74" x2="126.64" y2= "260.79" />
+     <line class="fil100 str125" x1="184.18" y1="43.18" x2="233.97" y2= "87.96" />
+     <line class="fil102 str126" x1="263.42" y1="122.71" x2="268.05" y2= "97.56" />
+     <line class="fil103 str127" x1="239.76" y1="81.63" x2="233.97" y2= "87.96" />
+     <line class="fil48 str54" x1="180.29" y1="309.68" x2="154.91" y2= "325.59" />
+     <line class="fil104 str128" x1="184.18" y1="43.18" x2="154.97" y2= "65.47" />
+     <line class="fil104 str128" x1="187.43" y1="342.07" x2="180.29" y2= "309.68" />
+     <line class="fil105 str129" x1="239.76" y1="81.63" x2="268.05" y2= "97.56" />
+     <line class="fil106 str130" x1="214.93" y1="145.2" x2="233.97" y2= "87.96" />
+     <line class="fil107 str131" x1="177.11" y1="117.92" x2="214.93" y2= "145.2" />
+     <line class="fil78 str89" x1="177.11" y1="117.92" x2="149.43" y2= "116.93" />
+     <line class="fil98 str115" x1="149.43" y1="116.93" x2="154.97" y2= "65.47" />
+     <line class="fil105 str129" x1="233.97" y1="87.96" x2="268.05" y2= "97.56" />
+     <line class="fil108 str132" x1="177.11" y1="117.92" x2="154.97" y2= "65.47" />
+     <line class="fil109 str133" x1="184.18" y1="43.18" x2="224.57" y2= "38.91" />
+     <line class="fil84 str98" x1="239.76" y1="81.63" x2="224.57" y2= "38.91" />
+     <line class="fil49 str55" x1="203.59" y1="188.12" x2="214.93" y2= "145.2" />
+     <line class="fil67 str134" x1="140.46" y1="192.74" x2="203.59" y2= "188.12" />
+     <line class="fil110 str135" x1="187.43" y1="342.07" x2="154.91" y2= "325.59" />
+     <line class="fil84 str98" x1="224.57" y1="38.91" x2="233.97" y2= "87.96" />
+     <line class="fil62 str121" x1="224.57" y1="38.91" x2="268.05" y2= "97.56" />
+     <line class="fil109 str133" x1="154.91" y1="325.59" x2="191.97" y2= "307.54" />
+     <line class="fil104 str128" x1="187.43" y1="342.07" x2="191.97" y2= "307.54" />
+     <line class="fil49 str55" x1="154.91" y1="325.59" x2="142.6" y2= "333.95" />
+     <line class="fil111 str136" x1="191.97" y1="307.54" x2="167.17" y2= "275.01" />
+     <line class="fil58 str137" x1="316.96" y1="128.53" x2="268.05" y2= "97.56" />
+     <line class="fil45 str138" x1="253.15" y1="98.35" x2="233.97" y2= "87.96" />
+     <line class="fil91 str139" x1="253.15" y1="98.35" x2="268.05" y2= "97.56" />
+     <line class="fil82 str140" x1="142.6" y1="333.95" x2="191.97" y2= "307.54" />
+     <line class="fil112 str141" x1="316.96" y1="128.53" x2="286.03" y2= "188.52" />
+     <line class="fil113 str142" x1="289.44" y1="315.09" x2="191.97" y2= "307.54" />
+     <line class="fil114 str143" x1="291.87" y1="41.05" x2="224.57" y2= "38.91" />
+     <line class="fil79 str144" x1="253.15" y1="98.35" x2="316.96" y2= "128.53" />
+     <line class="fil56 str145" x1="291.87" y1="41.05" x2="316.96" y2= "128.53" />
+     <line class="fil115 str146" x1="291.87" y1="41.05" x2="253.15" y2= "98.35" />
+     <g>
+      <path class="fil116" d="M100.47 249.7c-0.3,0.5 -0.95,0.67 -1.45,0.36 -0.5,-0.3 -0.67,-0.95 -0.36,-1.45 0.3,-0.5 0.95,-0.66 1.45,-0.36 0.5,0.3 0.66,0.95 0.36,1.45z"/>
+      <path id="1" class="fil117 str50" d="M100.47 249.7c-0.3,0.5 -0.95,0.67 -1.45,0.36 -0.5,-0.3 -0.67,-0.95 -0.36,-1.45 0.3,-0.5 0.95,-0.66 1.45,-0.36 0.5,0.3 0.66,0.95 0.36,1.45z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M132.7 240.55c-0.26,0.45 -0.85,0.59 -1.3,0.33 -0.44,-0.27 -0.59,-0.85 -0.32,-1.29 0.27,-0.45 0.85,-0.6 1.3,-0.33 0.44,0.27 0.59,0.85 0.32,1.3z"/>
+      <path id="1" class="fil117 str50" d="M132.7 240.55c-0.26,0.45 -0.85,0.59 -1.3,0.33 -0.44,-0.27 -0.59,-0.85 -0.32,-1.29 0.27,-0.45 0.85,-0.6 1.3,-0.33 0.44,0.27 0.59,0.85 0.32,1.3z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M82.32 198.1c-0.52,0.86 -1.64,1.15 -2.51,0.63 -0.86,-0.52 -1.15,-1.64 -0.62,-2.51 0.52,-0.87 1.64,-1.14 2.51,-0.62 0.87,0.52 1.15,1.64 0.62,2.51z"/>
+      <path id="1" class="fil117 str50" d="M82.32 198.1c-0.52,0.86 -1.64,1.15 -2.51,0.63 -0.86,-0.52 -1.15,-1.64 -0.62,-2.51 0.52,-0.87 1.64,-1.14 2.51,-0.62 0.87,0.52 1.15,1.64 0.62,2.51z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M228.56 316.92c-0.53,0.88 -1.67,1.16 -2.55,0.64 -0.88,-0.53 -1.17,-1.68 -0.64,-2.56 0.53,-0.88 1.67,-1.17 2.56,-0.63 0.88,0.53 1.16,1.68 0.63,2.56z"/>
+      <path id="1" class="fil117 str50" d="M228.56 316.92c-0.53,0.88 -1.67,1.16 -2.55,0.64 -0.88,-0.53 -1.17,-1.68 -0.64,-2.56 0.53,-0.88 1.67,-1.17 2.56,-0.63 0.88,0.53 1.16,1.68 0.63,2.56z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M188.82 240.2c-0.53,0.88 -1.67,1.16 -2.55,0.64 -0.88,-0.53 -1.17,-1.67 -0.64,-2.55 0.52,-0.88 1.67,-1.16 2.55,-0.64 0.88,0.53 1.16,1.67 0.63,2.55z"/>
+      <path id="1" class="fil117 str50" d="M188.82 240.2c-0.53,0.88 -1.67,1.16 -2.55,0.64 -0.88,-0.53 -1.17,-1.67 -0.64,-2.55 0.52,-0.88 1.67,-1.16 2.55,-0.64 0.88,0.53 1.16,1.67 0.63,2.55z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M184.4 193.47c-0.43,0.72 -1.36,0.95 -2.08,0.52 -0.72,-0.43 -0.95,-1.36 -0.52,-2.08 0.43,-0.72 1.37,-0.95 2.08,-0.52 0.72,0.44 0.95,1.36 0.52,2.08z"/>
+      <path id="1" class="fil117 str50" d="M184.4 193.47c-0.43,0.72 -1.36,0.95 -2.08,0.52 -0.72,-0.43 -0.95,-1.36 -0.52,-2.08 0.43,-0.72 1.37,-0.95 2.08,-0.52 0.72,0.44 0.95,1.36 0.52,2.08z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M151.75 299.33c-0.36,0.6 -1.14,0.8 -1.75,0.44 -0.6,-0.36 -0.79,-1.14 -0.43,-1.74 0.36,-0.6 1.14,-0.8 1.74,-0.43 0.6,0.36 0.79,1.14 0.44,1.74z"/>
+      <path id="1" class="fil117 str50" d="M151.75 299.33c-0.36,0.6 -1.14,0.8 -1.75,0.44 -0.6,-0.36 -0.79,-1.14 -0.43,-1.74 0.36,-0.6 1.14,-0.8 1.74,-0.43 0.6,0.36 0.79,1.14 0.44,1.74z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M183.09 146.47c-0.65,1.08 -2.05,1.43 -3.13,0.78 -1.08,-0.65 -1.43,-2.05 -0.78,-3.13 0.65,-1.08 2.05,-1.43 3.13,-0.78 1.08,0.65 1.43,2.05 0.78,3.13z"/>
+      <path id="1" class="fil117 str50" d="M183.09 146.47c-0.65,1.08 -2.05,1.43 -3.13,0.78 -1.08,-0.65 -1.43,-2.05 -0.78,-3.13 0.65,-1.08 2.05,-1.43 3.13,-0.78 1.08,0.65 1.43,2.05 0.78,3.13z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M256.11 129.09c-0.61,1.01 -1.92,1.34 -2.93,0.73 -1.01,-0.61 -1.34,-1.93 -0.73,-2.94 0.61,-1.01 1.92,-1.34 2.93,-0.73 1.01,0.6 1.34,1.92 0.73,2.93z"/>
+      <path id="1" class="fil117 str50" d="M256.11 129.09c-0.61,1.01 -1.92,1.34 -2.93,0.73 -1.01,-0.61 -1.34,-1.93 -0.73,-2.94 0.61,-1.01 1.92,-1.34 2.93,-0.73 1.01,0.6 1.34,1.92 0.73,2.93z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M61.38 288.25c-0.69,1.15 -2.18,1.52 -3.32,0.83 -1.15,-0.69 -1.52,-2.18 -0.82,-3.32 0.69,-1.15 2.18,-1.52 3.32,-0.83 1.14,0.69 1.52,2.18 0.83,3.32z"/>
+      <path id="1" class="fil117 str50" d="M61.38 288.25c-0.69,1.15 -2.18,1.52 -3.32,0.83 -1.15,-0.69 -1.52,-2.18 -0.82,-3.32 0.69,-1.15 2.18,-1.52 3.32,-0.83 1.14,0.69 1.52,2.18 0.83,3.32z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M131.09 305.66c-0.28,0.47 -0.88,0.61 -1.34,0.34 -0.46,-0.28 -0.61,-0.88 -0.33,-1.34 0.28,-0.46 0.88,-0.61 1.34,-0.33 0.46,0.28 0.62,0.88 0.34,1.34z"/>
+      <path id="1" class="fil117 str50" d="M131.09 305.66c-0.28,0.47 -0.88,0.61 -1.34,0.34 -0.46,-0.28 -0.61,-0.88 -0.33,-1.34 0.28,-0.46 0.88,-0.61 1.34,-0.33 0.46,0.28 0.62,0.88 0.34,1.34z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M161.68 292.12c-0.25,0.41 -0.77,0.54 -1.18,0.29 -0.41,-0.25 -0.54,-0.77 -0.29,-1.18 0.25,-0.4 0.77,-0.54 1.18,-0.29 0.41,0.25 0.54,0.77 0.29,1.18z"/>
+      <path id="1" class="fil117 str50" d="M161.68 292.12c-0.25,0.41 -0.77,0.54 -1.18,0.29 -0.41,-0.25 -0.54,-0.77 -0.29,-1.18 0.25,-0.4 0.77,-0.54 1.18,-0.29 0.41,0.25 0.54,0.77 0.29,1.18z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M271.73 321.19c-0.49,0.81 -1.54,1.07 -2.36,0.58 -0.81,-0.48 -1.07,-1.54 -0.59,-2.35 0.49,-0.82 1.55,-1.08 2.36,-0.59 0.81,0.49 1.07,1.55 0.59,2.36z"/>
+      <path id="1" class="fil117 str50" d="M271.73 321.19c-0.49,0.81 -1.54,1.07 -2.36,0.58 -0.81,-0.48 -1.07,-1.54 -0.59,-2.35 0.49,-0.82 1.55,-1.08 2.36,-0.59 0.81,0.49 1.07,1.55 0.59,2.36z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M55.23 178.86c-0.19,0.32 -0.61,0.43 -0.94,0.23 -0.32,-0.2 -0.42,-0.62 -0.23,-0.94 0.2,-0.32 0.62,-0.43 0.94,-0.24 0.32,0.19 0.43,0.61 0.23,0.94z"/>
+      <path id="1" class="fil117 str50" d="M55.23 178.86c-0.19,0.32 -0.61,0.43 -0.94,0.23 -0.32,-0.2 -0.42,-0.62 -0.23,-0.94 0.2,-0.32 0.62,-0.43 0.94,-0.24 0.32,0.19 0.43,0.61 0.23,0.94z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M275.29 66.75c-0.28,0.46 -0.88,0.61 -1.34,0.33 -0.47,-0.28 -0.61,-0.88 -0.34,-1.34 0.27,-0.46 0.88,-0.61 1.34,-0.33 0.46,0.27 0.61,0.88 0.33,1.34z"/>
+      <path id="1" class="fil117 str50" d="M275.29 66.75c-0.28,0.46 -0.88,0.61 -1.34,0.33 -0.47,-0.28 -0.61,-0.88 -0.34,-1.34 0.27,-0.46 0.88,-0.61 1.34,-0.33 0.46,0.27 0.61,0.88 0.33,1.34z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M209.57 282.24c-0.69,1.16 -2.2,1.53 -3.36,0.84 -1.15,-0.69 -1.53,-2.2 -0.84,-3.35 0.7,-1.16 2.2,-1.53 3.35,-0.83 1.16,0.7 1.53,2.2 0.84,3.35z"/>
+      <path id="1" class="fil117 str50" d="M209.57 282.24c-0.69,1.16 -2.2,1.53 -3.36,0.84 -1.15,-0.69 -1.53,-2.2 -0.84,-3.35 0.7,-1.16 2.2,-1.53 3.35,-0.83 1.16,0.7 1.53,2.2 0.84,3.35z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M118.4 324.55c-0.32,0.54 -1.02,0.71 -1.56,0.38 -0.54,-0.32 -0.71,-1.02 -0.39,-1.56 0.32,-0.54 1.02,-0.71 1.56,-0.39 0.54,0.32 0.71,1.02 0.39,1.56z"/>
+      <path id="1" class="fil117 str50" d="M118.4 324.55c-0.32,0.54 -1.02,0.71 -1.56,0.38 -0.54,-0.32 -0.71,-1.02 -0.39,-1.56 0.32,-0.54 1.02,-0.71 1.56,-0.39 0.54,0.32 0.71,1.02 0.39,1.56z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M104.36 300.96c-0.68,1.13 -2.15,1.49 -3.28,0.81 -1.13,-0.68 -1.5,-2.15 -0.82,-3.28 0.68,-1.13 2.15,-1.49 3.28,-0.81 1.13,0.68 1.5,2.15 0.82,3.28z"/>
+      <path id="1" class="fil117 str50" d="M104.36 300.96c-0.68,1.13 -2.15,1.49 -3.28,0.81 -1.13,-0.68 -1.5,-2.15 -0.82,-3.28 0.68,-1.13 2.15,-1.49 3.28,-0.81 1.13,0.68 1.5,2.15 0.82,3.28z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M125.69 299.16c-0.41,0.68 -1.28,0.89 -1.96,0.49 -0.68,-0.4 -0.89,-1.28 -0.49,-1.95 0.4,-0.68 1.29,-0.89 1.95,-0.49 0.68,0.41 0.89,1.28 0.49,1.96z"/>
+      <path id="1" class="fil117 str50" d="M125.69 299.16c-0.41,0.68 -1.28,0.89 -1.96,0.49 -0.68,-0.4 -0.89,-1.28 -0.49,-1.95 0.4,-0.68 1.29,-0.89 1.95,-0.49 0.68,0.41 0.89,1.28 0.49,1.96z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M231.88 37.52c-0.66,1.1 -2.1,1.46 -3.2,0.8 -1.1,-0.66 -1.46,-2.1 -0.8,-3.2 0.66,-1.11 2.09,-1.46 3.19,-0.8 1.11,0.66 1.46,2.09 0.8,3.2z"/>
+      <path id="1" class="fil117 str50" d="M231.88 37.52c-0.66,1.1 -2.1,1.46 -3.2,0.8 -1.1,-0.66 -1.46,-2.1 -0.8,-3.2 0.66,-1.11 2.09,-1.46 3.19,-0.8 1.11,0.66 1.46,2.09 0.8,3.2z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M70.07 164.11c-0.67,1.11 -2.1,1.47 -3.21,0.8 -1.11,-0.66 -1.46,-2.1 -0.8,-3.2 0.66,-1.11 2.1,-1.47 3.21,-0.8 1.11,0.67 1.46,2.1 0.8,3.21z"/>
+      <path id="1" class="fil117 str50" d="M70.07 164.11c-0.67,1.11 -2.1,1.47 -3.21,0.8 -1.11,-0.66 -1.46,-2.1 -0.8,-3.2 0.66,-1.11 2.1,-1.47 3.21,-0.8 1.11,0.67 1.46,2.1 0.8,3.21z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M44 305.05c-0.28,0.45 -0.86,0.6 -1.31,0.32 -0.46,-0.27 -0.6,-0.86 -0.33,-1.31 0.27,-0.45 0.86,-0.6 1.31,-0.33 0.46,0.27 0.6,0.86 0.33,1.32z"/>
+      <path id="1" class="fil117 str50" d="M44 305.05c-0.28,0.45 -0.86,0.6 -1.31,0.32 -0.46,-0.27 -0.6,-0.86 -0.33,-1.31 0.27,-0.45 0.86,-0.6 1.31,-0.33 0.46,0.27 0.6,0.86 0.33,1.32z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M138.16 98.45c-0.21,-0.87 -1.09,-1.4 -1.96,-1.19 -0.87,0.22 -1.4,1.1 -1.19,1.97 0.21,0.87 1.1,1.4 1.97,1.18 0.87,-0.22 1.4,-1.1 1.18,-1.97z"/>
+      <path id="1" class="fil117 str50" d="M138.16 98.45c-0.21,-0.87 -1.09,-1.4 -1.96,-1.19 -0.87,0.22 -1.4,1.1 -1.19,1.97 0.21,0.87 1.1,1.4 1.97,1.18 0.87,-0.22 1.4,-1.1 1.18,-1.97z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M72.74 220.04c-0.5,0.84 -1.59,1.11 -2.43,0.6 -0.84,-0.5 -1.11,-1.59 -0.61,-2.44 0.5,-0.84 1.6,-1.11 2.43,-0.6 0.84,0.5 1.11,1.59 0.6,2.44z"/>
+      <path id="1" class="fil117 str50" d="M72.74 220.04c-0.5,0.84 -1.59,1.11 -2.43,0.6 -0.84,-0.5 -1.11,-1.59 -0.61,-2.44 0.5,-0.84 1.6,-1.11 2.43,-0.6 0.84,0.5 1.11,1.59 0.6,2.44z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M175.66 96.79c-0.56,0.93 -1.76,1.23 -2.69,0.67 -0.93,-0.56 -1.23,-1.76 -0.67,-2.69 0.56,-0.93 1.76,-1.23 2.69,-0.67 0.93,0.56 1.23,1.76 0.67,2.69z"/>
+      <path id="1" class="fil117 str50" d="M175.66 96.79c-0.56,0.93 -1.76,1.23 -2.69,0.67 -0.93,-0.56 -1.23,-1.76 -0.67,-2.69 0.56,-0.93 1.76,-1.23 2.69,-0.67 0.93,0.56 1.23,1.76 0.67,2.69z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M174.52 258.19c-0.48,0.81 -1.53,1.07 -2.33,0.58 -0.8,-0.48 -1.07,-1.53 -0.58,-2.34 0.49,-0.8 1.53,-1.07 2.34,-0.58 0.8,0.49 1.07,1.53 0.58,2.34z"/>
+      <path id="1" class="fil117 str50" d="M174.52 258.19c-0.48,0.81 -1.53,1.07 -2.33,0.58 -0.8,-0.48 -1.07,-1.53 -0.58,-2.34 0.49,-0.8 1.53,-1.07 2.34,-0.58 0.8,0.49 1.07,1.53 0.58,2.34z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M288.45 39.14c-0.36,0.59 -1.13,0.78 -1.72,0.42 -0.59,-0.35 -0.78,-1.12 -0.43,-1.72 0.36,-0.59 1.13,-0.78 1.72,-0.43 0.59,0.36 0.78,1.12 0.43,1.72z"/>
+      <path id="1" class="fil117 str50" d="M288.45 39.14c-0.36,0.59 -1.13,0.78 -1.72,0.42 -0.59,-0.35 -0.78,-1.12 -0.43,-1.72 0.36,-0.59 1.13,-0.78 1.72,-0.43 0.59,0.36 0.78,1.12 0.43,1.72z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M111.59 176c-0.38,0.62 -1.19,0.83 -1.81,0.45 -0.62,-0.37 -0.82,-1.19 -0.45,-1.81 0.38,-0.63 1.19,-0.83 1.81,-0.45 0.63,0.37 0.83,1.19 0.45,1.81z"/>
+      <path id="1" class="fil117 str50" d="M111.59 176c-0.38,0.62 -1.19,0.83 -1.81,0.45 -0.62,-0.37 -0.82,-1.19 -0.45,-1.81 0.38,-0.63 1.19,-0.83 1.81,-0.45 0.63,0.37 0.83,1.19 0.45,1.81z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M196.59 223.32c-0.52,0.86 -1.64,1.14 -2.5,0.62 -0.86,-0.52 -1.15,-1.64 -0.62,-2.51 0.52,-0.86 1.64,-1.14 2.51,-0.62 0.86,0.52 1.14,1.64 0.62,2.51z"/>
+      <path id="1" class="fil117 str50" d="M196.59 223.32c-0.52,0.86 -1.64,1.14 -2.5,0.62 -0.86,-0.52 -1.15,-1.64 -0.62,-2.51 0.52,-0.86 1.64,-1.14 2.51,-0.62 0.86,0.52 1.14,1.64 0.62,2.51z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M153.45 235.57c-0.84,1.38 -2.63,1.83 -4.01,0.99 -1.38,-0.83 -1.83,-2.63 -1,-4.01 0.83,-1.38 2.63,-1.83 4.01,-0.99 1.38,0.83 1.83,2.63 1,4.01z"/>
+      <path id="1" class="fil117 str50" d="M153.45 235.57c-0.84,1.38 -2.63,1.83 -4.01,0.99 -1.38,-0.83 -1.83,-2.63 -1,-4.01 0.83,-1.38 2.63,-1.83 4.01,-0.99 1.38,0.83 1.83,2.63 1,4.01z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M205.79 167.09c-0.63,1.05 -1.98,1.39 -3.03,0.75 -1.04,-0.62 -1.38,-1.98 -0.75,-3.03 0.63,-1.04 1.99,-1.38 3.03,-0.75 1.05,0.62 1.39,1.98 0.76,3.03z"/>
+      <path id="1" class="fil117 str50" d="M205.79 167.09c-0.63,1.05 -1.98,1.39 -3.03,0.75 -1.04,-0.62 -1.38,-1.98 -0.75,-3.03 0.63,-1.04 1.99,-1.38 3.03,-0.75 1.05,0.62 1.39,1.98 0.76,3.03z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M173.85 85.05c-0.32,0.54 -1,0.7 -1.53,0.38 -0.54,-0.32 -0.71,-1.01 -0.39,-1.54 0.32,-0.53 1.01,-0.7 1.54,-0.38 0.52,0.32 0.7,1.01 0.38,1.54z"/>
+      <path id="1" class="fil117 str50" d="M173.85 85.05c-0.32,0.54 -1,0.7 -1.53,0.38 -0.54,-0.32 -0.71,-1.01 -0.39,-1.54 0.32,-0.53 1.01,-0.7 1.54,-0.38 0.52,0.32 0.7,1.01 0.38,1.54z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M218.45 187.34c0,-1.56 -1.27,-2.82 -2.83,-2.82 -1.56,0 -2.82,1.27 -2.82,2.82 0,1.56 1.27,2.82 2.82,2.82 1.56,0 2.83,-1.26 2.83,-2.82z"/>
+      <path id="1" class="fil117 str50" d="M218.45 187.34c0,-1.56 -1.27,-2.82 -2.83,-2.82 -1.56,0 -2.82,1.27 -2.82,2.82 0,1.56 1.27,2.82 2.82,2.82 1.56,0 2.83,-1.26 2.83,-2.82z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M94.36 145.55c-0.54,0.91 -1.72,1.2 -2.62,0.65 -0.9,-0.54 -1.19,-1.72 -0.65,-2.62 0.55,-0.91 1.72,-1.2 2.62,-0.65 0.9,0.54 1.19,1.72 0.65,2.62z"/>
+      <path id="1" class="fil117 str50" d="M94.36 145.55c-0.54,0.91 -1.72,1.2 -2.62,0.65 -0.9,-0.54 -1.19,-1.72 -0.65,-2.62 0.55,-0.91 1.72,-1.2 2.62,-0.65 0.9,0.54 1.19,1.72 0.65,2.62z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M160.15 256.99c-0.78,1.29 -2.46,1.72 -3.76,0.94 -1.3,-0.78 -1.71,-2.46 -0.94,-3.76 0.78,-1.29 2.46,-1.71 3.76,-0.93 1.3,0.78 1.72,2.46 0.94,3.75z"/>
+      <path id="1" class="fil117 str50" d="M160.15 256.99c-0.78,1.29 -2.46,1.72 -3.76,0.94 -1.3,-0.78 -1.71,-2.46 -0.94,-3.76 0.78,-1.29 2.46,-1.71 3.76,-0.93 1.3,0.78 1.72,2.46 0.94,3.75z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M105.89 295.87c-0.38,0.64 -1.21,0.85 -1.85,0.46 -0.64,-0.38 -0.84,-1.22 -0.46,-1.85 0.38,-0.64 1.21,-0.85 1.86,-0.46 0.64,0.39 0.84,1.21 0.46,1.85z"/>
+      <path id="1" class="fil117 str50" d="M105.89 295.87c-0.38,0.64 -1.21,0.85 -1.85,0.46 -0.64,-0.38 -0.84,-1.22 -0.46,-1.85 0.38,-0.64 1.21,-0.85 1.86,-0.46 0.64,0.39 0.84,1.21 0.46,1.85z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M238.47 184.68c-0.6,0.99 -1.89,1.31 -2.88,0.71 -0.99,-0.6 -1.31,-1.88 -0.71,-2.87 0.6,-0.99 1.88,-1.31 2.87,-0.71 0.99,0.59 1.31,1.88 0.72,2.87z"/>
+      <path id="1" class="fil117 str50" d="M238.47 184.68c-0.6,0.99 -1.89,1.31 -2.88,0.71 -0.99,-0.6 -1.31,-1.88 -0.71,-2.87 0.6,-0.99 1.88,-1.31 2.87,-0.71 0.99,0.59 1.31,1.88 0.72,2.87z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M235.57 186.67c-0.3,0.49 -0.93,0.65 -1.42,0.35 -0.49,-0.29 -0.65,-0.93 -0.36,-1.42 0.3,-0.49 0.93,-0.65 1.43,-0.35 0.49,0.29 0.65,0.93 0.35,1.42z"/>
+      <path id="1" class="fil117 str50" d="M235.57 186.67c-0.3,0.49 -0.93,0.65 -1.42,0.35 -0.49,-0.29 -0.65,-0.93 -0.36,-1.42 0.3,-0.49 0.93,-0.65 1.43,-0.35 0.49,0.29 0.65,0.93 0.35,1.42z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M120.92 109.49c-0.31,0.53 -1.01,0.7 -1.53,0.39 -0.53,-0.32 -0.7,-1.01 -0.38,-1.54 0.32,-0.53 1,-0.7 1.53,-0.38 0.53,0.32 0.7,1 0.38,1.53z"/>
+      <path id="1" class="fil117 str50" d="M120.92 109.49c-0.31,0.53 -1.01,0.7 -1.53,0.39 -0.53,-0.32 -0.7,-1.01 -0.38,-1.54 0.32,-0.53 1,-0.7 1.53,-0.38 0.53,0.32 0.7,1 0.38,1.53z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M194.16 238.45c-0.85,1.42 -2.7,1.88 -4.12,1.02 -1.42,-0.85 -1.88,-2.69 -1.02,-4.11 0.85,-1.42 2.7,-1.88 4.12,-1.02 1.42,0.85 1.88,2.69 1.03,4.11z"/>
+      <path id="1" class="fil117 str50" d="M194.16 238.45c-0.85,1.42 -2.7,1.88 -4.12,1.02 -1.42,-0.85 -1.88,-2.69 -1.02,-4.11 0.85,-1.42 2.7,-1.88 4.12,-1.02 1.42,0.85 1.88,2.69 1.03,4.11z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M296.96 140.81c-0.38,0.62 -1.18,0.82 -1.8,0.45 -0.62,-0.37 -0.82,-1.18 -0.45,-1.8 0.37,-0.62 1.18,-0.82 1.8,-0.45 0.62,0.37 0.82,1.18 0.45,1.8z"/>
+      <path id="1" class="fil117 str50" d="M296.96 140.81c-0.38,0.62 -1.18,0.82 -1.8,0.45 -0.62,-0.37 -0.82,-1.18 -0.45,-1.8 0.37,-0.62 1.18,-0.82 1.8,-0.45 0.62,0.37 0.82,1.18 0.45,1.8z"/>
+     </g>
+     <g>
+      <path class="fil116" d="M238.18 104.92c-0.41,0.68 -1.29,0.9 -1.98,0.49 -0.68,-0.41 -0.9,-1.3 -0.49,-1.98 0.41,-0.68 1.29,-0.9 1.98,-0.49 0.68,0.41 0.9,1.29 0.49,1.98z"/>
+      <path id="1" class="fil117 str50" d="M238.18 104.92c-0.41,0.68 -1.29,0.9 -1.98,0.49 -0.68,-0.41 -0.9,-1.3 -0.49,-1.98 0.41,-0.68 1.29,-0.9 1.98,-0.49 0.68,0.41 0.9,1.29 0.49,1.98z"/>
+     </g>
+    </g>
+   </g>
+  </g>
+  <polygon class="fil118" points="-0,0 388,0 388,388 -0,388 "/>
+ </g>
+</svg>

@@ -20,7 +20,7 @@ export function LabProjectBoxes({
       className={
         orientation === "vertical"
           ? "flex flex-col items-center gap-4"
-          : "grid grid-cols-3 gap-6"
+          : "grid grid-cols-2 gap-6 sm:grid-cols-4"
       }
     >
       {projects.map((project, index) => {

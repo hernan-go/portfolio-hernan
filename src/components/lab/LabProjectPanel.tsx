@@ -49,6 +49,9 @@ export function LabProjectPanel({ project, isActive }: LabProjectPanelProps) {
       </div>
 
       <div
+        role={project.coreTechnologies ? "region" : undefined}
+        tabIndex={project.coreTechnologies ? 0 : undefined}
+        aria-label={project.coreTechnologies ? `${project.name} project details` : undefined}
         className="
           px-5
           pb-12
@@ -58,6 +61,10 @@ export function LabProjectPanel({ project, isActive }: LabProjectPanelProps) {
           sm:overscroll-contain
           sm:[scrollbar-width:none]
           sm:[&::-webkit-scrollbar]:hidden
+          focus-visible:outline-2
+          focus-visible:outline-solid
+          focus-visible:-outline-offset-2
+          focus-visible:outline-[#8C82A7]
           "
       >
         <header>
@@ -84,6 +91,10 @@ export function LabProjectPanel({ project, isActive }: LabProjectPanelProps) {
             label="Product direction"
             value={project.productDirection}
           />
+
+          {project.coreTechnologies && (
+            <ProjectField label="Core Technologies" value={project.coreTechnologies} />
+          )}
 
           {project.nextMilestone && (
               <ProjectField label="Next milestone" value={project.nextMilestone} />

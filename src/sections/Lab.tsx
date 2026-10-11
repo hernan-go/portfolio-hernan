@@ -161,7 +161,7 @@ export function Lab() {
               Select project
             </span>
 
-            <div className="relative z-10 translate-x-15 -translate-y-35">
+            <div className="relative z-10 translate-x-15 -translate-y-20">
               <LabProjectBoxes
                 projects={labProjects}
                 activeProjectId={activeProjectId}

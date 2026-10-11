@@ -1,5 +1,7 @@
+import prismaCrmDashboard from "../assets/lab/prisma_crm_dashboard.webp";
+
 export type LabProjectId =
-  "argentina-engine" | "holistic-practice-saas" | "fastwork";
+  "prisma-crm" | "argentina-engine" | "holistic-practice-saas" | "fastwork";
 
 export type LabStatus =
   | "DISCOVERY"
@@ -10,6 +12,7 @@ export type LabStatus =
   | "COMPLETED";
 
 export type LabVisualKey =
+  | "prisma-crm-management"
   | "argentina-data-map"
   | "holistic-consultation-flow"
   | "fastwork-marketplace-flow";
@@ -34,6 +37,7 @@ export type LabProject = {
   focus: string;
   currentStage: string;
   productDirection: string;
+  coreTechnologies?: string;
   nextMilestone?: string;
   projectCollaborators?: string;
   visualKey: LabVisualKey;
@@ -46,6 +50,33 @@ export type LabProject = {
 };
 
 export const labProjects: LabProject[] = [
+  {
+    id: "prisma-crm",
+    name: "PRISMA CRM",
+    descriptor:
+      "A full-stack CRM built to centralize the operations of a multidisciplinary community space.",
+    status: "RELEASED",
+    focus:
+      "People and enrollment management, recurring activities, monthly schedules, facilitator coordination, collections, payments and expenses within a single system.",
+    currentStage:
+      "Released and actively running in production at PRISMA, supporting real administrative, operational and financial workflows.",
+    productDirection:
+      "Transform fragmented administrative processes into a centralized, traceable and adaptable management platform that connects participant follow-up, activity planning and financial control, with the flexibility to support different organizational needs.",
+    coreTechnologies: "React, TypeScript, Node.js, Express, MySQL.",
+    visualKey: "prisma-crm-management",
+    image: {
+      src: prismaCrmDashboard,
+      alt: "PRISMA CRM administrative dashboard showing enrollments, activity summaries and monthly financial information.",
+    },
+    storyRings: {
+      outer:
+        "It began with the need to organize a multidisciplinary community space",
+      middle:
+        "Connecting enrollments, schedules and finances shaped a practical daily workflow",
+      inner:
+        "Build a reliable and adaptable system that makes everyday operations easier to manage",
+    },
+  },
   {
     id: "argentina-engine",
     name: "Argentina Engine",
