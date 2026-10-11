@@ -433,7 +433,7 @@ function PhoneMockup({ visibleMessages, typingMessage }: PhoneMockupProps) {
                     uppercase
                     leading-5
                     tracking-[0.12em]
-                    text-neutral-500
+                    text-[#A8A8A8]
                     transition-colors
                     hover:text-[#FFDD1F]
                     focus-visible:outline-2

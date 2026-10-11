@@ -93,7 +93,7 @@ export function LabProjectBoxes({
                 ${
                   isActive
                     ? "text-neutral-100"
-                    : "text-neutral-500 group-hover:text-neutral-300"
+                    : "text-[#A3A3A3] group-hover:text-neutral-300"
                 }
                 group-focus-visible:text-neutral-100
               `}

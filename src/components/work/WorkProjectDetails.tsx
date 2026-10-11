@@ -51,7 +51,7 @@ export function WorkProjectDetails({ project }: WorkProjectDetailsProps) {
   return (
     <article aria-live="polite" className="font-['IBM_Plex_Mono']">
       <div>
-        <p className="mb-1 text-[0.7rem] uppercase tracking-[0.2em] text-neutral-500">
+        <p className="mb-1 text-[0.7rem] uppercase tracking-[0.2em] text-[#A8A8A8]">
           Active case
         </p>
 

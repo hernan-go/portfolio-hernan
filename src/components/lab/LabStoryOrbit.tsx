@@ -231,7 +231,7 @@ export function LabStoryOrbit({
             fill="freeze"
           />
 
-          <text className="fill-neutral-500 font-['IBM_Plex_Mono'] text-[15px] uppercase tracking-[0.1em]">
+          <text className="fill-[#9C9C9C] font-['IBM_Plex_Mono'] text-[15px] uppercase tracking-[0.1em]">
             <textPath href={`#${innerPathId}`} startOffset="5%">
               {story.inner}
             </textPath>
