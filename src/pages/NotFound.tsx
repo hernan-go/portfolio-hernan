@@ -115,6 +115,7 @@ export function NotFound() {
               duration-300
               hover:opacity-70
               focus:outline-none
+              focus-visible:outline-solid
               focus-visible:outline-2
               focus-visible:outline-offset-4
               focus-visible:outline-neutral-100
@@ -151,6 +152,7 @@ export function NotFound() {
                       duration-300
                       hover:text-neutral-100
                       focus:outline-none
+                      focus-visible:outline-solid
                       focus-visible:outline-2
                       focus-visible:outline-offset-4
                       focus-visible:outline-neutral-100
