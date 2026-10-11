@@ -2,7 +2,7 @@
 
 Updated: 2026-10-10. Source: [complete audit](AUDIT-2026-10-10.md). Current state: [PROJECT_STATE.md](PROJECT_STATE.md).
 
-**This roadmap does not authorize implementation, hosting changes, Git operations or deployment.** The owner must approve the scope of each intervention. H1 is implemented and validated for its original 320 px clipping problem, with owner approval. H2–H4 and H12 are implemented and validated within their checked scopes, with owner approval and remaining verification limits below. H5–H11 remain outstanding and have not been implemented. H12 is an independent P1 finding confirmed during H4 verification, outside the historical H1–H11 audit. Priorities express impact, not permission.
+**This roadmap does not authorize implementation, hosting changes, Git operations or deployment.** The owner must approve the scope of each intervention. H1 is implemented and validated for its original 320 px clipping problem, with owner approval. H2–H5 and H12 are implemented and validated within their checked scopes, with owner approval and remaining verification limits below. H6–H11 remain outstanding and have not been implemented. H12 is an independent P1 finding confirmed during H4 verification, outside the historical H1–H11 audit. Priorities express impact, not permission.
 
 P0: critical; P1: important; P2: optional. No P0 issues were identified within the audited scope. H7 is P1 for verification: a Googlebot block has not been demonstrated. H10 is P2 subject to measurement.
 
@@ -18,7 +18,7 @@ Prerequisite: Iteration 0 review and authorization of specific files/changes. Pr
 | H4 / P1 — implemented and validated within the checked scope | Unselected names in `src/components/work/WorkPreviewGrid.tsx` now use `text-[#B8B8B8]` instead of `text-neutral-500`, retaining hover and adding `group-focus-visible:text-neutral-200`. | Contrast calculations, sampled textured backgrounds, responsive/keyboard checks and visual comparison completed; owner approved the hierarchy between selected and unselected projects. Sizes, logos, layout, backgrounds and animations preserved. Verification methods and limits are recorded below. |
 | H12 / P1 — implemented and validated within the checked scope | Invisible keyboard outline corrected by adding `focus-visible:outline-solid` in `WorkPreviewGrid.tsx` and `WorkBackpackSelector.tsx`. Original cause: `focus:outline-none` set the style to `none`, which `focus-visible:outline-2` did not restore. | All eight projects checked with Tab/Shift+Tab and Enter/Space at 320, 390, 768, 1024 and 1440 px. Computed solid pink outlines and complete contours confirmed; geometry, selection, hover and H4 contrast preserved. Owner approved mobile captures. Other browsers, real zoom and a real screen reader remain unverified. |
 | H11 / P2 | SVG narrative alternative; `src/components/lab/LabStoryOrbit.tsx:155`. | All three passages have an accessible equivalent without redundant announcements; verify with a real screen reader. |
-| H5 / P1 | Continuous motion in Work and the orbit; `src/components/work/WorkProjectImage.tsx:132`, `src/components/lab/LabStoryOrbit.tsx:202`. | **Evaluate first** the pause mechanism and applicability of WCAG 2.2.2. Present a proposal and obtain separate authorization before implementation. If approved, validate keyboard control, pause/resume and reduced motion without removing existing animations. |
+| H5 / P1 — implemented and validated within the checked scope | Finite LAB ring introduction, static selected-box light, first-entry LAB selection and interaction-triggered single Work capture passes. Five approved code files are listed in the H5 closure below. | Owner approved the complete implementation after real Beelink tests. Codex browser checks, preference/edge-case simulations, final resize simulations and static checks are distinguished below. H6–H11 remain pending; this closure does not certify complete WCAG conformance. |
 
 Separate functional corrections from brightness or layout adjustments so that they can be reviewed in bounded changes. Proposed validation: lint/TypeScript without emitting files when appropriate, responsive review, focus/keyboard checks and visual comparison. A build may only run if the phase permits it.
 
@@ -30,7 +30,7 @@ Completed checks: ESLint without autofix or caching; application and configurati
 
 **Independent pending follow-up:** Contact still clips at 1024 px with enlarged text because of the preexisting desktop horizontal translation. This was reproduced in HEAD; H1 neither introduced nor corrected it. It needs separate analysis and authorization and does not reopen the validated original 320 px issue. The 200% check was a targeted text simulation; manual testing with real browser zoom and other browsers remains pending.
 
-H1 remains complete within Iteration 1; its implementation and documentation are incorporated in commit `fb064c8`. Subsequent H2–H4 and H12 closures are recorded below. H5–H11 retain their outstanding states; H12 is an independent finding completed within its checked scope.
+H1 remains complete within Iteration 1; its implementation and documentation are incorporated in commit `fb064c8`. Subsequent H2–H5 and H12 closures are recorded below. H6–H11 retain their outstanding states; H12 is an independent finding completed within its checked scope.
 
 ### H2 closure — Iteration 1
 
@@ -68,7 +68,7 @@ Contrast results are distinguished by method: the CSS color-pair calculation is 
 
 **H12 registration during H4:** the invisible keyboard focus outline reproduced before and after H4. Generated CSS confirmed that `focus:outline-none` set the outline style and `--tw-outline-style` to `none`, while `focus-visible:outline-2` reused that variable and only supplied the width. H12 was registered as an independent P1 finding, pending a separately authorized intervention. H4 did not correct it; the subsequent H12 closure is recorded below. The historical H1–H11 audit was not modified.
 
-H4 implementation and documentation are incorporated in commit `3f409e8`. H1–H4 remain complete within their checked scopes; H5–H11 retain their outstanding states.
+H4 implementation and documentation are incorporated in commit `3f409e8`. H1–H4 remain complete within their checked scopes; subsequent H12 and H5 closures are recorded below. H6–H11 retain their outstanding states.
 
 ### H12 closure — Iteration 1
 
@@ -80,7 +80,29 @@ Completed checks: all eight projects with Tab, Shift+Tab, Enter and Space at 320
 
 **Pending verification limits:** tests used the integrated browser. Other browsers, real browser zoom and a real screen reader were not tested. These results do not certify complete accessibility conformance.
 
-This documentary closure changes only `PROJECT_STATE.md` and `ROADMAP.md` and awaits owner review before any commit. The approved H12 code in both selectors and these two documents remain unstaged local changes on `main`, with `3f409e8` as HEAD. Documentary closure checks consistency, `git diff --check` and Git status without rerunning implementation tests. No builds, installations, staging, commits, pushes or deployment were performed during H12 implementation or closure. H1–H4 and H12 remain complete within their checked scopes; H5–H11 retain their outstanding states. Further implementation and Git writes require separate authorization.
+H12 implementation and documentation are incorporated in `bf0c4f2`. Its documentary closure checked consistency, `git diff --check` and Git status without rerunning implementation tests. No builds, installations, staging, commits, pushes or deployment were performed during the H12 implementation or documentary closure interventions themselves.
+
+### H5 closure — Iteration 1
+
+H5 is **implemented and validated within the checked scope**, with owner technical, visual and functional approval after real Beelink tests. The authorized implementation affects `src/sections/Lab.tsx`, `src/components/lab/LabStoryOrbit.tsx`, `src/components/lab/LabProjectBoxes.tsx`, `src/sections/Work.tsx` and `src/components/work/WorkProjectImage.tsx`.
+
+LAB's additional functional correction initializes selection with `labProjects[0].id`, so a future first-position PRISMA CRM entry will be selected without changing this logic. No project data, order or entry was changed. The three narrative rings run once per project per visit for 4.8 seconds, moving +8°, −9° and +11° in their original directions, then remain static. Shared playback history prevents repeats after reselection, scroll or responsive composition changes. Selected-box violet lighting is static and follows selection; the infinite pulse is removed. Reduced motion keeps the orbit static. Narrative content, typography, colors and central composition are preserved.
+
+Work starts with a static capture at the top. Each explicit selection from the grid or backpack can initiate one complete pass at 45 px/s, preserving pauses, opacity effects and return to the top, followed by a static capture. Another explicit selection, including the same project, can request another pass. There are no automatic repeats or additional controls. Shared request consumption coordinates mobile/desktop playback; switching projects cancels the old pass. Resize with unchanged frame width/height and rendered image height does not interrupt playback; changed geometry cancels the pass and returns it to the top without replay. Reduced motion, contain mode, absent images and no overflow remain static. Loading, scroll and visibility changes do not create playback requests.
+
+Verification sources are distinct:
+
+- **Codex integrated-browser checks:** eight Work projects at 320, 390, 768, 1024 and 1440 px; Tab/Shift+Tab and Enter/Space, selection, focus, responsive presentation and React StrictMode without observed duplicate playback. Initial static state, explicit reselection, project changes, scroll and responsive transitions were checked. Zepelin's full 427 px journey at 45 px/s, return and no repetition after more than two cycle durations were observed; full cycles were not awaited for every other project. These checks preceded the final resize refinement.
+- **Codex simulations/automated checks:** motion preferences were explicitly fixed in memory, with all 40 `reduce` selections static; missing-image, no-overflow and delayed-load fixtures were also simulated. Seven final resize scenarios verified unchanged-dimension continuity, cancellation for changed width/frame height/image height, no replay after hiding/returning, refreshed dimensions after delayed loading and no playback for consumed requests. These used simulated dimensions and animation objects. ESLint without autofix/cache, both TypeScript configurations without emission/incremental compilation and `git diff --check` passed during the reported Work implementation/adjustment checks.
+- **Owner manual validation:** LAB was technically and visually approved after real Beelink tests with animations enabled. The owner subsequently approved the complete H5 implementation visually and functionally on that machine, including the final Work resize behavior. This is owner-reported validation, not Codex browser or assistive-technology evidence.
+
+For [WCAG 2.2.2 (Level A)](https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html), LAB's automatic ring motion is below five seconds and continuous box pulsing is eliminated. Work journeys may exceed five seconds but require explicit visitor activation rather than automatic startup or indirect focus/hover/scroll triggers. This addresses the identified continuous-motion risk without asserting complete WCAG conformance or certification. H11's accessible narrative equivalent remains pending.
+
+**Pending verification limits:** other browsers, a real screen reader and exhaustive accessibility tests remain unverified. Codex used simulated motion preferences rather than validating native system settings; real zoom was not checked. The integrated browser could not connect to the final resize preview, so that refinement has simulated Codex coverage and subsequent owner approval, not a Codex real-browser resize check. Detailed evidence is recorded in [PROJECT_STATE.md](PROJECT_STATE.md).
+
+H1–H5 and H12 remain complete within their checked scopes; H6–H11 retain their pending states and priorities. PRISMA CRM integration remains in Iteration 3 with its existing review, evidence and authorization prerequisites. The first-entry LAB default does not authorize integration or change project data. The historical audit remains unchanged.
+
+This documentary closure modifies only `PROJECT_STATE.md` and `ROADMAP.md`; the five approved code files are preserved. The seven files remain unstaged on `main`, HEAD `bf0c4f2`, awaiting owner review before any Git write. Closure checks document consistency, code-file integrity, `git diff --check` and Git status without rerunning implementation tests. No builds, installations, staging, commits, pushes or deployment were performed in this closure; local checks do not assert remote synchronization.
 
 ## Iteration 2 — SEO and verification
 

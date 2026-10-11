@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { Container } from "../components/Container";
 import { LabProjectBoxes } from "../components/lab/LabProjectBoxes";
@@ -26,8 +26,9 @@ export function Lab() {
   }, []);
 
   const [activeProjectId, setActiveProjectId] = useState<LabProjectId>(
-    "holistic-practice-saas",
+    () => labProjects[0].id,
   );
+  const orbitHistory = useRef(new Map<LabProjectId, number>());
 
   const activeProject =
     labProjects.find((project) => project.id === activeProjectId) ??
@@ -94,7 +95,7 @@ export function Lab() {
               <LabStoryOrbit
                 key={activeProject.id}
                 project={activeProject}
-                compact
+                history={orbitHistory}
               />
             </div>
           </div>
@@ -126,7 +127,11 @@ export function Lab() {
         >
           {/* Narrative orbit */}
           <div className="relative flex min-w-0 -translate-y-14 items-center justify-center">
-            <LabStoryOrbit key={activeProject.id} project={activeProject} />
+            <LabStoryOrbit
+              key={activeProject.id}
+              project={activeProject}
+              history={orbitHistory}
+            />
           </div>
 
           {/* Vertical project selector */}

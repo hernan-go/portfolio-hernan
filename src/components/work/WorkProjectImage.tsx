@@ -1,15 +1,21 @@
-import { useCallback, useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef, type RefObject } from "react";
 
 type WorkProjectImageProps = {
   src?: string;
   alt?: string;
   mode?: "scroll" | "contain";
+  selectionSequence: number;
+  playbackRequestRef: RefObject<{ sequence: number; consumed: boolean }>;
+  layout: "mobile" | "desktop";
 };
 
 export function WorkProjectImage({
   src,
   alt = "",
   mode = "scroll",
+  selectionSequence,
+  playbackRequestRef,
+  layout,
 }: WorkProjectImageProps) {
   const frameRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
@@ -21,7 +27,6 @@ export function WorkProjectImage({
 
     if (
       !src ||
-      mode !== "scroll" ||
       !frame ||
       !image ||
       !image.complete ||
@@ -30,7 +35,22 @@ export function WorkProjectImage({
       return;
     }
 
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const request = playbackRequestRef.current;
+    const isDesktop = window.matchMedia("(min-width: 768px)").matches;
+    if (
+      request.sequence !== selectionSequence ||
+      request.consumed ||
+      isDesktop !== (layout === "desktop") ||
+      frame.clientWidth === 0
+    ) {
+      return;
+    }
+    playbackRequestRef.current = { ...request, consumed: true };
+
+    if (
+      mode !== "scroll" ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
       animationRef.current?.cancel();
 
       image.style.transform = "translate3d(0, 0, 0)";
@@ -129,12 +149,19 @@ export function WorkProjectImage({
       ],
       {
         duration: totalDuration,
-        iterations: Infinity,
+        iterations: 1,
         easing: "linear",
         fill: "both",
       },
     );
-  }, [src, mode]);
+    const animation = animationRef.current;
+    animation.onfinish = () => {
+      if (animationRef.current === animation) {
+        animation.cancel();
+        animationRef.current = null;
+      }
+    };
+  }, [src, mode, selectionSequence, playbackRequestRef, layout]);
 
   useEffect(() => {
     const frame = frameRef.current;
@@ -144,31 +171,23 @@ export function WorkProjectImage({
       return;
     }
 
-    if (mode !== "scroll") {
-      animationRef.current?.cancel();
-      animationRef.current = null;
-
-      image.style.transform = "translate3d(0, 0, 0)";
-      image.style.opacity = "1";
-
-      return;
-    }
-
     let firstFrame = 0;
     let secondFrame = 0;
-    let isVisible = false;
-
     const motionPreference = window.matchMedia(
       "(prefers-reduced-motion: reduce)",
     );
+    const readDimensions = () => ({
+      frameWidth: frame.clientWidth,
+      frameHeight: frame.clientHeight,
+      imageHeight: image.offsetHeight,
+    });
+    let dimensions = readDimensions();
 
     const resetImage = () => {
       cancelAnimationFrame(firstFrame);
       cancelAnimationFrame(secondFrame);
-
       animationRef.current?.cancel();
       animationRef.current = null;
-
       image.style.transform = "translate3d(0, 0, 0)";
       image.style.opacity = "1";
     };
@@ -176,19 +195,16 @@ export function WorkProjectImage({
     const scheduleAnimation = () => {
       cancelAnimationFrame(firstFrame);
       cancelAnimationFrame(secondFrame);
-
-      if (!isVisible || motionPreference.matches) {
+      if (
+        playbackRequestRef.current.sequence !== selectionSequence ||
+        playbackRequestRef.current.consumed
+      ) {
         return;
       }
-
-      // Wait two animation frames for the browser to resolve
-      // the final image dimensions.
+      // Resolve final image dimensions before consuming this selection.
       firstFrame = requestAnimationFrame(() => {
         secondFrame = requestAnimationFrame(() => {
-          if (!isVisible || motionPreference.matches) {
-            return;
-          }
-
+          dimensions = readDimensions();
           startAnimation();
         });
       });
@@ -196,75 +212,44 @@ export function WorkProjectImage({
 
     const handleMotionPreferenceChange = () => {
       if (motionPreference.matches) {
+        playbackRequestRef.current = {
+          ...playbackRequestRef.current,
+          consumed: true,
+        };
         resetImage();
-        return;
-      }
-
-      if (isVisible) {
-        scheduleAnimation();
       }
     };
 
-    const visibilityObserver = new IntersectionObserver(
-      ([entry]) => {
-        isVisible = entry.isIntersecting;
-
-        if (!isVisible) {
-          animationRef.current?.pause();
-          return;
-        }
-
-        if (motionPreference.matches) {
-          resetImage();
-          return;
-        }
-
-        if (animationRef.current) {
-          animationRef.current.play();
-          return;
-        }
-
-        scheduleAnimation();
-      },
-      {
-        threshold: 0.1,
-      },
-    );
-
-    if (motionPreference.matches) {
+    const handleResize = () => {
+      const nextDimensions = readDimensions();
+      if (
+        nextDimensions.frameWidth === dimensions.frameWidth &&
+        nextDimensions.frameHeight === dimensions.frameHeight &&
+        nextDimensions.imageHeight === dimensions.imageHeight
+      ) {
+        return;
+      }
+      dimensions = nextDimensions;
+      // A changed frame ends the current pass; it never starts a second one.
       resetImage();
-    }
+      scheduleAnimation();
+    };
 
-    if (!image.complete || image.naturalHeight === 0) {
-      image.addEventListener("load", scheduleAnimation);
-    }
-
-    visibilityObserver.observe(frame);
-
-    window.addEventListener("resize", scheduleAnimation);
-
+    scheduleAnimation();
+    image.addEventListener("load", scheduleAnimation);
+    window.addEventListener("resize", handleResize);
     motionPreference.addEventListener("change", handleMotionPreferenceChange);
 
     return () => {
-      cancelAnimationFrame(firstFrame);
-      cancelAnimationFrame(secondFrame);
-
-      visibilityObserver.disconnect();
-
-      animationRef.current?.cancel();
-      animationRef.current = null;
-
+      resetImage();
       image.removeEventListener("load", scheduleAnimation);
-
-      window.removeEventListener("resize", scheduleAnimation);
-
+      window.removeEventListener("resize", handleResize);
       motionPreference.removeEventListener(
         "change",
         handleMotionPreferenceChange,
       );
     };
-  }, [src, mode, startAnimation]);
-
+  }, [src, selectionSequence, playbackRequestRef, startAnimation]);
   return (
     <div
       ref={frameRef}

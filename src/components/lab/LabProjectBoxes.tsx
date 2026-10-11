@@ -185,7 +185,6 @@ function OpenBoxIcon() {
         style={{
           filter: "blur(60px)",
         }}
-        className="animate-[pulse_3.8s_ease-in-out_infinite] motion-reduce:animate-none"
       />
 
       {/* Left body: now extends to the center of the flaps */}

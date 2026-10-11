@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 import { Container } from "../components/Container";
 import { WorkBackpackSelector } from "../components/work/WorkBackpackSelector";
@@ -9,6 +9,15 @@ import { projects, type ProjectId } from "../data/workProjects";
 
 export function Work() {
   const [activeProjectId, setActiveProjectId] = useState<ProjectId>("operations-hub");
+  const [selectionSequence, setSelectionSequence] = useState(0);
+  const playbackRequestRef = useRef({ sequence: 0, consumed: true });
+
+  const handleSelect = (projectId: ProjectId) => {
+    const sequence = playbackRequestRef.current.sequence + 1;
+    playbackRequestRef.current = { sequence, consumed: false };
+    setActiveProjectId(projectId);
+    setSelectionSequence(sequence);
+  };
 
   const activeProject =
     projects.find((project) => project.id === activeProjectId) ?? projects[0];
@@ -58,7 +67,7 @@ export function Work() {
               <WorkBackpackSelector
                 projects={projects}
                 activeProjectId={activeProjectId}
-                onSelect={setActiveProjectId}
+                onSelect={handleSelect}
               />
 
               <div className="mt-7">
@@ -67,6 +76,9 @@ export function Work() {
                   src={activeProject.mainImage}
                   alt={activeProject.mainImageAlt}
                   mode={activeProject.previewMode}
+                  selectionSequence={selectionSequence}
+                  playbackRequestRef={playbackRequestRef}
+                  layout="mobile"
                 />
               </div>
 
@@ -82,7 +94,7 @@ export function Work() {
               <WorkPreviewGrid
                 projects={projects}
                 activeProjectId={activeProjectId}
-                onSelect={setActiveProjectId}
+                onSelect={handleSelect}
               />
 
               <div className="mt-4 grid items-start gap-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:gap-12 xl:gap-16">
@@ -91,6 +103,9 @@ export function Work() {
                   src={activeProject.mainImage}
                   alt={activeProject.mainImageAlt}
                   mode={activeProject.previewMode}
+                  selectionSequence={selectionSequence}
+                  playbackRequestRef={playbackRequestRef}
+                  layout="desktop"
                 />
 
                 <div className="min-w-0">

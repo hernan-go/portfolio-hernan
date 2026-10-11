@@ -1,23 +1,19 @@
-import { useEffect, useId, useRef } from "react";
+import { useEffect, useId, useRef, type RefObject } from "react";
 
 import type { LabProject } from "../../data/labProjects";
 import { LabProjectMedia } from "./LabProjectMedia";
 
 type LabStoryOrbitProps = {
   project: LabProject;
-  compact?: boolean;
+  history: RefObject<Map<LabProject["id"], number>>;
 };
 
 export function LabStoryOrbit({
   project,
-  compact = false,
+  history,
 }: LabStoryOrbitProps) {
   const uniqueId = useId().replace(/:/g, "");
   const story = project.storyRings;
-
-  const durations = compact
-    ? ["260s", "230s", "190s"]
-    : ["800s", "750s", "600s"];
 
   const titleId = `${uniqueId}-orbit-title`;
   const outerPathId = `${uniqueId}-outer-path`;
@@ -42,101 +38,93 @@ export function LabStoryOrbit({
     }
 
     let frameId = 0;
-    let isVisible = false;
     let hasStarted = false;
-
+    const visited = history.current;
+    const animations = [
+      outerAnimationRef.current,
+      middleAnimationRef.current,
+      innerAnimationRef.current,
+    ];
+    const angles = [8, -9, 11];
+    const duration = 4.8;
     const motionPreference = window.matchMedia(
       "(prefers-reduced-motion: reduce)",
     );
 
-    const startAnimations = () => {
-      cancelAnimationFrame(frameId);
-
-      frameId = requestAnimationFrame(() => {
-        outerAnimationRef.current?.beginElement();
-        middleAnimationRef.current?.beginElement();
-        innerAnimationRef.current?.beginElement();
-
-        svg.unpauseAnimations();
-        hasStarted = true;
+    const showStaticPosition = (elapsed: number) => {
+      animations.forEach((animation, index) => {
+        animation?.parentElement?.setAttribute(
+          "transform",
+          `rotate(${angles[index] * (elapsed / duration)} 350 350)`,
+        );
       });
     };
 
-    const stopAnimations = () => {
+    const previous = visited.get(project.id);
+    if (previous !== undefined) {
+      showStaticPosition(previous);
+      return;
+    }
+
+    svg.pauseAnimations();
+    svg.setCurrentTime(0);
+
+    const freezeForReducedMotion = () => {
       cancelAnimationFrame(frameId);
-
+      const elapsed = hasStarted
+        ? Math.min(duration, svg.getCurrentTime())
+        : 0;
       svg.pauseAnimations();
-
-      outerAnimationRef.current?.endElement();
-      middleAnimationRef.current?.endElement();
-      innerAnimationRef.current?.endElement();
-
-      hasStarted = false;
-    };
-
-    const pauseAnimations = () => {
-      cancelAnimationFrame(frameId);
-      svg.pauseAnimations();
-    };
-
-    const resumeAnimations = () => {
-      if (motionPreference.matches) {
-        stopAnimations();
-        return;
-      }
-
-      if (hasStarted) {
-        svg.unpauseAnimations();
-        return;
-      }
-
-      startAnimations();
-    };
-
-    const handleMotionPreferenceChange = () => {
-      if (motionPreference.matches) {
-        stopAnimations();
-        return;
-      }
-
-      if (isVisible) {
-        startAnimations();
-      }
+      animations.forEach((animation) => {
+        animation?.setAttribute("fill", "remove");
+        if (hasStarted) animation?.endElement();
+      });
+      showStaticPosition(elapsed);
+      visited.set(project.id, elapsed);
     };
 
     const visibilityObserver = new IntersectionObserver(
       ([entry]) => {
-        isVisible = entry.isIntersecting;
-
-        if (!isVisible) {
-          pauseAnimations();
+        if (!entry.isIntersecting || hasStarted || visited.has(project.id)) {
           return;
         }
-
-        resumeAnimations();
+        if (motionPreference.matches) {
+          freezeForReducedMotion();
+          return;
+        }
+        frameId = requestAnimationFrame(() => {
+          if (visited.has(project.id)) return;
+          if (motionPreference.matches) {
+            freezeForReducedMotion();
+            return;
+          }
+          // Reserve the single run before starting SMIL. A remount restores
+          // the final pose instead of replaying the introduction.
+          visited.set(project.id, duration);
+          svg.setCurrentTime(0);
+          animations.forEach((animation) => animation?.beginElement());
+          svg.unpauseAnimations();
+          hasStarted = true;
+        });
       },
-      {
-        threshold: 0.1,
-      },
+      { threshold: 0.1 },
     );
 
-    visibilityObserver.observe(orbit);
+    const handleMotionPreferenceChange = () => {
+      if (motionPreference.matches) freezeForReducedMotion();
+    };
 
+    if (motionPreference.matches) freezeForReducedMotion();
+    visibilityObserver.observe(orbit);
     motionPreference.addEventListener("change", handleMotionPreferenceChange);
 
     return () => {
       cancelAnimationFrame(frameId);
-
       visibilityObserver.disconnect();
-
       svg.pauseAnimations();
-
-      motionPreference.removeEventListener(
-        "change",
-        handleMotionPreferenceChange,
-      );
+      motionPreference.removeEventListener("change", handleMotionPreferenceChange);
     };
-  }, [project.id]);
+  }, [project.id, history]);
 
   return (
     <div
@@ -197,9 +185,10 @@ export function LabStoryOrbit({
             attributeName="transform"
             type="rotate"
             from="0 350 350"
-            to="360 350 350"
-            dur={durations[0]}
-            repeatCount="indefinite"
+            to="8 350 350"
+            dur="4.8s"
+            repeatCount="1"
+            fill="freeze"
           />
 
           <text className="fill-neutral-300 font-['IBM_Plex_Mono'] text-[19px] uppercase tracking-[0.12em]">
@@ -216,9 +205,10 @@ export function LabStoryOrbit({
             attributeName="transform"
             type="rotate"
             from="0 350 350"
-            to="-360 350 350"
-            dur={durations[1]}
-            repeatCount="indefinite"
+            to="-9 350 350"
+            dur="4.8s"
+            repeatCount="1"
+            fill="freeze"
           />
 
           <text className="fill-neutral-400 font-['IBM_Plex_Mono'] text-[17px] uppercase tracking-[0.11em]">
@@ -235,9 +225,10 @@ export function LabStoryOrbit({
             attributeName="transform"
             type="rotate"
             from="0 350 350"
-            to="360 350 350"
-            dur={durations[2]}
-            repeatCount="indefinite"
+            to="11 350 350"
+            dur="4.8s"
+            repeatCount="1"
+            fill="freeze"
           />
 
           <text className="fill-neutral-500 font-['IBM_Plex_Mono'] text-[15px] uppercase tracking-[0.1em]">
