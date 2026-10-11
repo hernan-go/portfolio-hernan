@@ -1,1 +1,6 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^www\.hernangobulin\.com$ [NC]
+RewriteRule ^(.*)$ https://hernangobulin.com/$1 [R=301,L]
+
 ErrorDocument 404 /index.html
